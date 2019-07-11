@@ -1,0 +1,45 @@
+#!/bin/sh
+
+LAZABS=../../tricera/tri
+
+cd preprocessed
+
+unsoundCount=0
+matchCount=0
+unmatchCount=0
+for name in *.c 
+do
+    echo
+    echo $name
+    res=$($LAZABS -cex -abstract:off "$@" $name 2>&1 | grep -v 'at ')
+    echo
+    echo "$res"
+
+    ymlExpected=$(sed -nr '/expected_verdict:/ s/.*expected_verdict:([^"]+).*/\1/p' ../yml/${name%?}yml | head -1)
+    if [ "$ymlExpected" = "false" ]; then
+        expected="UNSAFE"
+    else
+        expected="SAFE"
+    fi       
+    
+    echo "Expected result: $expected"
+
+    if echo "$res" | grep -qw "$expected"; then
+        echo "results match!"
+        matchCount=$((matchCount+1))
+    else
+        unmatchCount=$((unmatchCount+1))
+        echo "results do not match!"
+        if [ "$expected" = "UNSAFE" ]; then
+            if echo "$res" | grep -qw "SAFE"; then
+                unsoundCount=$((unsoundCount+1))
+                echo "UNSOUND RESULT DETECTED!"
+            fi
+        fi
+    fi
+    echo "unsound   : $unsoundCount"
+    echo "matched   : $matchCount"
+    echo "unmatched : $unmatchCount"
+    echo
+done
+cd ..
