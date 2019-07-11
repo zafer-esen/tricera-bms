@@ -16,7 +16,7 @@ do
     echo "$res"
 
     ymlExpected=$(sed -nr '/expected_verdict:/ s/.*expected_verdict:([^"]+).*/\1/p' ../yml/${name%?}yml | head -1)
-    if [ "$ymlExpected" = "false" ]; then
+    if echo "$ymlExpected" | grep -q "false"; then
         expected="UNSAFE"
     else
         expected="SAFE"
