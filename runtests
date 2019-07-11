@@ -7,11 +7,12 @@ cd preprocessed
 unsoundCount=0
 matchCount=0
 unmatchCount=0
+
 for name in *.c 
 do
     echo
     echo $name
-    res=$($LAZABS -cex -abstract:off "$@" $name 2>&1 | grep -v 'at ')
+    res=$($LAZABS -cex -abstract:off -t:60 "$@" $name 2>&1 | grep -v 'at ')
     echo
     echo "$res"
 
