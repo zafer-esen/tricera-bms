@@ -22,7 +22,8 @@ node_t* init_cll (int n)
   curr->val = 0;
   head = curr;
 
-  for (int i = 1; i < n; i++) {
+  int i;
+  for (i = 1; i < n; i++) {
     node_t* next_node = malloc(sizeof(node_t));
     next_node->val = i;
     curr->next = next_node;
