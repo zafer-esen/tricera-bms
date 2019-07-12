@@ -5,8 +5,9 @@ LAZABS=../../tricera/tri
 cd preprocessed
 
 unsoundCount=0
+impreciseCount=0
 matchCount=0
-unmatchCount=0
+errorCount=0
 
 for name in *.c 
 do
@@ -25,22 +26,39 @@ do
     
     echo "Expected result: $expected"
 
+    totalCount=$((totalCount+1))
+
     if echo "$res" | grep -qw "$expected"; then
         echo "results match!"
         matchCount=$((matchCount+1))
     else
-        unmatchCount=$((unmatchCount+1))
+
         echo "results do not match!"
         if [ "$expected" = "UNSAFE" ]; then
             if echo "$res" | grep -qw "SAFE"; then
                 unsoundCount=$((unsoundCount+1))
                 echo "UNSOUND RESULT DETECTED!"
+            else
+                errorCount=$((errorCount+1))
+                echo "PARSING ERROR OR BUG DETECTED"
+            fi
+        else #expected result is SAFE
+            if echo "$res" | grep -qw "UNSAFE"; then
+                impreciseCount=$((impreciseCount+1))
+            else
+                errorCount=$((errorCount+1))
+                echo "PARSING ERROR OR BUG DETECTED"
             fi
         fi
     fi
-    echo "unsound   : $unsoundCount"
-    echo "matched   : $matchCount"
-    echo "unmatched : $unmatchCount"
     echo
+    echo "---------------------------"
+    echo "matched    : $matchCount"
+    echo "imprecise  : $impreciseCount"
+    echo "unsound    : $unsoundCount"
+    echo "error      : $errorCount"
+    echo "---------------------------"
+    echo "total      : $totalCount"
+    echo "---------------------------"
 done
 cd ..
