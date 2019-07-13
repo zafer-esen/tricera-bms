@@ -10,22 +10,15 @@
 
 
 
+
+
+
 void __foo(void *arg){
 
 
 }
 # 2 "<stdin>" 2
-# 13 "<stdin>"
-# 1 "./stdlib.h" 1
-
-
-
-
-void __foo(void *arg){
-
-
-}
-# 14 "<stdin>" 2
+# 14 "<stdin>"
 extern int __VERIFIER_nondet_int(void);
 # 47 "<stdin>"
 typedef struct TSLL

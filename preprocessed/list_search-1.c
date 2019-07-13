@@ -10,6 +10,9 @@
 
 
 
+
+
+
 void __foo(void *arg){
 
 
@@ -23,16 +26,7 @@ void __VERIFIER_assert(int cond) {
   }
   return;
 }
-# 1 "./stdlib.h" 1
 
-
-
-
-void __foo(void *arg){
-
-
-}
-# 11 "<stdin>" 2
 typedef struct list {
  int key;
  struct list *next;

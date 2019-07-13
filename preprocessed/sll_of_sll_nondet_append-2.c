@@ -10,6 +10,9 @@
 
 
 
+
+
+
 void __foo(void *arg){
 
 
@@ -17,24 +20,7 @@ void __foo(void *arg){
 # 2 "<stdin>" 2
 
 extern int __VERIFIER_nondet_int();
-
-
-
-
-
-
-
-# 1 "./stdlib.h" 1
-
-
-
-
-void __foo(void *arg){
-
-
-}
-# 12 "<stdin>" 2
-
+# 13 "<stdin>"
 typedef struct node {
   struct node* next;
   struct node* inner;

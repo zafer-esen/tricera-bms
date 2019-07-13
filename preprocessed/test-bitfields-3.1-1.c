@@ -10,6 +10,9 @@
 
 
 
+
+
+
 void __foo(void *arg){
 
 
@@ -17,16 +20,7 @@ void __foo(void *arg){
 # 2 "<stdin>" 2
 
 
-# 1 "./stdlib.h" 1
 
-
-
-
-void __foo(void *arg){
-
-
-}
-# 5 "<stdin>" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4

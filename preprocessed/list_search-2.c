@@ -10,6 +10,9 @@
 
 
 
+
+
+
 void __foo(void *arg){
 
 
@@ -808,19 +811,10 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 868 "/usr/include/stdio.h" 3 4
 
 # 11 "<stdin>" 2
-# 1 "./stdlib.h" 1
 
 
 
-
-
-# 5 "./stdlib.h"
-void __foo(void *arg){
-
-
-}
-# 12 "<stdin>" 2
-
+# 13 "<stdin>"
 typedef struct list {
  int key;
  struct list *next;
@@ -830,7 +824,11 @@ mlist *head;
 
 mlist* search_list(mlist *l, int k){
  l = head;
- while(l!=0 && l->key!=k) {
+ while(l!=
+# 22 "<stdin>" 3 4
+         ((void *)0) 
+# 22 "<stdin>"
+              && l->key!=k) {
   l = l->next;
  }
  return l;
@@ -855,9 +853,17 @@ int insert_list(mlist *l, int k){
 
  l = malloc(sizeof(mlist));
 
- if (head==0) {
+ if (head==
+# 47 "<stdin>" 3 4
+          ((void *)0)
+# 47 "<stdin>"
+              ) {
   l->key = k;
-  l->next = 0;
+  l->next = 
+# 49 "<stdin>" 3 4
+           ((void *)0)
+# 49 "<stdin>"
+               ;
  } else {
   l->key = k;
   l->next = head;

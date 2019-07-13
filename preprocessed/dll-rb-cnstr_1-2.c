@@ -10,6 +10,9 @@
 
 
 
+
+
+
 void __foo(void *arg){
 
 
@@ -21,16 +24,7 @@ void __foo(void *arg){
 
 
 
-# 1 "./stdlib.h" 1
 
-
-
-
-void __foo(void *arg){
-
-
-}
-# 9 "<stdin>" 2
 extern int __VERIFIER_nondet_int(void);
 
 

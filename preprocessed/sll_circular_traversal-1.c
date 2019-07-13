@@ -10,29 +10,15 @@
 
 
 
+
+
+
 void __foo(void *arg){
 
 
 }
 # 2 "<stdin>" 2
-
-
-
-
-
-
-
-# 1 "./stdlib.h" 1
-
-
-
-
-void __foo(void *arg){
-
-
-}
-# 10 "<stdin>" 2
-
+# 11 "<stdin>"
 typedef struct node {
   struct node* next;
   int data;

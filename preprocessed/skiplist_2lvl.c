@@ -10,25 +10,16 @@
 
 
 
+
+
+
 void __foo(void *arg){
 
 
 }
 # 2 "<stdin>" 2
 extern int __VERIFIER_nondet_int(void);
-# 19 "<stdin>"
-# 1 "./stdlib.h" 1
-
-
-
-
-void __foo(void *arg){
-
-
-}
-# 20 "<stdin>" 2
-
-
+# 22 "<stdin>"
 struct sl_item {
  struct sl_item *n1, *n2;
 };

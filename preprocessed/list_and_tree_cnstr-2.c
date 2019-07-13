@@ -10,6 +10,9 @@
 
 
 
+
+
+
 void __foo(void *arg){
 
 
@@ -18,18 +21,7 @@ void __foo(void *arg){
 
 
 extern int __VERIFIER_nondet_int();
-# 19 "<stdin>"
-# 1 "./stdlib.h" 1
-
-
-
-
-void __foo(void *arg){
-
-
-}
-# 20 "<stdin>" 2
-
+# 21 "<stdin>"
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
