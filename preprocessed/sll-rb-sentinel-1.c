@@ -10,7 +10,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -85,19 +86,19 @@ int main()
   if (RED == list->colour)
   {
    end = list->next;
-   free(list);
+   __foo(list);
    list = end->next;
-   free(end);
+   __foo(end);
   }
   else
   {
    end = list->next;
-   free(list);
+   __foo(list);
    list = end;
   }
  }
 
- free(null);
+ __foo(null);
 
  return 0;
 }

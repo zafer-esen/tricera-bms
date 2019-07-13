@@ -9,7 +9,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -22,7 +23,7 @@ void g(int *p, int *s);
 
 
 void f( int *q, int *r) {
- free(r);
+ __foo(r);
  if(*q < 0) {
   return;
  }
@@ -35,7 +36,7 @@ void f( int *q, int *r) {
 
 
 void g(int *p, int *s) {
- free(s);
+ __foo(s);
  if(*p < 0)
   return;
 
@@ -55,7 +56,7 @@ int main() {
 
  f(p1,p2);
 
- free(p1);
+ __foo(p1);
 
 
 }

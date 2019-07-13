@@ -9,7 +9,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -20,13 +21,13 @@ extern int __VERIFIER_nondet_int(void);
 int rec(int *op) {
  if(*op < 0) {
   int r = *op;
-  free(op);
+  __foo(op);
   return r;
  }
  int *ip = malloc(sizeof(int));
 
  *ip = (*op) - 1;
- free(op);
+ __foo(op);
 
  return rec(ip);
 
@@ -45,6 +46,6 @@ int main() {
   *qq += (rec(pp) <= -1 ? -1 : 1);
  }
 
- free(qq);
+ __foo(qq);
 
 }

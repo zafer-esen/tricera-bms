@@ -16,7 +16,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -75,11 +76,11 @@ int main()
  {
   head = x;
   x = x->next;
-  free(head);
+  __foo(head);
  }
  __VERIFIER_assert(1 == x->data);
- free(x->next);
- free(x);
+ __foo(x->next);
+ __foo(x);
 
  return 0;
 }

@@ -17,7 +17,8 @@ extern int __VERIFIER_nondet_int(void);
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -70,7 +71,7 @@ int main() {
   p = a;
   while (p != 0) {
     t = p->n;
-    free(p);
+    __foo(p);
     p = t;
   }
 

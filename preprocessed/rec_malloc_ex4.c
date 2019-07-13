@@ -9,7 +9,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -30,7 +31,7 @@ void f(int *p, int *q) {
 
  *np = *p - 1;
 
- free(p);
+ __foo(p);
 
  g(q,np);
 

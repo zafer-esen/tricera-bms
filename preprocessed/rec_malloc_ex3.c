@@ -9,7 +9,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -20,7 +21,7 @@ extern int __VERIFIER_nondet_int(void);
 int rec(int *p) {
  if(*p < 0) {
   int pv = *p;
-  free(p);
+  __foo(p);
   return pv;
  }
  (*p)--;

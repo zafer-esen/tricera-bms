@@ -11,7 +11,8 @@ extern int __VERIFIER_nondet_int(void);
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -130,11 +131,11 @@ int main()
   {
    tmpList = tmp->list->next;
    tmp->list->next = tmpList->next;
-   free(tmpList);
+   __foo(tmpList);
   }
 
-  free(tmp->list);
-  free(tmp);
+  __foo(tmp->list);
+  __foo(tmp);
  }
 
  return 0;

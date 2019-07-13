@@ -9,7 +9,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -27,7 +28,7 @@ int* g(int *p);
 
 int* f( int *q, int v) {
  if(v < 0) {
-  free(q);
+  __foo(q);
   return malloc(sizeof(int));
  }
 
@@ -44,7 +45,7 @@ int* f( int *q, int v) {
 
 int* g(int *p) {
  if(*p < 0) {
-  free(p);
+  __foo(p);
   return malloc(sizeof(int));
  }
 
@@ -54,7 +55,7 @@ int* g(int *p) {
  int *np = g(p);
 
 
- free(np);
+ __foo(np);
 
 
  return malloc(sizeof(int));
@@ -77,7 +78,7 @@ int main() {
 
  f(p1,*p2);
 
- free(p1);
+ __foo(p1);
 
 
 }

@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -57,10 +58,10 @@ void sll_circular_destroy(SLL head) {
     SLL p = head->next;
     while(p != head) {
       SLL q = p->next;
-      free(p);
+      __foo(p);
       p = q;
     }
-    free(head);
+    __foo(head);
   }
 }
 

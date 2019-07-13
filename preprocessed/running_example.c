@@ -12,7 +12,8 @@ extern int __VERIFIER_nondet_int();
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }

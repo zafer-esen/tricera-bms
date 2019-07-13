@@ -10,7 +10,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -93,12 +94,12 @@ int main()
    itr = item;
    item = item->next;
    __VERIFIER_assert(itr->data != bcki->data);
-   free(itr);
+   __foo(itr);
   }
   __VERIFIER_assert(item == 0);
   bucket = bcki;
   bcki = bcki->next;
-  free(bucket);
+  __foo(bucket);
   bucket = 0;
  }
 

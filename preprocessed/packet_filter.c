@@ -14,7 +14,8 @@ extern char *__VERIFIER_nondet_charp();
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }

@@ -11,7 +11,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -350,22 +351,22 @@ int main(void)
  p = malloc(sizeof(struct A));
  memcpy(p, &d, sizeof(struct A));
  if (p->a != 0) {
-  free(p);
+  __foo(p);
  }
  if (p->b != 2) {
-  free(p);
+  __foo(p);
  }
  if (p->c != 3) {
-  free(p);
+  __foo(p);
  }
  if (p->d != 4) {
-  free(p);
+  __foo(p);
  }
  if (p->e != 0) {
-  free(p);
+  __foo(p);
  }
  if (p->f != 0) {
-  free(p);
+  __foo(p);
  }
- free(p);
+ __foo(p);
 }

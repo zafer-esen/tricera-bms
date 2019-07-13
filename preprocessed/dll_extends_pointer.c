@@ -11,7 +11,8 @@ extern int __VERIFIER_nondet_int(void);
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -66,10 +67,10 @@ int main()
 
   if (&y->data != y->pData)
   {
-   free(y->pData);
+   __foo(y->pData);
   }
 
-  free(y);
+  __foo(y);
  }
 
  return 0;

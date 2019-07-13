@@ -11,7 +11,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -83,10 +84,10 @@ int main() {
         while (y != &x->head) {
             struct T* z = y;
             y = y->next;
-            free(z);
+            __foo(z);
         }
 
-        free(x);
+        __foo(x);
 
     }
 

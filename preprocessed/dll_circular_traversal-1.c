@@ -10,7 +10,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -77,7 +78,7 @@ int main() {
       goto ERROR;
     }
     DLL temp = ptr->prev;
-    free(ptr);
+    __foo(ptr);
     ptr = temp;
   } while(ptr != 0);
   return 0; assert(0);

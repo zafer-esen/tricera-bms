@@ -17,7 +17,8 @@ extern int __VERIFIER_nondet_int();
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -73,7 +74,7 @@ int main() {
     if(0 != head->data_0 || 0 != head->data_1 || 0 != head->data_2) {
       goto ERROR;
     }
-    free(head);
+    __foo(head);
     head = temp;
   }
   return 0;

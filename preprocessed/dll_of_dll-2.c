@@ -11,7 +11,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -95,7 +96,7 @@ void dll_destroy_slave(struct slave_item *dll)
 {
     while (dll) {
         struct slave_item *next = dll->next;
-        free(dll);
+        __foo(dll);
         dll = next;
     }
 }
@@ -120,7 +121,7 @@ void dll_destroy_master(struct master_item *dll)
 {
     while (dll) {
         struct master_item *next = dll->next;
-        free(dll);
+        __foo(dll);
         dll = next;
     }
 }

@@ -11,7 +11,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -37,8 +38,8 @@ static void free_data(TData *data)
     int *hi = data->hi;
 
     if (*lo >= *hi) {
-        free(lo);
-        free(hi);
+        __foo(lo);
+        __foo(hi);
     }
 
     data->lo = 0;

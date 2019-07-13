@@ -11,7 +11,8 @@ extern int __VERIFIER_nondet_int(void);
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -67,7 +68,7 @@ int main() {
   st = s;
   s = s->next;
   n = st->node;
-  free(st);
+  __foo(st);
   if (n->left) {
    st = malloc(sizeof(*st));
    st->next = s;
@@ -80,7 +81,7 @@ int main() {
    st->node = n->right;
    s = st;
   }
-  free(n);
+  __foo(n);
  }
 
  return 0;

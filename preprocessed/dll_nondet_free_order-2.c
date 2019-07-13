@@ -16,7 +16,8 @@ extern int __VERIFIER_nondet_int();
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -59,31 +60,31 @@ void _destroy_in_nondeterministic_order(DLL head) {
   DLL pred = head->prev;
   DLL succ = head->next;
   if(__VERIFIER_nondet_int()) {
-    free(head);
+    __foo(head);
     if(__VERIFIER_nondet_int()) {
-      free(succ);
-      free(pred);
+      __foo(succ);
+      __foo(pred);
     } else {
-      free(pred);
-      free(succ);
+      __foo(pred);
+      __foo(succ);
     }
   } else if(__VERIFIER_nondet_int()) {
-    free(succ);
+    __foo(succ);
     if(__VERIFIER_nondet_int()) {
-      free(head);
-      free(pred);
+      __foo(head);
+      __foo(pred);
     } else {
-      free(pred);
-      free(head);
+      __foo(pred);
+      __foo(head);
     }
   } else {
-    free(pred);
+    __foo(pred);
     if(__VERIFIER_nondet_int()) {
-      free(head);
-      free(succ);
+      __foo(head);
+      __foo(succ);
     } else {
 
-      free(head);
+      __foo(head);
     }
   }
 }

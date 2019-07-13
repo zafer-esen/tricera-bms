@@ -9,7 +9,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -48,7 +49,7 @@ int main() {
 
  f(p1);
 
- free(p1);
+ __foo(p1);
 
 
 }

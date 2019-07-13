@@ -11,7 +11,8 @@ extern int __VERIFIER_nondet_int(void);
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -84,9 +85,9 @@ void destroy_sl(struct sl *sl)
  while (sl->head) {
   tmp = sl->head;
   sl->head = sl->head->n1;
-  free(tmp);
+  __foo(tmp);
  }
- free(sl);
+ __foo(sl);
 }
 
 int main()

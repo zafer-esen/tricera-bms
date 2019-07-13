@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -55,7 +56,7 @@ SLL sll_circular_create(int len, int data) {
 void sll_circular_remove_first(SLL* head) {
   SLL temp = (*head)->next;
   if(temp == *head) {
-    free(*head);
+    __foo(*head);
     *head = 0;
   } else {
     SLL last = *head;
@@ -63,7 +64,7 @@ void sll_circular_remove_first(SLL* head) {
       last = last->next;
     }
     last->next = temp;
-    free(*head);
+    __foo(*head);
     *head = temp;
   }
 }

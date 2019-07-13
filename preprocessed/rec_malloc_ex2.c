@@ -9,7 +9,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -20,8 +21,8 @@ extern int __VERIFIER_nondet_int(void);
 int rec(int *p, int *up) {
  if(*p < 0) {
   int pv = *p;
-  free(p);
-  free(up);
+  __foo(p);
+  __foo(up);
   return pv;
  }
  int *upn = malloc(sizeof(int));

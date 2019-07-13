@@ -13,7 +13,8 @@ extern int __VERIFIER_nondet_int();
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -80,7 +81,7 @@ int main() {
         pred->right = 0;
     } else
       root = 0;
-    free(n);
+    __foo(n);
     }
 
 

@@ -803,8 +803,9 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 
 
-# 4 "./stdlib.h"
-void free(){
+
+# 5 "./stdlib.h"
+void __foo(void *arg){
 
 
 }
@@ -836,7 +837,7 @@ int delete_list(mlist *l){
   head = l->next;
  }
  tmp->next = l->next;
- free(l);
+ __foo(l);
  return 0;
 }
 

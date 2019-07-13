@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -44,8 +45,8 @@ int main() {
   *s = *s;
 
   struct node* t = s->next;
-  free(s);
-  free(t);
+  __foo(s);
+  __foo(t);
 
   return 0;
 }

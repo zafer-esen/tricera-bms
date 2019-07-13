@@ -11,7 +11,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -115,7 +116,7 @@ int main()
 
     while (garbage) {
         struct cell *next = garbage->next;
-        free(garbage);
+        __foo(garbage);
         garbage = next;
     }
 

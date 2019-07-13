@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -43,7 +44,7 @@ int main() {
 
 
   *s = *(s->next);
-  free(s);
+  __foo(s);
 
   return 0;
 }

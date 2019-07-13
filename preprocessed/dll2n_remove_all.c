@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -65,7 +66,7 @@ void dll_remove_first(DLL* head) {
   if(temp) {
     temp->prev = 0;
   }
-  free(*head);
+  __foo(*head);
   *head = temp;
 }
 

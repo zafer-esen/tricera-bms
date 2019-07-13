@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -59,7 +60,7 @@ DLL dll_create(int len, int data) {
 void dll_destroy(DLL head) {
   while(head) {
     DLL temp = head->next;
-    free(head);
+    __foo(head);
     head = temp;
   }
 }

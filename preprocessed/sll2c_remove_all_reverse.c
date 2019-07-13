@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -58,14 +59,14 @@ void sll_circular_remove_last(SLL* head) {
     last = last->next;
   }
   if(last == *head) {
-    free(*head);
+    __foo(*head);
     *head = 0;
   } else {
     SLL snd_to_last = *head;
     while(snd_to_last->next != last) {
       snd_to_last = snd_to_last->next;
     }
-    free(last);
+    __foo(last);
     snd_to_last->next = *head;
   }
 }

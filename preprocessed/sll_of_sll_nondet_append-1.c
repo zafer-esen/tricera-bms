@@ -17,7 +17,8 @@ extern int __VERIFIER_nondet_int();
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -85,10 +86,10 @@ void sll_hierarchical_destroy(SLL head) {
     SLL sub_head = head->inner;
     while(sub_head) {
       SLL temp_2 = sub_head->next;
-      free(sub_head);
+      __foo(sub_head);
       sub_head = temp_2;
     }
-    free(head);
+    __foo(head);
     head = temp;
   }
 }

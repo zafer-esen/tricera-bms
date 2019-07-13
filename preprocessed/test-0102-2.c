@@ -16,7 +16,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -61,7 +62,7 @@ void destroy_sub(struct list_head *head)
     while (&now->link != (head)) {
         struct sub_list *next = ((struct sub_list *)((char *)(now->link.next)-(unsigned long)(&((struct sub_list *)0)->link)));
 
-        free(now);
+        __foo(now);
         now = next;
     }
 }
@@ -79,7 +80,7 @@ void destroy_top(struct list_head *head)
 
 
 
-        free(now);
+        __foo(now);
         now = next;
     }
 }

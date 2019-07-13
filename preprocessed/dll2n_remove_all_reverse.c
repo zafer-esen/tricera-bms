@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -62,7 +63,7 @@ DLL dll_create(int len, int data) {
 
 void dll_remove_last(DLL* head) {
   if(0 == (*head)->next) {
-    free(*head);
+    __foo(*head);
     *head = 0;
   } else {
     DLL snd_to_last = 0;
@@ -72,7 +73,7 @@ void dll_remove_last(DLL* head) {
       last = last->next;
     }
     snd_to_last->next = 0;
-    free(last);
+    __foo(last);
   }
 }
 

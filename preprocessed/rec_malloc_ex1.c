@@ -9,7 +9,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -27,7 +28,7 @@ void rec(int *op, int i) {
 
  rec(ip,i-1);
 
- free(ip);
+ __foo(ip);
 
 }
 
@@ -44,7 +45,7 @@ int main() {
   *qq = *qq + *pp;
  }
 
- free(pp);
- free(qq);
+ __foo(pp);
+ __foo(qq);
 
 }

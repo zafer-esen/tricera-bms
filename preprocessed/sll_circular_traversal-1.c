@@ -16,7 +16,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -75,7 +76,7 @@ int main() {
       goto ERROR;
     }
     SLL temp = ptr->next;
-    free(ptr);
+    __foo(ptr);
     ptr = temp;
     data_new++;
   } while(ptr != head);

@@ -16,7 +16,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -87,11 +88,11 @@ int main()
    __VERIFIER_assert(0 != end);
    __VERIFIER_assert(0 == end->inner);
    __VERIFIER_assert(0 == end->next);
-   free(end);
+   __foo(end);
    end = 0;
   }
   end = list->next;
-  free(list);
+  __foo(list);
   list = end;
  }
 

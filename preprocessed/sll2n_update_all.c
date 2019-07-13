@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -52,7 +53,7 @@ SLL sll_create(int len, int data) {
 void sll_destroy(SLL head) {
   while(head) {
     SLL temp = head->next;
-    free(head);
+    __foo(head);
     head = temp;
   }
 }

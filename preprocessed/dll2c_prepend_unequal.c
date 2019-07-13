@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -63,10 +64,10 @@ void dll_circular_destroy(DLL head) {
     DLL p = head->next;
     while(p != head) {
       DLL q = p->next;
-      free(p);
+      __foo(p);
       p = q;
     }
-    free(head);
+    __foo(head);
   }
 }
 

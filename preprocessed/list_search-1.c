@@ -17,7 +17,8 @@ void __VERIFIER_assert(int cond) {
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -62,7 +63,7 @@ int main(void){
 
   while(head!=0) {
     mlist *tmp = head->next;
-    free(head);
+    __foo(head);
     head = tmp;
   }
 }

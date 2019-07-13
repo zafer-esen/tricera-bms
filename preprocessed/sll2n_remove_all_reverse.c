@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -51,7 +52,7 @@ SLL sll_create(int len, int data) {
 
 void sll_remove_last(SLL* head) {
   if(0 == (*head)->next) {
-    free(*head);
+    __foo(*head);
     *head = 0;
   } else {
     SLL snd_to_last = 0;
@@ -61,7 +62,7 @@ void sll_remove_last(SLL* head) {
       last = last->next;
     }
     snd_to_last->next = 0;
-    free(last);
+    __foo(last);
   }
 }
 

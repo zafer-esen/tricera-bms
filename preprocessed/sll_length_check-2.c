@@ -16,7 +16,8 @@ extern int __VERIFIER_nondet_int();
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -56,7 +57,7 @@ int sll_length(SLL head) {
 void sll_destroy(SLL head) {
   while(head) {
     SLL temp = head->next;
-    free(head);
+    __foo(head);
     head = temp;
   }
 }

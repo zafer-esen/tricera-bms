@@ -10,7 +10,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -95,7 +96,7 @@ int main()
  {
   item = head;
   head = head->next;
-  free(item);
+  __foo(item);
  }
 
  return 0;

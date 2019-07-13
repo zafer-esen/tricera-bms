@@ -11,7 +11,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -90,10 +91,10 @@ int main() {
             y = y->next;
 
             if(z->data < 16) {
-              free(z);
+              __foo(z);
             }
         }
-        free(x);
+        __foo(x);
     }
 
     return 0;

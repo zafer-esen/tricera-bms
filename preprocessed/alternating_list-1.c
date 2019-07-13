@@ -17,7 +17,8 @@ extern int __VERIFIER_nondet_int();
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -76,9 +77,9 @@ int main() {
   while (p->h != 3) {
     List* tmp = p;
     p = p->n;
-    free(tmp);
+    __foo(tmp);
   }
-  free(p);
+  __foo(p);
 
   return 0;
 

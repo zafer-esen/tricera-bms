@@ -14,7 +14,8 @@
 
 
 
-void free(){
+
+void __foo(void *arg){
 
 
 }
@@ -61,11 +62,11 @@ DLL dll_circular_create(int len, int data) {
 void dll_circular_remove_last(DLL* head) {
   DLL last = (*head)->prev;
   if(last == *head) {
-    free(*head);
+    __foo(*head);
     *head = 0;
   } else {
     DLL snd_to_last = (last)->prev;
-    free(last);
+    __foo(last);
     (*head)->prev = snd_to_last;
     snd_to_last->next = *head;
   }
