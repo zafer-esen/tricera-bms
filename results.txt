@@ -6,10 +6,15 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 SAFE
 Expected result: SAFE
 results match!
-unsound   : 0
-matched   : 1
-unmatched : 0
 
+---------------------------
+matched    : 1
+imprecise  : 0
+unsound    : 0
+error      : 0
+---------------------------
+total      : 1
+---------------------------
 
 SyntaxSupportPointer01-2.c
 
@@ -18,10 +23,15 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 SAFE
 Expected result: SAFE
 results match!
-unsound   : 0
-matched   : 2
-unmatched : 0
 
+---------------------------
+matched    : 2
+imprecise  : 0
+unsound    : 0
+error      : 0
+---------------------------
+total      : 2
+---------------------------
 
 SyntaxSupportPointer01-3.c
 
@@ -29,10 +39,15 @@ Warning: enabling heap model
 SAFE
 Expected result: SAFE
 results match!
-unsound   : 0
-matched   : 3
-unmatched : 0
 
+---------------------------
+matched    : 3
+imprecise  : 0
+unsound    : 0
+error      : 0
+---------------------------
+total      : 3
+---------------------------
 
 alternating_list-1.c
 
@@ -64,10 +79,15 @@ Final:
 -----------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 3
-unmatched : 1
 
+---------------------------
+matched    : 3
+imprecise  : 1
+unsound    : 0
+error      : 0
+---------------------------
+total      : 4
+---------------------------
 
 alternating_list-2.c
 
@@ -99,10 +119,15 @@ Final:
 -----------------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 4
-unmatched : 1
 
+---------------------------
+matched    : 4
+imprecise  : 1
+unsound    : 0
+error      : 0
+---------------------------
+total      : 5
+---------------------------
 
 calendar.c
 
@@ -164,10 +189,15 @@ Final:
 -----------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 4
-unmatched : 2
 
+---------------------------
+matched    : 4
+imprecise  : 2
+unsound    : 0
+error      : 0
+---------------------------
+total      : 6
+---------------------------
 
 cart.c
 
@@ -248,20 +278,31 @@ Final:
 --------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 4
-unmatched : 3
 
+---------------------------
+matched    : 4
+imprecise  : 3
+unsound    : 0
+error      : 0
+---------------------------
+total      : 7
+---------------------------
 
 cll_by_lseg-alloca-1.c
 
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 4
-unmatched : 4
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 4
+imprecise  : 3
+unsound    : 0
+error      : 1
+---------------------------
+total      : 8
+---------------------------
 
 cll_by_lseg-alloca-2.c
 
@@ -269,10 +310,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 4
-unmatched : 5
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 4
+imprecise  : 3
+unsound    : 0
+error      : 2
+---------------------------
+total      : 9
+---------------------------
 
 cll_by_lseg_traverse-alloca.c
 
@@ -280,55 +327,85 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 4
-unmatched : 6
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 4
+imprecise  : 3
+unsound    : 0
+error      : 3
+---------------------------
+total      : 10
+---------------------------
 
 cll_search-alloca-1.c
 
-Syntax Error, trying to recover and continue parse...
-(error "At line 25, near """i = 1; i""" :     Unrecoverable Syntax Error")
+Warning: no definition of function "__VERIFIER_nondet_int" available
+(error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 4
-unmatched : 7
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 4
+imprecise  : 3
+unsound    : 0
+error      : 4
+---------------------------
+total      : 11
+---------------------------
 
 cll_search-alloca-2.c
 
-Syntax Error, trying to recover and continue parse...
-(error "At line 25, near """i = 1; i""" :     Unrecoverable Syntax Error")
+Warning: no definition of function "__VERIFIER_nondet_int" available
+(error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 4
-unmatched : 8
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 4
+imprecise  : 3
+unsound    : 0
+error      : 5
+---------------------------
+total      : 12
+---------------------------
 
 cll_search-alloca-WithForgottenReturn_false-valid-deref.c
 
-Syntax Error, trying to recover and continue parse...
-(error "At line 25, near """i = 1; i""" :     Unrecoverable Syntax Error")
+Warning: no definition of function "__VERIFIER_nondet_int" available
+(error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 sed: can't read ../yml/cll_search-alloca-WithForgottenReturn_false-valid-deref.yml: No such file or directory
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 4
-unmatched : 9
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 4
+imprecise  : 3
+unsound    : 0
+error      : 6
+---------------------------
+total      : 13
+---------------------------
 
 cll_traverse-alloca.c
 
-Syntax Error, trying to recover and continue parse...
-(error "At line 25, near """i = 1; i""" :     Unrecoverable Syntax Error")
+Warning: no definition of function "__VERIFIER_nondet_int" available
+(error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 4
-unmatched : 10
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 4
+imprecise  : 3
+unsound    : 0
+error      : 7
+---------------------------
+total      : 14
+---------------------------
 
 dll-01-1.c
 
@@ -372,10 +449,15 @@ Final:
 -------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 5
-unmatched : 10
 
+---------------------------
+matched    : 5
+imprecise  : 3
+unsound    : 0
+error      : 7
+---------------------------
+total      : 15
+---------------------------
 
 dll-01-2.c
 
@@ -419,10 +501,15 @@ Final:
 -------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 5
-unmatched : 11
 
+---------------------------
+matched    : 5
+imprecise  : 4
+unsound    : 0
+error      : 7
+---------------------------
+total      : 16
+---------------------------
 
 dll-circular-1.c
 
@@ -455,23 +542,61 @@ Final:
 --------------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 6
-unmatched : 11
 
+---------------------------
+matched    : 6
+imprecise  : 4
+unsound    : 0
+error      : 7
+---------------------------
+total      : 17
+---------------------------
 
 dll-circular-2.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
+UNSAFE
+
+--------------------
+Init:
+      main2(1)      
+--------------------
+         |          
+         |          
+         V          
+    main3(2, 1)     
+--------------------
+         |          
+         |          
+         V          
+    main4(2, 1)     
+--------------------
+         |          
+         |          
+         V          
+    main5(2, 1)     
+--------------------
+         |          
+         |          
+         V          
+ main27(2, 1, 0, 1) 
+--------------------
+Final:
+ main27(2, 1, 0, 1) 
+--------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 6
-unmatched : 12
 
+---------------------------
+matched    : 6
+imprecise  : 5
+unsound    : 0
+error      : 7
+---------------------------
+total      : 18
+---------------------------
 
 dll-optional-1.c
 
@@ -479,10 +604,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 47, near """return""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 6
-unmatched : 13
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 6
+imprecise  : 5
+unsound    : 0
+error      : 8
+---------------------------
+total      : 19
+---------------------------
 
 dll-optional-2.c
 
@@ -490,36 +621,148 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 47, near """return""" :     Unrecoverable Syntax Error")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 6
-unmatched : 14
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 6
+imprecise  : 5
+unsound    : 0
+error      : 9
+---------------------------
+total      : 20
+---------------------------
 
 dll-queue-1.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
+UNSAFE
+
+-----------------------
+Init:
+       main2(1)        
+-----------------------
+           |           
+           |           
+           V           
+      main3(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main4(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main5(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+  main10(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+ main13(3, 1, 1, 0, 2) 
+-----------------------
+           |           
+           |           
+           V           
+  main12(3, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main17(3, 1, 0, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main27(3, 1, 0, 1)   
+-----------------------
+Final:
+  main27(3, 1, 0, 1)   
+-----------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 6
-unmatched : 15
 
+---------------------------
+matched    : 6
+imprecise  : 6
+unsound    : 0
+error      : 9
+---------------------------
+total      : 21
+---------------------------
 
 dll-queue-2.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
-Expected result: UNSAFE
-results do not match!
-unsound   : 0
-matched   : 6
-unmatched : 16
+UNSAFE
 
+-----------------------
+Init:
+       main2(1)        
+-----------------------
+           |           
+           |           
+           V           
+      main3(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main4(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main5(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+  main10(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+ main13(3, 1, 1, 0, 2) 
+-----------------------
+           |           
+           |           
+           V           
+  main12(3, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main17(3, 1, 0, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main27(3, 1, 0, 1)   
+-----------------------
+Final:
+  main27(3, 1, 0, 1)   
+-----------------------
+Expected result: UNSAFE
+results match!
+
+---------------------------
+matched    : 7
+imprecise  : 6
+unsound    : 0
+error      : 9
+---------------------------
+total      : 22
+---------------------------
 
 dll-rb-cnstr_1-1.c
 
@@ -562,10 +805,15 @@ Final:
 -----------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 6
-unmatched : 17
 
+---------------------------
+matched    : 7
+imprecise  : 7
+unsound    : 0
+error      : 9
+---------------------------
+total      : 23
+---------------------------
 
 dll-rb-cnstr_1-2.c
 
@@ -613,10 +861,15 @@ Final:
 -----------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 7
-unmatched : 17
 
+---------------------------
+matched    : 8
+imprecise  : 7
+unsound    : 0
+error      : 9
+---------------------------
+total      : 24
+---------------------------
 
 dll-rb-sentinel-1.c
 
@@ -679,10 +932,15 @@ Final:
 --------------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 8
-unmatched : 17
 
+---------------------------
+matched    : 9
+imprecise  : 7
+unsound    : 0
+error      : 9
+---------------------------
+total      : 25
+---------------------------
 
 dll-rb-sentinel-2.c
 
@@ -745,10 +1003,15 @@ Final:
 --------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 18
 
+---------------------------
+matched    : 9
+imprecise  : 8
+unsound    : 0
+error      : 9
+---------------------------
+total      : 26
+---------------------------
 
 dll-reverse.c
 
@@ -801,10 +1064,15 @@ Final:
 -----------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 19
 
+---------------------------
+matched    : 9
+imprecise  : 9
+unsound    : 0
+error      : 9
+---------------------------
+total      : 27
+---------------------------
 
 dll-simple-white-blue-1.c
 
@@ -812,13 +1080,66 @@ Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
-Expected result: UNSAFE
-results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 20
+UNSAFE
 
+-----------------
+Init:
+    main2(1)     
+-----------------
+        |        
+        |        
+        V        
+   main3(2, 1)   
+-----------------
+        |        
+        |        
+        V        
+   main4(2, 1)   
+-----------------
+        |        
+        |        
+        V        
+   main5(2, 1)   
+-----------------
+        |        
+        |        
+        V        
+ main7(2, 1, 1)  
+-----------------
+        |        
+        |        
+        V        
+ main17(2, 1, 1) 
+-----------------
+        |        
+        |        
+        V        
+ main41(3, 2, 2) 
+-----------------
+        |        
+        |        
+        V        
+ main44(3, 2, 2) 
+-----------------
+        |        
+        |        
+        V        
+ main48(3, 2, 2) 
+-----------------
+Final:
+ main48(3, 2, 2) 
+-----------------
+Expected result: UNSAFE
+results match!
+
+---------------------------
+matched    : 10
+imprecise  : 9
+unsound    : 0
+error      : 9
+---------------------------
+total      : 28
+---------------------------
 
 dll-simple-white-blue-2.c
 
@@ -826,13 +1147,66 @@ Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
+UNSAFE
+
+-----------------
+Init:
+    main2(1)     
+-----------------
+        |        
+        |        
+        V        
+   main3(2, 1)   
+-----------------
+        |        
+        |        
+        V        
+   main4(2, 1)   
+-----------------
+        |        
+        |        
+        V        
+   main5(2, 1)   
+-----------------
+        |        
+        |        
+        V        
+ main7(2, 1, 1)  
+-----------------
+        |        
+        |        
+        V        
+ main17(2, 1, 1) 
+-----------------
+        |        
+        |        
+        V        
+ main40(3, 2, 2) 
+-----------------
+        |        
+        |        
+        V        
+ main43(3, 2, 2) 
+-----------------
+        |        
+        |        
+        V        
+ main47(3, 2, 2) 
+-----------------
+Final:
+ main47(3, 2, 2) 
+-----------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 21
 
+---------------------------
+matched    : 10
+imprecise  : 10
+unsound    : 0
+error      : 9
+---------------------------
+total      : 29
+---------------------------
 
 dll-sorted-1.c
 
@@ -840,13 +1214,86 @@ Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
-Expected result: UNSAFE
-results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 22
+UNSAFE
 
+-----------------------
+Init:
+       main2(1)        
+-----------------------
+           |           
+           |           
+           V           
+      main3(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main4(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main5(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+   main8(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main10(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+ main13(3, 1, 1, 0, 2) 
+-----------------------
+           |           
+           |           
+           V           
+  main12(3, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main8(3, 1, 12, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main23(3, 1, 1, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main25(3, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main26(3, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main32(3, 1, 1, 0)   
+-----------------------
+Final:
+  main32(3, 1, 1, 0)   
+-----------------------
+Expected result: UNSAFE
+results match!
+
+---------------------------
+matched    : 11
+imprecise  : 10
+unsound    : 0
+error      : 9
+---------------------------
+total      : 30
+---------------------------
 
 dll-sorted-2.c
 
@@ -854,48 +1301,222 @@ Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
+UNSAFE
+
+-----------------------
+Init:
+       main2(1)        
+-----------------------
+           |           
+           |           
+           V           
+      main3(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main4(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main5(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+   main8(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main10(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+ main13(3, 1, 1, 0, 2) 
+-----------------------
+           |           
+           |           
+           V           
+  main12(3, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main8(3, 1, 13, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main23(3, 1, 1, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main25(3, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main26(3, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main32(3, 1, 1, 0)   
+-----------------------
+Final:
+  main32(3, 1, 1, 0)   
+-----------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 23
 
+---------------------------
+matched    : 11
+imprecise  : 11
+unsound    : 0
+error      : 9
+---------------------------
+total      : 31
+---------------------------
 
 dll-token-1.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
+UNSAFE
+
+--------------------
+Init:
+      main2(1)      
+--------------------
+         |          
+         |          
+         V          
+    main3(2, 1)     
+--------------------
+         |          
+         |          
+         V          
+    main4(2, 1)     
+--------------------
+         |          
+         |          
+         V          
+    main5(2, 1)     
+--------------------
+         |          
+         |          
+         V          
+   main9(2, 1, 1)   
+--------------------
+         |          
+         |          
+         V          
+ main12(3, 1, 1, 2) 
+--------------------
+         |          
+         |          
+         V          
+  main11(3, 1, 1)   
+--------------------
+         |          
+         |          
+         V          
+  main15(3, 1, 0)   
+--------------------
+Final:
+  main15(3, 1, 0)   
+--------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 24
 
+---------------------------
+matched    : 11
+imprecise  : 12
+unsound    : 0
+error      : 9
+---------------------------
+total      : 32
+---------------------------
 
 dll-token-2.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
-Expected result: UNSAFE
-results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 25
+UNSAFE
 
+--------------------
+Init:
+      main2(1)      
+--------------------
+         |          
+         |          
+         V          
+    main3(2, 1)     
+--------------------
+         |          
+         |          
+         V          
+    main4(2, 1)     
+--------------------
+         |          
+         |          
+         V          
+    main5(2, 1)     
+--------------------
+         |          
+         |          
+         V          
+   main9(2, 1, 1)   
+--------------------
+         |          
+         |          
+         V          
+ main12(3, 1, 1, 2) 
+--------------------
+         |          
+         |          
+         V          
+  main11(3, 1, 1)   
+--------------------
+         |          
+         |          
+         V          
+  main15(3, 1, 0)   
+--------------------
+Final:
+  main15(3, 1, 0)   
+--------------------
+Expected result: UNSAFE
+results match!
+
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 9
+---------------------------
+total      : 33
+---------------------------
 
 dll2c_append_equal.c
 
-Warning: enabling heap model
-(error "Trying to access field '->next' of non pointer.")
+(error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 26
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 10
+---------------------------
+total      : 34
+---------------------------
 
 dll2c_append_unequal.c
 
@@ -903,10 +1524,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 27
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 11
+---------------------------
+total      : 35
+---------------------------
 
 dll2c_insert_equal.c
 
@@ -914,10 +1541,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 28
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 12
+---------------------------
+total      : 36
+---------------------------
 
 dll2c_insert_unequal.c
 
@@ -925,10 +1558,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 29
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 13
+---------------------------
+total      : 37
+---------------------------
 
 dll2c_prepend_equal.c
 
@@ -936,10 +1575,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 30
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 14
+---------------------------
+total      : 38
+---------------------------
 
 dll2c_prepend_unequal.c
 
@@ -947,10 +1592,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 31
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 15
+---------------------------
+total      : 39
+---------------------------
 
 dll2c_remove_all.c
 
@@ -958,10 +1609,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 32
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 16
+---------------------------
+total      : 40
+---------------------------
 
 dll2c_remove_all_reverse.c
 
@@ -969,10 +1626,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 33
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 17
+---------------------------
+total      : 41
+---------------------------
 
 dll2c_update_all.c
 
@@ -980,10 +1643,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 34
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 18
+---------------------------
+total      : 42
+---------------------------
 
 dll2c_update_all_reverse.c
 
@@ -991,10 +1660,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 35
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 19
+---------------------------
+total      : 43
+---------------------------
 
 dll2n_append_equal.c
 
@@ -1002,10 +1677,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 36
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 20
+---------------------------
+total      : 44
+---------------------------
 
 dll2n_append_unequal.c
 
@@ -1013,10 +1694,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 37
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 21
+---------------------------
+total      : 45
+---------------------------
 
 dll2n_insert_equal.c
 
@@ -1024,10 +1711,16 @@ Warning: enabling heap model
 (error "Trying to access field '->data' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 38
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 22
+---------------------------
+total      : 46
+---------------------------
 
 dll2n_insert_unequal.c
 
@@ -1035,10 +1728,16 @@ Warning: enabling heap model
 (error "Trying to access field '->data' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 39
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 23
+---------------------------
+total      : 47
+---------------------------
 
 dll2n_prepend_equal.c
 
@@ -1046,10 +1745,16 @@ Warning: enabling heap model
 (error "Trying to access field '->data' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 40
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 24
+---------------------------
+total      : 48
+---------------------------
 
 dll2n_prepend_unequal.c
 
@@ -1057,10 +1762,16 @@ Warning: enabling heap model
 (error "Trying to access field '->data' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 41
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 25
+---------------------------
+total      : 49
+---------------------------
 
 dll2n_remove_all.c
 
@@ -1068,10 +1779,16 @@ Warning: enabling heap model
 (error "Trying to access field '->data' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 42
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 26
+---------------------------
+total      : 50
+---------------------------
 
 dll2n_remove_all_reverse.c
 
@@ -1079,10 +1796,16 @@ Warning: enabling heap model
 (error "Trying to access field '->data' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 43
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 27
+---------------------------
+total      : 51
+---------------------------
 
 dll2n_update_all.c
 
@@ -1090,10 +1813,16 @@ Warning: enabling heap model
 (error "Trying to access field '->data' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 44
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 28
+---------------------------
+total      : 52
+---------------------------
 
 dll2n_update_all_reverse.c
 
@@ -1101,10 +1830,16 @@ Warning: enabling heap model
 (error "Trying to access field '->data' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 45
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 29
+---------------------------
+total      : 53
+---------------------------
 
 dll_circular_traversal-1.c
 
@@ -1112,10 +1847,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 46
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 30
+---------------------------
+total      : 54
+---------------------------
 
 dll_circular_traversal-2.c
 
@@ -1123,10 +1864,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 47
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 31
+---------------------------
+total      : 55
+---------------------------
 
 dll_extends_pointer.c
 
@@ -1134,10 +1881,16 @@ Warning: enabling heap model
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 48
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 32
+---------------------------
+total      : 56
+---------------------------
 
 dll_nondet_free_order-1.c
 
@@ -1145,10 +1898,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 49
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 33
+---------------------------
+total      : 57
+---------------------------
 
 dll_nondet_free_order-2.c
 
@@ -1156,10 +1915,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 50
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 34
+---------------------------
+total      : 58
+---------------------------
 
 dll_nullified-1.c
 
@@ -1167,10 +1932,16 @@ Warning: enabling heap model
 (error "Trying to access field '->data_0' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 51
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 35
+---------------------------
+total      : 59
+---------------------------
 
 dll_nullified-2.c
 
@@ -1178,30 +1949,48 @@ Warning: enabling heap model
 (error "Trying to access field '->data_0' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 52
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 36
+---------------------------
+total      : 60
+---------------------------
 
 dll_of_dll-1.c
 
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 53
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 37
+---------------------------
+total      : 61
+---------------------------
 
 dll_of_dll-2.c
 
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 54
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 38
+---------------------------
+total      : 62
+---------------------------
 
 hash_fun.c
 
@@ -1215,10 +2004,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 55
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 39
+---------------------------
+total      : 63
+---------------------------
 
 list-1.c
 
@@ -1227,10 +2022,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 56
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 40
+---------------------------
+total      : 64
+---------------------------
 
 list-2.c
 
@@ -1239,10 +2040,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 57
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 41
+---------------------------
+total      : 65
+---------------------------
 
 list-ext.c
 
@@ -1251,10 +2058,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 58
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 42
+---------------------------
+total      : 66
+---------------------------
 
 list-ext_1.c
 
@@ -1263,10 +2076,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 59
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 43
+---------------------------
+total      : 67
+---------------------------
 
 list-ext_flag.c
 
@@ -1276,10 +2095,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->flag' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 60
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 44
+---------------------------
+total      : 68
+---------------------------
 
 list-ext_flag_1.c
 
@@ -1289,10 +2114,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->flag' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 61
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 45
+---------------------------
+total      : 69
+---------------------------
 
 list_and_tree_cnstr-1.c
 
@@ -1300,10 +2131,16 @@ Warning: enabling heap model
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 62
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 46
+---------------------------
+total      : 70
+---------------------------
 
 list_and_tree_cnstr-2.c
 
@@ -1311,10 +2148,16 @@ Warning: enabling heap model
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 63
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 47
+---------------------------
+total      : 71
+---------------------------
 
 list_flag-1.c
 
@@ -1325,10 +2168,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 64
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 48
+---------------------------
+total      : 72
+---------------------------
 
 list_flag-2.c
 
@@ -1339,20 +2188,32 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 65
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 49
+---------------------------
+total      : 73
+---------------------------
 
 list_search-1.c
 
 (error "Pointer declarations without initializers are not allowed.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 66
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 50
+---------------------------
+total      : 74
+---------------------------
 
 list_search-2.c
 
@@ -1360,10 +2221,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 105, near """2]; } __fs""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 67
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 51
+---------------------------
+total      : 75
+---------------------------
 
 ll_append-alloca-1.c
 
@@ -1371,10 +2238,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 68
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 52
+---------------------------
+total      : 76
+---------------------------
 
 ll_append-alloca-2.c
 
@@ -1382,10 +2255,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 69
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 53
+---------------------------
+total      : 77
+---------------------------
 
 ll_append-alloca-WithAbsOfMinIntBug_false-no-overflow.c
 
@@ -1394,10 +2273,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 sed: can't read ../yml/ll_append-alloca-WithAbsOfMinIntBug_false-no-overflow.yml: No such file or directory
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 70
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 54
+---------------------------
+total      : 78
+---------------------------
 
 ll_append_rec-alloca-1.c
 
@@ -1405,10 +2290,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 71
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 55
+---------------------------
+total      : 79
+---------------------------
 
 ll_append_rec-alloca-2.c
 
@@ -1416,10 +2307,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 72
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 56
+---------------------------
+total      : 80
+---------------------------
 
 ll_create_rec-alloca-1.c
 
@@ -1427,10 +2324,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 73
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 57
+---------------------------
+total      : 81
+---------------------------
 
 ll_create_rec-alloca-2.c
 
@@ -1438,10 +2341,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 74
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 58
+---------------------------
+total      : 82
+---------------------------
 
 ll_create_rec-alloca-WithMinIntBug_false-no-overflow.c
 
@@ -1450,10 +2359,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 sed: can't read ../yml/ll_create_rec-alloca-WithMinIntBug_false-no-overflow.yml: No such file or directory
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 75
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 59
+---------------------------
+total      : 83
+---------------------------
 
 ll_search-alloca.c
 
@@ -1461,10 +2376,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 22, near """i = 0; i""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 76
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 60
+---------------------------
+total      : 84
+---------------------------
 
 ll_search_not_found-alloca.c
 
@@ -1472,10 +2393,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 22, near """i = 0; i""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 77
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 61
+---------------------------
+total      : 85
+---------------------------
 
 ll_traverse-alloca.c
 
@@ -1483,50 +2410,80 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 22, near """i = 0; i""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 78
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 62
+---------------------------
+total      : 86
+---------------------------
 
 lockfree-3.0.c
 
 (error "Pointer declarations without initializers are not allowed.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 79
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 63
+---------------------------
+total      : 87
+---------------------------
 
 lockfree-3.1.c
 
 (error "Pointer declarations without initializers are not allowed.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 80
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 64
+---------------------------
+total      : 88
+---------------------------
 
 lockfree-3.2.c
 
 (error "Pointer declarations without initializers are not allowed.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 81
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 65
+---------------------------
+total      : 89
+---------------------------
 
 lockfree-3.3.c
 
 (error "Pointer declarations without initializers are not allowed.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 82
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 66
+---------------------------
+total      : 90
+---------------------------
 
 min_max.c
 
@@ -1536,44 +2493,52 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 83
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 67
+---------------------------
+total      : 91
+---------------------------
 
 mutual_simple.c
+Killed
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000f8600000, 59244544, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 59244544 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid18818.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 84
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 68
+---------------------------
+total      : 92
+---------------------------
 
 mutual_simple2.c
+Killed
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000bba80000, 260046848, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 260046848 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid18861.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 85
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 69
+---------------------------
+total      : 93
+---------------------------
 
 nondet_ll_search-alloca-1.c
 
@@ -1581,10 +2546,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 25, near """i = 1; i""" :     Unrecoverable Syntax Error")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 86
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 70
+---------------------------
+total      : 94
+---------------------------
 
 nondet_ll_search-alloca-2.c
 
@@ -1592,10 +2563,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 25, near """i = 1; i""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 87
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 71
+---------------------------
+total      : 95
+---------------------------
 
 nondet_ll_traverse-alloca.c
 
@@ -1603,10 +2580,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 25, near """i = 1; i""" :     Unrecoverable Syntax Error")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 88
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 72
+---------------------------
+total      : 96
+---------------------------
 
 packet_filter.c
 
@@ -1614,10 +2597,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 54, near """node = q;""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 89
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 73
+---------------------------
+total      : 97
+---------------------------
 
 process_queue.c
 
@@ -1625,20 +2614,32 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 52, near """process_n""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 90
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 74
+---------------------------
+total      : 98
+---------------------------
 
 quick_sort_split.c
 
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 91
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 75
+---------------------------
+total      : 99
+---------------------------
 
 rec_malloc_ex1.c
 
@@ -2576,74 +3577,169 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000bda00000, 258473984, 0) failed; error='Cannot allocate memory' (errno=12)
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000caf00000, 182976512, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 258473984 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 182976512 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19075.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid17862.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 92
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 76
+---------------------------
+total      : 100
+---------------------------
 
 rec_malloc_ex10.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000beb80000, 264765440, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000cb980000, 171966464, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 264765440 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 171966464 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19105.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid17896.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 93
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 77
+---------------------------
+total      : 101
+---------------------------
 
 rec_malloc_ex11.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000c7480000, 226492416, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000bed00000, 264241152, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 226492416 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 264241152 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19136.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid17929.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 94
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 78
+---------------------------
+total      : 102
+---------------------------
 
 rec_malloc_ex11B.c
-
-Warning: enabling heap model
-Warning: no definition of function "__VERIFIER_nondet_int" available
-Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000bd400000, 275251200, 0) failed; error='Cannot allocate memory' (errno=12)
-#
-# There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 275251200 bytes for committing reserved memory.
-# An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19168.log
-Expected result: SAFE
-results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 95
-
-
-rec_malloc_ex11C.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
@@ -2653,48 +3749,90 @@ Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000c78
 # There is insufficient memory for the Java Runtime Environment to continue.
 # Native memory allocation (mmap) failed to map 240648192 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19197.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid17961.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 96
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 79
+---------------------------
+total      : 103
+---------------------------
+
+rec_malloc_ex11C.c
+
+Warning: enabling heap model
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000c8500000, 225968128, 0) failed; error='Cannot allocate memory' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 225968128 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid17993.log
+Expected result: SAFE
+results do not match!
+PARSING ERROR OR BUG DETECTED
+
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 80
+---------------------------
+total      : 104
+---------------------------
 
 rec_malloc_ex11D.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000c3b80000, 248512512, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000b9980000, 259522560, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 248512512 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 259522560 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19268.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid18046.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 97
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 81
+---------------------------
+total      : 105
+---------------------------
 
 rec_malloc_ex2.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000cb280000, 179306496, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000bf900000, 268959744, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 179306496 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 268959744 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19299.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid18078.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 98
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 82
+---------------------------
+total      : 106
+---------------------------
 
 rec_malloc_ex3.c
 
@@ -2702,156 +3840,216 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000c5400000, 259522560, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000ac500000, 239599616, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 259522560 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 239599616 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19330.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid18111.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 99
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 83
+---------------------------
+total      : 107
+---------------------------
 
 rec_malloc_ex4.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000c9680000, 208666624, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000c8f00000, 216530944, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 208666624 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 216530944 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19359.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid18142.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 100
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 84
+---------------------------
+total      : 108
+---------------------------
 
 rec_malloc_ex5.c
 
 (error "Pointer declarations without initializers are not allowed.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 101
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 85
+---------------------------
+total      : 109
+---------------------------
 
 rec_malloc_ex5B.c
 
 (error "Pointer declarations without initializers are not allowed.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 102
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 86
+---------------------------
+total      : 110
+---------------------------
 
 rec_malloc_ex6.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000cab80000, 186646528, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000beb00000, 267911168, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 186646528 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 267911168 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19448.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid18258.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 103
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 87
+---------------------------
+total      : 111
+---------------------------
 
 rec_malloc_ex7.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000bf680000, 274202624, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000be900000, 292028416, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 274202624 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 292028416 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19498.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid18290.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 104
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 88
+---------------------------
+total      : 112
+---------------------------
 
 rec_malloc_ex7B.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000bac80000, 270008320, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000bf180000, 223870976, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 270008320 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 223870976 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19530.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid18323.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 105
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 89
+---------------------------
+total      : 113
+---------------------------
 
 rec_malloc_ex8.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000bca00000, 249036800, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000b9b00000, 268435456, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 249036800 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 268435456 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19561.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid18354.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 106
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 90
+---------------------------
+total      : 114
+---------------------------
 
 rec_malloc_ex9.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000bae00000, 262668288, 0) failed; error='Cannot allocate memory' (errno=12)
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000cd980000, 138412032, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
-# Native memory allocation (mmap) failed to map 262668288 bytes for committing reserved memory.
+# Native memory allocation (mmap) failed to map 138412032 bytes for committing reserved memory.
 # An error report file with more information is saved as:
-# /home/zafer/tricera-bms/preprocessed/hs_err_pid19591.log
+# /home/zafer/tricera-bms/preprocessed/hs_err_pid18387.log
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 107
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 91
+---------------------------
+total      : 115
+---------------------------
 
 running_example.c
 
 (error "Pointer declarations without initializers are not allowed.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 108
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 92
+---------------------------
+total      : 116
+---------------------------
 
 shared_mem1.c
 
@@ -2859,10 +4057,16 @@ Warning: enabling heap model
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 109
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 93
+---------------------------
+total      : 117
+---------------------------
 
 shared_mem2.c
 
@@ -2870,10 +4074,16 @@ Warning: enabling heap model
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 110
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 94
+---------------------------
+total      : 118
+---------------------------
 
 simple-1.c
 
@@ -2881,10 +4091,16 @@ Warning: enabling heap model
 (error "Trying to access field '->h' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 111
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 95
+---------------------------
+total      : 119
+---------------------------
 
 simple-2.c
 
@@ -2893,10 +4109,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 112
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 96
+---------------------------
+total      : 120
+---------------------------
 
 simple-ext.c
 
@@ -2905,10 +4127,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 113
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 97
+---------------------------
+total      : 121
+---------------------------
 
 simple-ext_1.c
 
@@ -2917,10 +4145,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 114
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 98
+---------------------------
+total      : 122
+---------------------------
 
 simple_and_skiplist_2lvl-1.c
 
@@ -2928,10 +4162,16 @@ Warning: enabling heap model
 (error "Trying to access field '->h' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 115
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 99
+---------------------------
+total      : 123
+---------------------------
 
 simple_and_skiplist_2lvl-2.c
 
@@ -2940,10 +4180,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 116
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 100
+---------------------------
+total      : 124
+---------------------------
 
 simple_built_from_end.c
 
@@ -2953,10 +4199,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 117
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 101
+---------------------------
+total      : 125
+---------------------------
 
 simple_search_value-1.c
 
@@ -2965,10 +4217,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 118
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 102
+---------------------------
+total      : 126
+---------------------------
 
 simple_search_value-2.c
 
@@ -2977,30 +4235,48 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 119
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 103
+---------------------------
+total      : 127
+---------------------------
 
 skiplist_2lvl.c
 
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 120
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 104
+---------------------------
+total      : 128
+---------------------------
 
 skiplist_3lvl.c
 
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 121
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 12
+imprecise  : 12
+unsound    : 0
+error      : 105
+---------------------------
+total      : 129
+---------------------------
 
 sll-01-1.c
 
@@ -3039,10 +4315,15 @@ Final:
 -------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 8
-unmatched : 122
 
+---------------------------
+matched    : 12
+imprecise  : 13
+unsound    : 0
+error      : 105
+---------------------------
+total      : 130
+---------------------------
 
 sll-01-2.c
 
@@ -3081,10 +4362,15 @@ Final:
 -------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 9
-unmatched : 122
 
+---------------------------
+matched    : 13
+imprecise  : 13
+unsound    : 0
+error      : 105
+---------------------------
+total      : 131
+---------------------------
 
 sll-buckets-1.c
 
@@ -3092,13 +4378,81 @@ Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
+UNSAFE
+
+------------------------
+Init:
+        main2(1)        
+------------------------
+           |            
+           |            
+           V            
+      main3(2, 1)       
+------------------------
+           |            
+           |            
+           V            
+      main4(2, 1)       
+------------------------
+           |            
+           |            
+           V            
+      main5(2, 1)       
+------------------------
+           |            
+           |            
+           V            
+     main7(3, 1, 2)     
+------------------------
+           |            
+           |            
+           V            
+     main8(3, 1, 1)     
+------------------------
+           |            
+           |            
+           V            
+     main9(3, 1, 1)     
+------------------------
+           |            
+           |            
+           V            
+    main10(3, 1, 1)     
+------------------------
+           |            
+           |            
+           V            
+   main12(4, 1, 1, 3)   
+------------------------
+           |            
+           |            
+           V            
+ main18(4, 1, 19, 0, 0) 
+------------------------
+           |            
+           |            
+           V            
+ main47(4, 1, 1, 4, 0)  
+------------------------
+           |            
+           |            
+           V            
+ main51(4, 1, 1, 8, 4)  
+------------------------
+Final:
+ main51(4, 1, 1, 8, 4)  
+------------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 9
-unmatched : 123
 
+---------------------------
+matched    : 13
+imprecise  : 14
+unsound    : 0
+error      : 105
+---------------------------
+total      : 132
+---------------------------
 
 sll-buckets-2.c
 
@@ -3106,13 +4460,81 @@ Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
-Expected result: UNSAFE
-results do not match!
-unsound   : 0
-matched   : 9
-unmatched : 124
+UNSAFE
 
+------------------------
+Init:
+        main2(1)        
+------------------------
+           |            
+           |            
+           V            
+      main3(2, 1)       
+------------------------
+           |            
+           |            
+           V            
+      main4(2, 1)       
+------------------------
+           |            
+           |            
+           V            
+      main5(2, 1)       
+------------------------
+           |            
+           |            
+           V            
+     main7(3, 1, 2)     
+------------------------
+           |            
+           |            
+           V            
+     main8(3, 1, 1)     
+------------------------
+           |            
+           |            
+           V            
+     main9(3, 1, 1)     
+------------------------
+           |            
+           |            
+           V            
+    main10(3, 1, 1)     
+------------------------
+           |            
+           |            
+           V            
+   main12(4, 1, 1, 3)   
+------------------------
+           |            
+           |            
+           V            
+ main18(4, 1, 18, 0, 0) 
+------------------------
+           |            
+           |            
+           V            
+ main47(4, 1, 1, 4, 0)  
+------------------------
+           |            
+           |            
+           V            
+ main51(4, 1, 1, 7, 4)  
+------------------------
+Final:
+ main51(4, 1, 1, 7, 4)  
+------------------------
+Expected result: UNSAFE
+results match!
+
+---------------------------
+matched    : 14
+imprecise  : 14
+unsound    : 0
+error      : 105
+---------------------------
+total      : 133
+---------------------------
 
 sll-circular-1.c
 
@@ -3145,10 +4567,15 @@ Final:
 --------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 9
-unmatched : 125
 
+---------------------------
+matched    : 14
+imprecise  : 15
+unsound    : 0
+error      : 105
+---------------------------
+total      : 134
+---------------------------
 
 sll-circular-2.c
 
@@ -3181,10 +4608,15 @@ Final:
 --------------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 10
-unmatched : 125
 
+---------------------------
+matched    : 15
+imprecise  : 15
+unsound    : 0
+error      : 105
+---------------------------
+total      : 135
+---------------------------
 
 sll-optional-1.c
 
@@ -3192,10 +4624,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 45, near """return""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 10
-unmatched : 126
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 15
+imprecise  : 15
+unsound    : 0
+error      : 106
+---------------------------
+total      : 136
+---------------------------
 
 sll-optional-2.c
 
@@ -3203,36 +4641,128 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 45, near """return""" :     Unrecoverable Syntax Error")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 10
-unmatched : 127
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 15
+imprecise  : 15
+unsound    : 0
+error      : 107
+---------------------------
+total      : 137
+---------------------------
 
 sll-queue-1.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
+UNSAFE
+
+-----------------------
+Init:
+       main2(1)        
+-----------------------
+           |           
+           |           
+           V           
+      main3(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main4(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+   main9(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+ main12(3, 1, 1, 0, 2) 
+-----------------------
+           |           
+           |           
+           V           
+  main15(3, 1, 0, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main25(3, 1, 0, 1)   
+-----------------------
+Final:
+  main25(3, 1, 0, 1)   
+-----------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 10
-unmatched : 128
 
+---------------------------
+matched    : 15
+imprecise  : 16
+unsound    : 0
+error      : 107
+---------------------------
+total      : 138
+---------------------------
 
 sll-queue-2.c
 
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
-Expected result: UNSAFE
-results do not match!
-unsound   : 0
-matched   : 10
-unmatched : 129
+UNSAFE
 
+-----------------------
+Init:
+       main2(1)        
+-----------------------
+           |           
+           |           
+           V           
+      main3(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main4(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+   main9(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+ main12(3, 1, 1, 0, 2) 
+-----------------------
+           |           
+           |           
+           V           
+  main15(3, 1, 0, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main25(3, 1, 0, 1)   
+-----------------------
+Final:
+  main25(3, 1, 0, 1)   
+-----------------------
+Expected result: UNSAFE
+results match!
+
+---------------------------
+matched    : 16
+imprecise  : 16
+unsound    : 0
+error      : 107
+---------------------------
+total      : 139
+---------------------------
 
 sll-rb-cnstr_1-1.c
 
@@ -3275,10 +4805,15 @@ Final:
 -----------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 10
-unmatched : 130
 
+---------------------------
+matched    : 16
+imprecise  : 17
+unsound    : 0
+error      : 107
+---------------------------
+total      : 140
+---------------------------
 
 sll-rb-cnstr_1-2.c
 
@@ -3321,10 +4856,15 @@ Final:
 -----------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 11
-unmatched : 130
 
+---------------------------
+matched    : 17
+imprecise  : 17
+unsound    : 0
+error      : 107
+---------------------------
+total      : 141
+---------------------------
 
 sll-rb-sentinel-1.c
 
@@ -3382,10 +4922,15 @@ Final:
 --------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 11
-unmatched : 131
 
+---------------------------
+matched    : 17
+imprecise  : 18
+unsound    : 0
+error      : 107
+---------------------------
+total      : 142
+---------------------------
 
 sll-rb-sentinel-2.c
 
@@ -3443,10 +4988,15 @@ Final:
 --------------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 12
-unmatched : 131
 
+---------------------------
+matched    : 18
+imprecise  : 18
+unsound    : 0
+error      : 107
+---------------------------
+total      : 143
+---------------------------
 
 sll-reverse_simple.c
 
@@ -3494,10 +5044,15 @@ Final:
 -----------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 12
-unmatched : 132
 
+---------------------------
+matched    : 18
+imprecise  : 19
+unsound    : 0
+error      : 107
+---------------------------
+total      : 144
+---------------------------
 
 sll-simple-white-blue-1.c
 
@@ -3551,10 +5106,15 @@ Final:
 -----------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 12
-unmatched : 133
 
+---------------------------
+matched    : 18
+imprecise  : 20
+unsound    : 0
+error      : 107
+---------------------------
+total      : 145
+---------------------------
 
 sll-simple-white-blue-2.c
 
@@ -3608,10 +5168,15 @@ Final:
 -----------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 13
-unmatched : 133
 
+---------------------------
+matched    : 19
+imprecise  : 20
+unsound    : 0
+error      : 107
+---------------------------
+total      : 146
+---------------------------
 
 sll-sorted-1.c
 
@@ -3619,13 +5184,76 @@ Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
-Expected result: UNSAFE
-results do not match!
-unsound   : 0
-matched   : 13
-unmatched : 134
+UNSAFE
 
+-----------------------
+Init:
+       main2(1)        
+-----------------------
+           |           
+           |           
+           V           
+      main3(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main4(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+   main7(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+   main9(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+ main12(3, 1, 1, 0, 2) 
+-----------------------
+           |           
+           |           
+           V           
+   main7(3, 1, 9, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main21(3, 1, 1, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main23(3, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main24(3, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+  main30(3, 1, 1, 0)   
+-----------------------
+Final:
+  main30(3, 1, 1, 0)   
+-----------------------
+Expected result: UNSAFE
+results match!
+
+---------------------------
+matched    : 20
+imprecise  : 20
+unsound    : 0
+error      : 107
+---------------------------
+total      : 147
+---------------------------
 
 sll-sorted-2.c
 
@@ -3633,13 +5261,66 @@ Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-Exception in thread "main" java.lang.AssertionError: assertion failed
+UNSAFE
+
+-----------------------
+Init:
+       main2(1)        
+-----------------------
+           |           
+           |           
+           V           
+      main3(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+      main4(2, 1)      
+-----------------------
+           |           
+           |           
+           V           
+   main7(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+   main9(2, 1, 1, 0)   
+-----------------------
+           |           
+           |           
+           V           
+ main12(3, 1, 1, 0, 2) 
+-----------------------
+           |           
+           |           
+           V           
+  main7(3, 1, 11, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main21(3, 1, 1, 1)   
+-----------------------
+           |           
+           |           
+           V           
+  main25(3, 1, 1, 0)   
+-----------------------
+Final:
+  main25(3, 1, 1, 0)   
+-----------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 13
-unmatched : 135
 
+---------------------------
+matched    : 20
+imprecise  : 21
+unsound    : 0
+error      : 107
+---------------------------
+total      : 148
+---------------------------
 
 sll-token-1.c
 
@@ -3681,10 +5362,15 @@ Final:
 --------------------
 Expected result: UNSAFE
 results match!
-unsound   : 0
-matched   : 14
-unmatched : 135
 
+---------------------------
+matched    : 21
+imprecise  : 21
+unsound    : 0
+error      : 107
+---------------------------
+total      : 149
+---------------------------
 
 sll-token-2.c
 
@@ -3726,10 +5412,15 @@ Final:
 --------------------
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 136
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 107
+---------------------------
+total      : 150
+---------------------------
 
 sll2c_append_equal.c
 
@@ -3737,10 +5428,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 137
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 108
+---------------------------
+total      : 151
+---------------------------
 
 sll2c_append_unequal.c
 
@@ -3748,10 +5445,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 138
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 109
+---------------------------
+total      : 152
+---------------------------
 
 sll2c_insert_equal.c
 
@@ -3759,10 +5462,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 139
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 110
+---------------------------
+total      : 153
+---------------------------
 
 sll2c_insert_unequal.c
 
@@ -3770,10 +5479,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 140
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 111
+---------------------------
+total      : 154
+---------------------------
 
 sll2c_prepend_equal.c
 
@@ -3781,10 +5496,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 141
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 112
+---------------------------
+total      : 155
+---------------------------
 
 sll2c_prepend_unequal.c
 
@@ -3792,10 +5513,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 142
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 113
+---------------------------
+total      : 156
+---------------------------
 
 sll2c_remove_all.c
 
@@ -3803,10 +5530,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 143
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 114
+---------------------------
+total      : 157
+---------------------------
 
 sll2c_remove_all_reverse.c
 
@@ -3814,10 +5547,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 144
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 115
+---------------------------
+total      : 158
+---------------------------
 
 sll2c_update_all.c
 
@@ -3825,10 +5564,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 145
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 116
+---------------------------
+total      : 159
+---------------------------
 
 sll2c_update_all_reverse.c
 
@@ -3836,10 +5581,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 146
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 117
+---------------------------
+total      : 160
+---------------------------
 
 sll2n_append_equal.c
 
@@ -3847,10 +5598,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 147
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 118
+---------------------------
+total      : 161
+---------------------------
 
 sll2n_append_unequal.c
 
@@ -3858,10 +5615,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 148
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 119
+---------------------------
+total      : 162
+---------------------------
 
 sll2n_insert_equal.c
 
@@ -3869,10 +5632,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 149
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 120
+---------------------------
+total      : 163
+---------------------------
 
 sll2n_insert_unequal.c
 
@@ -3880,10 +5649,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 150
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 121
+---------------------------
+total      : 164
+---------------------------
 
 sll2n_prepend_equal.c
 
@@ -3891,10 +5666,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 151
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 122
+---------------------------
+total      : 165
+---------------------------
 
 sll2n_prepend_unequal.c
 
@@ -3902,10 +5683,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 152
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 123
+---------------------------
+total      : 166
+---------------------------
 
 sll2n_remove_all.c
 
@@ -3913,10 +5700,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 153
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 124
+---------------------------
+total      : 167
+---------------------------
 
 sll2n_remove_all_reverse.c
 
@@ -3924,10 +5717,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 154
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 125
+---------------------------
+total      : 168
+---------------------------
 
 sll2n_update_all.c
 
@@ -3935,10 +5734,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 155
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 126
+---------------------------
+total      : 169
+---------------------------
 
 sll2n_update_all_reverse.c
 
@@ -3946,10 +5751,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 156
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 127
+---------------------------
+total      : 170
+---------------------------
 
 sll_circular_traversal-1.c
 
@@ -3957,10 +5768,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 157
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 128
+---------------------------
+total      : 171
+---------------------------
 
 sll_circular_traversal-2.c
 
@@ -3968,10 +5785,16 @@ Warning: enabling heap model
 (error "Trying to access field '->next' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 158
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 129
+---------------------------
+total      : 172
+---------------------------
 
 sll_length_check-1.c
 
@@ -3981,10 +5804,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->next' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 159
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 130
+---------------------------
+total      : 173
+---------------------------
 
 sll_length_check-2.c
 
@@ -3994,10 +5823,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 160
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 131
+---------------------------
+total      : 174
+---------------------------
 
 sll_nondet_insert-1.c
 
@@ -4007,10 +5842,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->next' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 161
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 132
+---------------------------
+total      : 175
+---------------------------
 
 sll_nondet_insert-2.c
 
@@ -4020,10 +5861,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 162
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 133
+---------------------------
+total      : 176
+---------------------------
 
 sll_of_sll_nondet_append-1.c
 
@@ -4033,10 +5880,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->next' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 163
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 134
+---------------------------
+total      : 177
+---------------------------
 
 sll_of_sll_nondet_append-2.c
 
@@ -4046,30 +5899,48 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->next' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 164
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 135
+---------------------------
+total      : 178
+---------------------------
 
 sll_shallow_copy-1.c
 
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 165
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 136
+---------------------------
+total      : 179
+---------------------------
 
 sll_shallow_copy-2.c
 
 (error "tricera.concurrency.concurrentC.Absyn.BeginPointer cannot be cast to tricera.concurrency.concurrentC.Absyn.NoPointer")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 166
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 137
+---------------------------
+total      : 180
+---------------------------
 
 splice-1.c
 
@@ -4078,10 +5949,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 167
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 138
+---------------------------
+total      : 181
+---------------------------
 
 splice-2.c
 
@@ -4090,10 +5967,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Trying to access field '->h' of non pointer.")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 168
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 139
+---------------------------
+total      : 182
+---------------------------
 
 test-0019_1-1.c
 
@@ -4101,10 +5984,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 29, near """int *""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 169
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 140
+---------------------------
+total      : 183
+---------------------------
 
 test-0019_1-2.c
 
@@ -4112,10 +6001,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 29, near """int *""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 170
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 141
+---------------------------
+total      : 184
+---------------------------
 
 test-0102-1.c
 
@@ -4123,10 +6018,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 15, near """__list_ad""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 171
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 142
+---------------------------
+total      : 185
+---------------------------
 
 test-0102-2.c
 
@@ -4134,10 +6035,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 15, near """__list_ad""" :     Unrecoverable Syntax Error")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 172
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 143
+---------------------------
+total      : 186
+---------------------------
 
 test-0504.c
 
@@ -4147,10 +6054,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Function abort is not declared")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 173
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 144
+---------------------------
+total      : 187
+---------------------------
 
 test-0504_1.c
 
@@ -4160,10 +6073,16 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 (error "Function abort is not declared")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 174
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 145
+---------------------------
+total      : 188
+---------------------------
 
 test-bitfields-3-1.c
 
@@ -4171,10 +6090,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 47, near """, const vo""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 175
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 146
+---------------------------
+total      : 189
+---------------------------
 
 test-bitfields-3-2.c
 
@@ -4182,10 +6107,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 47, near """, const vo""" :     Unrecoverable Syntax Error")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 176
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 147
+---------------------------
+total      : 190
+---------------------------
 
 test-bitfields-3.1-1.c
 
@@ -4193,10 +6124,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 47, near """, const vo""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 177
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 148
+---------------------------
+total      : 191
+---------------------------
 
 test_malloc-1.c
 
@@ -4204,10 +6141,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 44, near """((__nothr""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 178
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 149
+---------------------------
+total      : 192
+---------------------------
 
 test_malloc-2.c
 
@@ -4215,10 +6158,16 @@ Syntax Error, trying to recover and continue parse...
 (error "At line 44, near """((__nothr""" :     Unrecoverable Syntax Error")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 179
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 150
+---------------------------
+total      : 193
+---------------------------
 
 tree_cnstr.c
 
@@ -4226,10 +6175,16 @@ Warning: enabling heap model
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 180
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 151
+---------------------------
+total      : 194
+---------------------------
 
 tree_dsw.c
 
@@ -4237,10 +6192,16 @@ Warning: enabling heap model
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 181
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 152
+---------------------------
+total      : 195
+---------------------------
 
 tree_of_cslls.c
 
@@ -4248,10 +6209,16 @@ Warning: enabling heap model
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: SAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 182
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 153
+---------------------------
+total      : 196
+---------------------------
 
 tree_parent_ptr.c
 
@@ -4259,10 +6226,16 @@ Warning: enabling heap model
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 183
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 154
+---------------------------
+total      : 197
+---------------------------
 
 tree_stack.c
 
@@ -4270,7 +6243,13 @@ Warning: enabling heap model
 (error "memory functions can currently only be called with argument: sizeof(type).")
 Expected result: UNSAFE
 results do not match!
-unsound   : 0
-matched   : 14
-unmatched : 184
+PARSING ERROR OR BUG DETECTED
 
+---------------------------
+matched    : 21
+imprecise  : 22
+unsound    : 0
+error      : 155
+---------------------------
+total      : 198
+---------------------------
