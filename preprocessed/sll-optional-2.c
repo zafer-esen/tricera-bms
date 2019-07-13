@@ -5,7 +5,6 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 12 "<stdin>"
 # 1 "./stdlib.h" 1
 
 
@@ -15,9 +14,20 @@ void __foo(void *arg){
 
 
 }
-# 13 "<stdin>" 2
+# 2 "<stdin>" 2
+# 13 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+
+void __foo(void *arg){
+
+
+}
+# 14 "<stdin>" 2
 extern int __VERIFIER_nondet_int(void);
-# 46 "<stdin>"
+# 47 "<stdin>"
 typedef struct TSLL
 {
  struct TSLL* next;

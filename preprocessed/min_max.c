@@ -5,6 +5,16 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+
+void __foo(void *arg){
+
+
+}
+# 2 "<stdin>" 2
 extern int __VERIFIER_nondet_int();
 
 
@@ -17,7 +27,7 @@ void __foo(void *arg){
 
 
 }
-# 5 "<stdin>" 2
+# 6 "<stdin>" 2
 # 1 "/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h" 1 3 4
 # 34 "/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h" 3 4
 # 1 "/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h" 1 3 4
@@ -67,7 +77,7 @@ void __foo(void *arg){
 # 195 "/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h" 2 3 4
 # 8 "/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h" 2 3 4
 # 35 "/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h" 2 3 4
-# 6 "<stdin>" 2
+# 7 "<stdin>" 2
 
 
 

@@ -5,6 +5,16 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+
+void __foo(void *arg){
+
+
+}
+# 2 "<stdin>" 2
 
 
 
@@ -21,14 +31,14 @@ void __foo(void *arg){
 
 
 }
-# 9 "<stdin>" 2
+# 10 "<stdin>" 2
 
 extern int __VERIFIER_nondet_int(void);
 
 struct list_head {
     struct list_head *next, *prev;
 };
-# 24 "<stdin>"
+# 25 "<stdin>"
 static inline void __list_add(struct list_head *new,
                               struct list_head *prev,
                               struct list_head *next)

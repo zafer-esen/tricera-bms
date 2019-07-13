@@ -5,10 +5,6 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-
-
-extern int __VERIFIER_nondet_int();
-# 12 "<stdin>"
 # 1 "./stdlib.h" 1
 
 
@@ -18,7 +14,21 @@ void __foo(void *arg){
 
 
 }
-# 13 "<stdin>" 2
+# 2 "<stdin>" 2
+
+
+extern int __VERIFIER_nondet_int();
+# 13 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+
+void __foo(void *arg){
+
+
+}
+# 14 "<stdin>" 2
 
 void myexit(int s) {
  _EXIT: goto _EXIT;

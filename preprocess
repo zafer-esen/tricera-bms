@@ -6,5 +6,5 @@ shopt -s nullglob
 
 for name in *.c; do
     echo "Processing file: $name"
-    cat $name | sed '/void \* /s//\/\/&/' | sed '/extern void/s//\/\/&/' | sed '/void * __attribute/s//\/\/&/' | sed '/#define __VERIFIER_assert/s//\/\/&/' | sed "s/([^)]*) *malloc/malloc/g" | cpp -E -I . -o ../preprocessed/"$name"
+    printf "#include <stdlib.h>\n" | cat - $name | sed '/void \* /s//\/\/&/' | sed '/extern void/s//\/\/&/' | sed '/void * __attribute/s//\/\/&/' | sed '/#define __VERIFIER_assert/s//\/\/&/' | sed "s/([^)]*) *malloc/malloc/g" | cpp -E -I . -o ../preprocessed/"$name"
 done

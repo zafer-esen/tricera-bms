@@ -5,6 +5,16 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+
+void __foo(void *arg){
+
+
+}
+# 2 "<stdin>" 2
 
 
 
@@ -13,7 +23,7 @@
  typedef long unsigned int size_t;
 
 
-void free (void *__ptr);
+void __foo (void *__ptr);
 
 extern int __VERIFIER_nondet_int(void);
 
@@ -22,6 +32,6 @@ int main() {
  while (*p >= 0) {
   (*p)--;
  }
- free(p);
+ __foo(p);
  return 0;
 }

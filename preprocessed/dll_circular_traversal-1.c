@@ -5,7 +5,6 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 9 "<stdin>"
 # 1 "./stdlib.h" 1
 
 
@@ -15,7 +14,18 @@ void __foo(void *arg){
 
 
 }
-# 10 "<stdin>" 2
+# 2 "<stdin>" 2
+# 10 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+
+void __foo(void *arg){
+
+
+}
+# 11 "<stdin>" 2
 
 typedef struct node {
   int data;

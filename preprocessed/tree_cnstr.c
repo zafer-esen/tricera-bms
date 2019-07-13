@@ -5,8 +5,6 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-extern int __VERIFIER_nondet_int(void);
-# 10 "<stdin>"
 # 1 "./stdlib.h" 1
 
 
@@ -16,7 +14,19 @@ void __foo(void *arg){
 
 
 }
-# 11 "<stdin>" 2
+# 2 "<stdin>" 2
+extern int __VERIFIER_nondet_int(void);
+# 11 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+
+void __foo(void *arg){
+
+
+}
+# 12 "<stdin>" 2
 
 int main() {
 
