@@ -5,9 +5,24 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 11 "<stdin>"
+
+
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 9 "<stdin>" 2
 extern int __VERIFIER_nondet_int(void);
-# 26 "<stdin>"
+# 24 "<stdin>"
 typedef struct TSLL
 {
  struct TSLL* next;
@@ -70,11 +85,11 @@ int main()
    __VERIFIER_assert(0 != end);
    __VERIFIER_assert(0 == end->inner);
    __VERIFIER_assert(0 == end->next);
-
+   free(end);
    end = 0;
   }
   end = list->next;
-
+  free(list);
   list = end;
  }
 

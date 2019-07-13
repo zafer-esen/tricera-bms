@@ -6,10 +6,23 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 
-
-
 extern int __VERIFIER_nondet_int(void);
-# 13 "<stdin>"
+
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 10 "<stdin>" 2
+
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
@@ -57,7 +70,7 @@ int main() {
   p = a;
   while (p != 0) {
     t = p->n;
-
+    free(p);
     p = t;
   }
 

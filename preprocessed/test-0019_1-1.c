@@ -7,9 +7,15 @@
 # 1 "<stdin>"
 
 
+# 1 "./stdlib.h" 1
 
 
 
+void free(){
+
+
+}
+# 4 "<stdin>" 2
 
 typedef struct {
     int *lo;
@@ -25,14 +31,14 @@ static void alloc_data(TData *pdata)
     *(pdata->hi) = 8;
 }
 
-static void
+static void free_data(TData *data)
 {
     int *lo = data->lo;
     int *hi = data->hi;
 
     if (*lo >= *hi) {
-
-
+        free(lo);
+        free(hi);
     }
 
     data->lo = 0;
@@ -42,6 +48,6 @@ static void
 int main() {
     TData data;
     alloc_data(&data);
-
+    free_data(&data);
     return 0;
 }

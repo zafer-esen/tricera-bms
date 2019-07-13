@@ -5,10 +5,23 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-
-
 extern int __VERIFIER_nondet_int();
-# 12 "<stdin>"
+
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 9 "<stdin>" 2
+
 typedef struct node {
   struct node* next;
   struct node* prev;
@@ -46,31 +59,31 @@ void _destroy_in_nondeterministic_order(DLL head) {
   DLL pred = head->prev;
   DLL succ = head->next;
   if(__VERIFIER_nondet_int()) {
-
+    free(head);
     if(__VERIFIER_nondet_int()) {
-
-
+      free(succ);
+      free(pred);
     } else {
-
-
+      free(pred);
+      free(succ);
     }
   } else if(__VERIFIER_nondet_int()) {
-
+    free(succ);
     if(__VERIFIER_nondet_int()) {
-
-
+      free(head);
+      free(pred);
     } else {
-
-
+      free(pred);
+      free(head);
     }
   } else {
-
+    free(pred);
     if(__VERIFIER_nondet_int()) {
-
-
+      free(head);
+      free(succ);
     } else {
 
-
+      free(head);
     }
   }
 }

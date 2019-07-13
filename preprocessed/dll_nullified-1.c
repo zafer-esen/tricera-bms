@@ -6,10 +6,23 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 
-
-
 extern int __VERIFIER_nondet_int();
-# 13 "<stdin>"
+
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 10 "<stdin>" 2
+
 typedef struct node {
   int data_0;
   struct node* next;
@@ -60,7 +73,7 @@ int main() {
     if(0 != head->data_0 || 0 != head->data_1 || 0 != head->data_2) {
       goto ERROR;
     }
-
+    free(head);
     head = temp;
   }
   return 0;

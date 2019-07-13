@@ -5,7 +5,16 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 15 "<stdin>"
+# 12 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 13 "<stdin>" 2
 extern int __VERIFIER_nondet_int(void);
 
 
@@ -76,7 +85,7 @@ int main()
  while(item && __VERIFIER_nondet_int())
  {
   __VERIFIER_assert(!status || item->data > 0);
-# 109 "<stdin>"
+# 107 "<stdin>"
   item = item->next;
  }
 
@@ -85,7 +94,7 @@ int main()
  {
   item = head;
   head = head->next;
-
+  free(item);
  }
 
  return 0;

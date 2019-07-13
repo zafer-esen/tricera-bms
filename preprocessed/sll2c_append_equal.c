@@ -5,7 +5,21 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 10 "<stdin>"
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 7 "<stdin>" 2
+
 typedef struct node {
   struct node *next;
   int data;
@@ -43,10 +57,10 @@ void sll_circular_destroy(SLL head) {
     SLL p = head->next;
     while(p != head) {
       SLL q = p->next;
-
+      free(p);
       p = q;
     }
-
+    free(head);
   }
 }
 

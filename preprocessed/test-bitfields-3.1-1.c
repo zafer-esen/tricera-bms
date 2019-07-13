@@ -7,9 +7,15 @@
 # 1 "<stdin>"
 
 
+# 1 "./stdlib.h" 1
 
 
 
+void free(){
+
+
+}
+# 4 "<stdin>" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -310,10 +316,10 @@ extern char *stpncpy (char *__restrict __dest,
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
 # 498 "/usr/include/string.h" 3 4
 
-# 7 "<stdin>" 2
+# 5 "<stdin>" 2
 
 
-# 8 "<stdin>"
+# 6 "<stdin>"
 struct A {
  unsigned char a;
  unsigned char b:2;
@@ -344,22 +350,22 @@ int main(void)
  p = malloc(sizeof(struct A));
  memcpy(p, &d, sizeof(struct A));
  if (p->a != 0) {
-
+  free(p);
  }
  if (p->b != 2) {
-
+  free(p);
  }
  if (p->c != 3) {
-
+  free(p);
  }
  if (p->d != 4) {
-
+  free(p);
  }
  if (p->e != 0) {
-
+  free(p);
  }
  if (p->f != 0) {
-
+  free(p);
  }
-
+ free(p);
 }

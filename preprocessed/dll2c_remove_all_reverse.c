@@ -5,7 +5,21 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 10 "<stdin>"
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 7 "<stdin>" 2
+
 typedef struct node {
   struct node *next;
   struct node *prev;
@@ -47,11 +61,11 @@ DLL dll_circular_create(int len, int data) {
 void dll_circular_remove_last(DLL* head) {
   DLL last = (*head)->prev;
   if(last == *head) {
-
+    free(*head);
     *head = 0;
   } else {
     DLL snd_to_last = (last)->prev;
-
+    free(last);
     (*head)->prev = snd_to_last;
     snd_to_last->next = *head;
   }

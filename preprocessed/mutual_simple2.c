@@ -5,9 +5,15 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
+# 1 "./stdlib.h" 1
 
 
 
+void free(){
+
+
+}
+# 2 "<stdin>" 2
 
 extern int __VERIFIER_nondet_int(void);
 
@@ -16,7 +22,7 @@ void g(int *p, int *s);
 
 
 void f( int *q, int *r) {
-
+ free(r);
  if(*q < 0) {
   return;
  }
@@ -29,7 +35,7 @@ void f( int *q, int *r) {
 
 
 void g(int *p, int *s) {
-
+ free(s);
  if(*p < 0)
   return;
 
@@ -49,7 +55,7 @@ int main() {
 
  f(p1,p2);
 
-
+ free(p1);
 
 
 }

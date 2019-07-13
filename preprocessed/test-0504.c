@@ -7,9 +7,15 @@
 # 1 "<stdin>"
 
 
+# 1 "./stdlib.h" 1
 
 
 
+void free(){
+
+
+}
+# 4 "<stdin>" 2
 
 extern int __VERIFIER_nondet_int(void);
 
@@ -77,10 +83,10 @@ int main() {
         while (y != &x->head) {
             struct T* z = y;
             y = y->next;
-
+            free(z);
         }
 
-
+        free(x);
 
     }
 

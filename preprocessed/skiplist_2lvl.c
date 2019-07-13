@@ -5,10 +5,19 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-
-
 extern int __VERIFIER_nondet_int(void);
-# 23 "<stdin>"
+# 18 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 19 "<stdin>" 2
+
+
 struct sl_item {
  struct sl_item *n1, *n2;
 };
@@ -75,9 +84,9 @@ void destroy_sl(struct sl *sl)
  while (sl->head) {
   tmp = sl->head;
   sl->head = sl->head->n1;
-
+  free(tmp);
  }
-
+ free(sl);
 }
 
 int main()

@@ -10,12 +10,10 @@
 
 
 
-
-
  typedef long unsigned int size_t;
 
 
-void
+void free (void *__ptr);
 
 extern int __VERIFIER_nondet_int(void);
 
@@ -24,6 +22,6 @@ int main() {
  while (*p >= 0) {
   (*p)--;
  }
-
+ free(p);
  return 0;
 }

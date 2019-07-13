@@ -6,14 +6,20 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 
-
-
 extern int __VERIFIER_nondet_int();
 
 
 
 
+# 1 "./stdlib.h" 1
 
+
+
+void free(){
+
+
+}
+# 8 "<stdin>" 2
 
 typedef struct node {
   int data;
@@ -47,7 +53,7 @@ SLL sll_create(int len, int data) {
 void sll_destroy(SLL head) {
   while(head) {
     SLL temp = head->next;
-
+    free(head);
     head = temp;
   }
 }

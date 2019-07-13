@@ -5,9 +5,15 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
+# 1 "./stdlib.h" 1
 
 
 
+void free(){
+
+
+}
+# 2 "<stdin>" 2
 
 extern int __VERIFIER_nondet_int(void);
 
@@ -22,7 +28,7 @@ int rec(int *op) {
 
  int res = rec(ip);
 
-
+ free(ip);
 
  return res;
 
@@ -44,6 +50,6 @@ int main() {
   *qq += (rec(pp) == -1 ? -1 : 1);
  }
 
-
+ free(qq);
 
 }

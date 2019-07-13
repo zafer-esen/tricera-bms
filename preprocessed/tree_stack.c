@@ -5,10 +5,18 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-
-
 extern int __VERIFIER_nondet_int(void);
-# 16 "<stdin>"
+# 12 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 13 "<stdin>" 2
+
 int main() {
 
  struct TreeNode {
@@ -21,7 +29,7 @@ int main() {
   struct TreeNode* node;
  };
 
- struct TreeNode* root = malloc(sizeof(*root)), *n;
+ struct TreeNode* root = malloc(sizeof(TreeNode)), *n;
  root->left = 0;
  root->right = 0;
 
@@ -34,12 +42,12 @@ int main() {
     n = n->right;
   }
   if (!n->left && __VERIFIER_nondet_int()) {
-   n->left = malloc(sizeof(*n));
+   n->left = malloc(sizeof(TreeNode));
    n->left->left = 0;
    n->left->right = 0;
   }
   if (!n->right && __VERIFIER_nondet_int()) {
-   n->right = malloc(sizeof(*n));
+   n->right = malloc(sizeof(TreeNode));
    n->right->left = 0;
    n->right->right = 0;
   }
@@ -47,7 +55,7 @@ int main() {
 
  n = 0;
 
- struct StackItem* s = malloc(sizeof(*s)), *st;
+ struct StackItem* s = malloc(sizeof(StackItem)), *st;
  s->next = 0;
  s->node = root;
 
@@ -55,20 +63,20 @@ int main() {
   st = s;
   s = s->next;
   n = st->node;
-
+  free(st);
   if (n->left) {
-   st = malloc(sizeof(*st));
+   st = malloc(sizeof(StackItem));
    st->next = s;
    st->node = n->left;
    s = st;
   }
   if (n->right) {
-   st = malloc(sizeof(*st));
+   st = malloc(sizeof(StackItem));
    st->next = s;
    st->node = n->right;
    s = st;
   }
-
+  free(n);
  }
 
  return 0;

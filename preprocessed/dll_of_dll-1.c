@@ -7,9 +7,15 @@
 # 1 "<stdin>"
 
 
+# 1 "./stdlib.h" 1
 
 
 
+void free(){
+
+
+}
+# 4 "<stdin>" 2
 
 extern int __VERIFIER_nondet_int(void);
 
@@ -89,7 +95,7 @@ void dll_destroy_slave(struct slave_item *dll)
 {
     while (dll) {
         struct slave_item *next = dll->next;
-
+        free(dll);
         dll = next;
     }
 }
@@ -114,7 +120,7 @@ void dll_destroy_master(struct master_item *dll)
 {
     while (dll) {
         struct master_item *next = dll->next;
-
+        free(dll);
         dll = next;
     }
 }

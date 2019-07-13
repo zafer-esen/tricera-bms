@@ -7,9 +7,15 @@
 # 1 "<stdin>"
 
 
+# 1 "./stdlib.h" 1
 
 
 
+void free(){
+
+
+}
+# 4 "<stdin>" 2
 
 extern int __VERIFIER_nondet_int(void);
 
@@ -84,10 +90,10 @@ int main() {
             y = y->next;
 
             if(z->data < 16) {
-
+              free(z);
             }
         }
-
+        free(x);
     }
 
     return 0;

@@ -5,7 +5,21 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 10 "<stdin>"
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 7 "<stdin>" 2
+
 struct node {
   struct node* next;
 };
@@ -30,8 +44,8 @@ int main() {
   *s = *s;
 
   struct node* t = s->next;
-
-
+  free(s);
+  free(t);
 
   return 0;
 }

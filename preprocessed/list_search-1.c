@@ -7,15 +7,21 @@
 # 1 "<stdin>"
 
 
-
-
 void __VERIFIER_assert(int cond) {
   if (!(cond)) {
-    ERROR: assert(0);
+    ERROR: __VERIFIER_error();
   }
   return;
 }
+# 1 "./stdlib.h" 1
 
+
+
+void free(){
+
+
+}
+# 10 "<stdin>" 2
 typedef struct list {
  int key;
  struct list *next;
@@ -56,7 +62,7 @@ int main(void){
 
   while(head!=0) {
     mlist *tmp = head->next;
-
+    free(head);
     head = tmp;
   }
 }

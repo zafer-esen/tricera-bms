@@ -5,10 +5,18 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-
-
 extern int __VERIFIER_nondet_int(void);
-# 16 "<stdin>"
+# 12 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 13 "<stdin>" 2
+
 typedef struct TListNode
 {
  struct TListNode* next;
@@ -122,11 +130,11 @@ int main()
   {
    tmpList = tmp->list->next;
    tmp->list->next = tmpList->next;
-
+   free(tmpList);
   }
 
-
-
+  free(tmp->list);
+  free(tmp);
  }
 
  return 0;

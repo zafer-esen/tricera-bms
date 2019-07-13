@@ -6,10 +6,23 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 
-
-
 extern int __VERIFIER_nondet_int();
-# 13 "<stdin>"
+
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 10 "<stdin>" 2
+
 typedef struct node {
   struct node* next;
   struct node* inner;
@@ -72,10 +85,10 @@ void sll_hierarchical_destroy(SLL head) {
     SLL sub_head = head->inner;
     while(sub_head) {
       SLL temp_2 = sub_head->next;
-
+      free(sub_head);
       sub_head = temp_2;
     }
-
+    free(head);
     head = temp;
   }
 }

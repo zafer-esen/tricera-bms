@@ -5,7 +5,16 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 13 "<stdin>"
+# 10 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 11 "<stdin>" 2
 extern int __VERIFIER_nondet_int(void);
 
 
@@ -83,14 +92,14 @@ int main()
   if (RED == list->colour)
   {
    end = list->next;
-
+   free(list);
    list = end->next;
-
+   free(end);
   }
   else
   {
    end = list->next;
-
+   free(list);
    list = end;
   }
  }

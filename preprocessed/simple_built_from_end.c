@@ -7,15 +7,21 @@
 # 1 "<stdin>"
 
 
-
-
 extern int __VERIFIER_nondet_int();
 
 
 
 
 
+# 1 "./stdlib.h" 1
 
+
+
+void free(){
+
+
+}
+# 10 "<stdin>" 2
 
 void myexit(int s) {
  _EXIT: goto _EXIT;

@@ -5,7 +5,22 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 11 "<stdin>"
+
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 8 "<stdin>" 2
+
 typedef struct node {
   int data_0;
   struct node* next;
@@ -55,7 +70,7 @@ int main() {
     if(0 != head->data_0 || 0 != head->data_1 || 0 != head->data_2) {
       goto ERROR;
     }
-
+    free(head);
     head = temp;
   }
   return 0;

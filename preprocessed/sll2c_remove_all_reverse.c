@@ -5,7 +5,21 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 10 "<stdin>"
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 7 "<stdin>" 2
+
 typedef struct node {
   struct node *next;
   int data;
@@ -44,14 +58,14 @@ void sll_circular_remove_last(SLL* head) {
     last = last->next;
   }
   if(last == *head) {
-
+    free(*head);
     *head = 0;
   } else {
     SLL snd_to_last = *head;
     while(snd_to_last->next != last) {
       snd_to_last = snd_to_last->next;
     }
-
+    free(last);
     snd_to_last->next = *head;
   }
 }

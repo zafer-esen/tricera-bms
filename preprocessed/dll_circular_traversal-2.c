@@ -5,7 +5,23 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 12 "<stdin>"
+
+
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 9 "<stdin>" 2
+
 typedef struct node {
   int data;
   struct node* next;
@@ -66,7 +82,7 @@ int main() {
       goto ERROR;
     }
     DLL temp = ptr->prev;
-
+    free(ptr);
     ptr = temp;
   } while(ptr != 0);
   return 0;

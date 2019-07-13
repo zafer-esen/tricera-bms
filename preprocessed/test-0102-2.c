@@ -5,13 +5,29 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 12 "<stdin>"
+
+
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 9 "<stdin>" 2
+
 extern int __VERIFIER_nondet_int(void);
 
 struct list_head {
     struct list_head *next, *prev;
 };
-# 26 "<stdin>"
+# 24 "<stdin>"
 static inline void __list_add(struct list_head *new,
                               struct list_head *prev,
                               struct list_head *next)
@@ -45,7 +61,7 @@ void destroy_sub(struct list_head *head)
     while (&now->link != (head)) {
         struct sub_list *next = ((struct sub_list *)((char *)(now->link.next)-(unsigned long)(&((struct sub_list *)0)->link)));
 
-
+        free(now);
         now = next;
     }
 }
@@ -63,7 +79,7 @@ void destroy_top(struct list_head *head)
 
 
 
-
+        free(now);
         now = next;
     }
 }

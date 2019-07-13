@@ -5,9 +5,15 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
+# 1 "./stdlib.h" 1
 
 
 
+void free(){
+
+
+}
+# 2 "<stdin>" 2
 
 extern int __VERIFIER_nondet_int(void);
 
@@ -21,7 +27,7 @@ int* g(int *p);
 
 int* f( int *q, int v) {
  if(v < 0) {
-
+  free(q);
   return malloc(sizeof(int));
  }
 
@@ -38,7 +44,7 @@ int* f( int *q, int v) {
 
 int* g(int *p) {
  if(*p < 0) {
-
+  free(p);
   return malloc(sizeof(int));
  }
 
@@ -48,7 +54,7 @@ int* g(int *p) {
  int *np = g(p);
 
 
-
+ free(np);
 
 
  return malloc(sizeof(int));
@@ -71,7 +77,7 @@ int main() {
 
  f(p1,*p2);
 
-
+ free(p1);
 
 
 }

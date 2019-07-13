@@ -5,14 +5,20 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-
-
 extern unsigned __VERIFIER_nondet_uint();
 extern int __VERIFIER_nondet_int();
 extern char *__VERIFIER_nondet_charp();
 
 
+# 1 "./stdlib.h" 1
 
+
+
+void free(){
+
+
+}
+# 7 "<stdin>" 2
 
 
 

@@ -5,7 +5,16 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 13 "<stdin>"
+# 10 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 11 "<stdin>" 2
 extern int __VERIFIER_nondet_int(void);
 
 
@@ -84,12 +93,12 @@ int main()
    itr = item;
    item = item->next;
    __VERIFIER_assert(itr->data == bcki->data);
-
+   free(itr);
   }
   __VERIFIER_assert(item == 0);
   bucket = bcki;
   bcki = bcki->next;
-
+  free(bucket);
   bucket = 0;
  }
 

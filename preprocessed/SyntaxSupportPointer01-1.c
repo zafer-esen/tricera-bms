@@ -10,8 +10,6 @@
 
 
 
-
-
 typedef long unsigned int size_t;
 
 
@@ -25,6 +23,6 @@ int main() {
  while (*p >= 0) {
   (*p)--;
  }
-
+ free(p);
  return 0;
 }

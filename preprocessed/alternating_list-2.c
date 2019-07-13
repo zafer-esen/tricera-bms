@@ -7,10 +7,23 @@
 # 1 "<stdin>"
 
 
-
-
 extern int __VERIFIER_nondet_int();
-# 14 "<stdin>"
+
+
+
+
+
+
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 11 "<stdin>" 2
+
 typedef struct node {
   int h;
   struct node *n;
@@ -64,9 +77,9 @@ int main() {
   while (p->h != 3) {
     List* tmp = p;
     p = p->n;
-
+    free(tmp);
   }
-
+  free(p);
 
   return 0;
 

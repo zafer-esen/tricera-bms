@@ -7,10 +7,18 @@
 # 1 "<stdin>"
 
 
-
-
 extern int __VERIFIER_nondet_int();
-# 22 "<stdin>"
+# 18 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 19 "<stdin>" 2
+
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
@@ -72,7 +80,7 @@ int main() {
         pred->right = 0;
     } else
       root = 0;
-
+    free(n);
     }
 
 

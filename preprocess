@@ -5,5 +5,6 @@ cd orig
 shopt -s nullglob
 
 for name in *.c; do
-    printf "#define NULL 0\n#define __VERIFIER_error() assert(0)\n" | cat - $name | sed '/free/s//\/\/&/' | sed '/void \* /s//\/\/&/' | sed '/extern void/s//\/\/&/' | sed '/void * __attribute/s//\/\/&/' | sed '/#define __VERIFIER_assert/s//\/\/&/' | sed '/#include <stdlib.h>/s//\/\/&/' | sed "s/([^)]*) *malloc/malloc/g" | cpp -E -o ../preprocessed/"$name"
+    echo "Processing file: $name"
+    cat $name | sed '/void \* /s//\/\/&/' | sed '/extern void/s//\/\/&/' | sed '/void * __attribute/s//\/\/&/' | sed '/#define __VERIFIER_assert/s//\/\/&/' | sed "s/([^)]*) *malloc/malloc/g" | cpp -E -I . -o ../preprocessed/"$name"
 done

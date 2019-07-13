@@ -5,9 +5,18 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "<stdin>"
-# 15 "<stdin>"
+# 12 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 13 "<stdin>" 2
 extern int __VERIFIER_nondet_int(void);
-# 49 "<stdin>"
+# 47 "<stdin>"
 typedef struct TSLL
 {
  struct TSLL* next;
@@ -42,8 +51,8 @@ int main()
   head = x;
   x = x->next;
   if (head->data == 2)
-
-
+   free(head->opt);
+  free(head);
  }
 
  return 0;

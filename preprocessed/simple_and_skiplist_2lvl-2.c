@@ -7,10 +7,18 @@
 # 1 "<stdin>"
 
 
-
-
 extern int __VERIFIER_nondet_int();
-# 20 "<stdin>"
+# 16 "<stdin>"
+# 1 "./stdlib.h" 1
+
+
+
+void free(){
+
+
+}
+# 17 "<stdin>" 2
+
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
@@ -87,9 +95,9 @@ void destroy_sl(struct sl *sl)
  while (sl->head) {
   tmp = sl->head;
   sl->head = sl->head->n1;
-
+  free(tmp);
  }
-
+ free(sl);
 }
 
 int main() {
