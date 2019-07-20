@@ -43,11 +43,11 @@ DLL* dll_circular_create(int len, int data) {
   return head;
 }
 
-void dll_circular_destroy(DLL head) {
+void dll_circular_destroy(DLL* head) {
   if(NULL != head) {
-    DLL p = head->next;
+    DLL* p = head->next;
     while(p != head) {
-      DLL q = p->next;
+      DLL* q = p->next;
       free(p);
       p = q;
     }

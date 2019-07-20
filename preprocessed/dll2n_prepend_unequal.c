@@ -33,14 +33,14 @@ typedef struct node {
   int data;
   struct node* next;
   struct node* prev;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL node_create(int data) {
-  DLL temp = malloc(sizeof(struct node));
+DLL* node_create(int data) {
+  DLL* temp = malloc(sizeof(struct node));
   if(0 == temp) {
     myexit(1);
   }
@@ -50,10 +50,10 @@ DLL node_create(int data) {
   return temp;
 }
 
-DLL dll_create(int len, int data) {
-  DLL head = 0;
+DLL* dll_create(int len, int data) {
+  DLL* head = 0;
   while(len > 0) {
-    DLL new_head = malloc(sizeof(struct node));
+    DLL* new_head = malloc(sizeof(struct node));
     if(0 == new_head) {
       myexit(1);
     }
@@ -69,16 +69,16 @@ DLL dll_create(int len, int data) {
   return head;
 }
 
-void dll_destroy(DLL head) {
+void dll_destroy(DLL* head) {
   while(head) {
-    DLL temp = head->next;
+    DLL* temp = head->next;
     __foo(head);
     head = temp;
   }
 }
 
-void dll_prepend(DLL* head, int data) {
-  DLL new_head = node_create(data);
+void dll_prepend(DLL** head, int data) {
+  DLL* new_head = node_create(data);
   new_head->next = *head;
   if(*head) {
     (*head)->prev = new_head;
@@ -90,19 +90,19 @@ int main() {
 
   const int len = 2;
   const int data = 1;
-  DLL s = dll_create(len, data);
+  DLL* s = dll_create(len, data);
 
   const int uneq = 5;
   dll_prepend(&s, uneq);
 
-  DLL ptr = s;
+  DLL* ptr = s;
   if(uneq != ptr->data) {
     goto ERROR;
   }
   ptr = ptr->next;
   int count = 1;
   while(ptr) {
-    DLL temp = ptr->next;
+    DLL* temp = ptr->next;
     if(data != ptr->data) {
       goto ERROR;
     }

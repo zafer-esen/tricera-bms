@@ -42,7 +42,7 @@ int main()
  Node* list = 0;
  Node* y = 0;
 
- y = malloc(sizeof(*y));
+ y = malloc(sizeof(Node));
  y->next = 0;
  y->prev = 0;
  y->pData = &y->data;
@@ -50,13 +50,13 @@ int main()
 
  while (__VERIFIER_nondet_int())
  {
-  y = malloc(sizeof(*y));
+  y = malloc(sizeof(Node));
   y->next = list;
   list->prev = y;
 
   if (__VERIFIER_nondet_int())
   {
-   y->pData = malloc(sizeof(*y->pData));
+   y->pData = malloc(sizeof(Data));
   }
   else
   {

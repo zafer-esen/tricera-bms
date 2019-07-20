@@ -33,11 +33,11 @@ void myexit(int s) {
 typedef struct node {
   int h;
   struct node *n;
-} *List;
+} List;
 
 int main() {
   int flag = __VERIFIER_nondet_int();
-  List p, a, t;
+  List* p, a, t;
 
 
 

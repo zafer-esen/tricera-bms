@@ -17,16 +17,16 @@ void myexit(int s) {
 typedef struct node {
   int h;
   struct node *n;
-} *List;
+} List;
 
 int main() {
   int flag = __VERIFIER_nondet_int();
-  List p, a, t;
+  List* p, a, t;
 
   /* Build a list of the form x->x->x->...->x->3
    * with x depending on some flag
    */
-  a = (List) malloc(sizeof(struct node));
+  a = (List*) malloc(sizeof(struct node));
   if (a == 0) myexit(1);
   p = a;
   while (__VERIFIER_nondet_int()) {
@@ -37,7 +37,7 @@ int main() {
     }
     /*** TVLA forgets at this point the dependence
 	 between p->h and the value of flag        ***/
-    t = (List) malloc(sizeof(struct node));
+    t = (List*) malloc(sizeof(struct node));
     if (t == 0) myexit(1);
     p->n = t;
     p = p->n;

@@ -34,10 +34,10 @@ typedef struct node {
   int h;
   int flag;
   struct node *n;
-} *List;
+} List;
 
 int main() {
-  List p, a, t;
+  List* p, a, t;
 
 
 

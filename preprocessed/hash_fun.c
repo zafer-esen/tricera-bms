@@ -37,7 +37,7 @@ struct node {
 int hash_fun() { return __VERIFIER_nondet_int(); }
 
 void append_to_list(struct node **list, int hash) {
-    struct node *node = malloc(sizeof(*node));
+    struct node *node = malloc(sizeof(struct node));
     node->next = *list;
     node->hash = hash;
     *list = node;

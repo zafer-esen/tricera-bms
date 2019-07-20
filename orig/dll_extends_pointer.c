@@ -27,7 +27,7 @@ int main()
 	Node* list = NULL;
 	Node* y = NULL;
 
-	y = malloc(sizeof(*y));
+	y = malloc(sizeof(Node));
 	y->next = NULL;
 	y->prev = NULL;
 	y->pData = &y->data;
@@ -35,13 +35,13 @@ int main()
 
 	while (__VERIFIER_nondet_int())
 	{
-		y = malloc(sizeof(*y));
+		y = malloc(sizeof(Node));
 		y->next = list;
 		list->prev = y;
 
 		if (__VERIFIER_nondet_int())
 		{
-			y->pData = malloc(sizeof(*y->pData));
+			y->pData = malloc(sizeof(Data));
 		}
 		else
 		{

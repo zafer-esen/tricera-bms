@@ -33,7 +33,7 @@ void myexit(int s) {
 typedef struct node {
   int h;
   struct node *n;
-} *List;
+} List;
 
 int main() {
 
@@ -41,12 +41,12 @@ int main() {
   int y = 0;
 
 
-  List a = malloc(sizeof(struct node));
+  List* a = malloc(sizeof(struct node));
 
   if (a == 0) myexit(1);
 
-  List t;
-  List p = a;
+  List* t;
+  List* p = a;
   while (i < 10 && __VERIFIER_nondet_int()) {
     i++;
     p->h = 1;

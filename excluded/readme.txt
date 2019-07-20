@@ -12,6 +12,6 @@
    (/*contract*/ did not work)
 5. mutex/*
    Reason: uses mutex allocation
-6. process_queue.c
+6. funptr/*
    Reason: uses function pointers
 7.

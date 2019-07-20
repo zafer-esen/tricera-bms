@@ -62,7 +62,8 @@ node_t* append(node_t* x, node_t* y)
 
 int main ()
 {
-  int n = abs(__VERIFIER_nondet_int());
+  int n = __VERIFIER_nondet_int();
+  assume(n>=0);
   node_t* x = new_ll(n + 1);
   node_t* y = append(x, x);
   int y_length = length(y);
