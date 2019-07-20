@@ -11,6 +11,9 @@ safeMatchCount=0
 unsafeMatchCount=0
 errorCount=0
 
+declare -a unsoundList=()
+declare -a errorList=()
+
 for name in *.c 
 do
     echo
@@ -43,9 +46,11 @@ do
         echo "results do not match!"
         if [ "$expected" = "UNSAFE" ]; then
             if echo "$res" | grep -qw "SAFE"; then
+                unsoundList[$unsoundCount]=$name
                 unsoundCount=$((unsoundCount+1))
                 echo "UNSOUND RESULT DETECTED!"
             else
+                errorList[$errorCount]=$name
                 errorCount=$((errorCount+1))
                 echo "PARSING ERROR OR BUG DETECTED"
             fi
@@ -71,4 +76,22 @@ do
     echo "total      : $totalCount"
     echo "---------------------------"
 done
+
+echo
+echo "Unsound results"
+echo "---------------------------"
+for i in "${unsoundList[@]}"
+do
+   echo "$i"
+done
+
+echo "---------------------------"
+echo
+echo "Errors"
+echo "---------------------------"
+for i in "${errorList[@]}"
+do
+   echo "$i"
+done
+
 cd ..
