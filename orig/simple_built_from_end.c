@@ -15,14 +15,14 @@ void myexit(int s) {
 typedef struct node {
   int h;
   struct node *n;
-} *List;
+} List;
 
 int main() {
   /* Build a list of the form 1->...->1->0 */
-  List t;
-  List p = 0;
+  List* t;
+  List* p = 0;
   while (__VERIFIER_nondet_int()) {
-    t = (List) malloc(sizeof(struct node));
+    t = (List*) malloc(sizeof(struct node));
     if (t == 0) myexit(1);
     t->h = 1;
     t->n = p;

@@ -36,7 +36,7 @@ struct sl_item* alloc_or_die(void)
 
 struct sl* create_sl_with_head_and_tail(void)
 {
-	struct sl *sl = malloc(sizeof(*sl));
+	struct sl *sl = malloc(sizeof(struct sl));
 
 	sl->head = malloc(sizeof(struct sl_item));
 	sl->tail = malloc(sizeof(struct sl_item));

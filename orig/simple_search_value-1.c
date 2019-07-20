@@ -18,19 +18,19 @@ void myexit(int s) {
 typedef struct node {
   int h;
   struct node *n;
-} *List;
+} List;
 
 int main() {
   /* Build a list of the form 1->2->3->4... */
-  List a = (List) malloc(sizeof(struct node));
+  List* a = (List*) malloc(sizeof(struct node));
   if (a == 0) myexit(1);
-  List t;
-  List p = a;
+  List* t;
+  List* p = a;
 
   int counter = 0;
   while (counter < 10 || __VERIFIER_nondet_int()) {
     p->h = counter;
-    t = (List) malloc(sizeof(struct node));
+    t = (List*) malloc(sizeof(struct node));
     if (t == 0) myexit(1);
     p->n = t;
     p = p->n;

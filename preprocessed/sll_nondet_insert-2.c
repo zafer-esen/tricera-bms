@@ -17,22 +17,26 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 
 extern int __VERIFIER_nondet_int();
 # 12 "<stdin>"
 typedef struct node {
   struct node* next;
-} *SLL;
+} SLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-SLL sll_create(int len) {
-  SLL head = 0;
+SLL* sll_create(int len) {
+  SLL* head = 0;
   while(len-- > 0) {
-    SLL new_head = malloc(sizeof(struct node));
+    SLL* new_head = malloc(sizeof(struct node));
     if(0 == new_head) {
       myexit(1);
     }
@@ -42,7 +46,7 @@ SLL sll_create(int len) {
   return head;
 }
 
-int sll_length(SLL head) {
+int sll_length(SLL* head) {
   int len = 0;
   while(head) {
     len++;
@@ -51,21 +55,21 @@ int sll_length(SLL head) {
   return len;
 }
 
-void sll_destroy(SLL head) {
+void sll_destroy(SLL* head) {
   while(head) {
-    SLL temp = head->next;
+    SLL* temp = head->next;
     __foo(head);
     head = temp;
   }
 }
 
-void sll_insert(SLL* head, int position) {
-  SLL new_node = malloc(sizeof(struct node));
+void sll_insert(SLL** head, int position) {
+  SLL* new_node = malloc(sizeof(struct node));
   if(0 == new_node) {
     myexit(1);
   }
-  SLL second_to_last = 0;
-  SLL last = *head;
+  SLL* second_to_last = 0;
+  SLL* last = *head;
   while(position-- > 0) {
     second_to_last = last;
     last = last->next;
@@ -88,7 +92,7 @@ int _get_nondet_int(int from, int until) {
 
 int main() {
   const int len = _get_nondet_int(2, 5);
-  SLL s = sll_create(len);
+  SLL* s = sll_create(len);
   const int k = _get_nondet_int(0, len - 1);
   int i = 0;
   while(i < k) {

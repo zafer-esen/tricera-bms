@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 
 
@@ -28,14 +32,14 @@ void __foo(void *arg){
 typedef struct node {
   int data;
   struct node* next;
-} *SLL;
+} SLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-SLL node_create(int data) {
-  SLL temp = malloc(sizeof(struct node));
+SLL* node_create(int data) {
+  SLL* temp = malloc(sizeof(struct node));
   if(0 == temp) {
     myexit(1);
   }
@@ -44,25 +48,25 @@ SLL node_create(int data) {
   return temp;
 }
 
-SLL sll_create(int len, int data) {
-  SLL head = 0;
+SLL* sll_create(int len, int data) {
+  SLL* head = 0;
   for(; len > 0; len--) {
-    SLL new_head = node_create(data);
+    SLL* new_head = node_create(data);
     new_head->next = head;
     head = new_head;
   }
   return head;
 }
 
-void sll_destroy(SLL head) {
+void sll_destroy(SLL* head) {
   while(head) {
-    SLL temp = head->next;
+    SLL* temp = head->next;
     __foo(head);
     head = temp;
   }
 }
 
-int sll_get_data_at(SLL head, int index) {
+int sll_get_data_at(SLL* head, int index) {
   while(index > 0) {
     head = head->next;
     index--;
@@ -70,7 +74,7 @@ int sll_get_data_at(SLL head, int index) {
   return head->data;
 }
 
-void sll_update_at(SLL head, int data, int index) {
+void sll_update_at(SLL* head, int data, int index) {
   while(index > 0) {
     head = head->next;
     index--;
@@ -81,7 +85,7 @@ void sll_update_at(SLL head, int data, int index) {
 int main() {
   const int len = 2;
   const int data = 1;
-  SLL s = sll_create(len, data);
+  SLL* s = sll_create(len, data);
   int i;
   for(i = len - 1; i >= 0; i--) {
     int new_data = i + len;

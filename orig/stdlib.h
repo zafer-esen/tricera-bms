@@ -10,4 +10,8 @@ void __foo(void *arg){
 to get rid of errors*/
 }
 
+void abort(void){
+  return 1; //only will work from main, but the test cases seems to call it from main
+}
+
 #endif

@@ -9,22 +9,22 @@ extern int __VERIFIER_nondet_int();
 typedef struct node {
   struct node* next;
   struct node* prev;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL dll_circular_create(int len) {
-  DLL last = (DLL) malloc(sizeof(struct node));
+DLL* dll_circular_create(int len) {
+  DLL* last = (DLL*) malloc(sizeof(struct node));
   if(NULL == last) {
     myexit(1);
   }
   last->next = last;
   last->prev = last;
-  DLL head = last;
+  DLL* head = last;
   while(len > 1) {
-    DLL new_head = (DLL) malloc(sizeof(struct node));
+    DLL* new_head = (DLL*) malloc(sizeof(struct node));
     if(NULL == new_head) {
       myexit(1);
     }
@@ -39,9 +39,9 @@ DLL dll_circular_create(int len) {
 }
 
 /* dll must be circular and must have exactly 3 nodes */
-void _destroy_in_nondeterministic_order(DLL head) {
-  DLL pred = head->prev;
-  DLL succ = head->next;
+void _destroy_in_nondeterministic_order(DLL* head) {
+  DLL* pred = head->prev;
+  DLL* succ = head->next;
   if(__VERIFIER_nondet_int()) {
     free(head);
     if(__VERIFIER_nondet_int()) {
@@ -75,7 +75,7 @@ void _destroy_in_nondeterministic_order(DLL head) {
 int main() {
   /* example only works if list has 3 elements */
   const int len = 3;
-  DLL head = dll_circular_create(len);
+  DLL* head = dll_circular_create(len);
   _destroy_in_nondeterministic_order(head);
   head = NULL;
   return 0;

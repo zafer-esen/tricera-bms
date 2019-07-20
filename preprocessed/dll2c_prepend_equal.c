@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 
 
@@ -29,14 +33,14 @@ typedef struct node {
   struct node *next;
   struct node *prev;
   int data;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL node_create(int data) {
-  DLL temp = malloc(sizeof(struct node));
+DLL* node_create(int data) {
+  DLL* temp = malloc(sizeof(struct node));
   if(0 == temp) {
     myexit(1);
   }
@@ -46,11 +50,11 @@ DLL node_create(int data) {
   return temp;
 }
 
-DLL dll_circular_create(int len, int data) {
-  DLL head = node_create(data);
-  DLL last = head;
+DLL* dll_circular_create(int len, int data) {
+  DLL* head = node_create(data);
+  DLL* last = head;
   while(len > 1) {
-    DLL new_head = node_create(data);
+    DLL* new_head = node_create(data);
     new_head->next = head;
     if(head) {
       head->prev = new_head;
@@ -63,11 +67,11 @@ DLL dll_circular_create(int len, int data) {
   return head;
 }
 
-void dll_circular_destroy(DLL head) {
+void dll_circular_destroy(DLL* head) {
   if(0 != head) {
-    DLL p = head->next;
+    DLL* p = head->next;
     while(p != head) {
-      DLL q = p->next;
+      DLL* q = p->next;
       __foo(p);
       p = q;
     }
@@ -75,15 +79,15 @@ void dll_circular_destroy(DLL head) {
   }
 }
 
-void dll_circular_prepend(DLL* head, int data) {
-  DLL new_head = node_create(data);
+void dll_circular_prepend(DLL** head, int data) {
+  DLL* new_head = node_create(data);
   if(0 == *head) {
     *head = new_head;
     new_head->next = new_head;
     new_head->prev = new_head;
   } else {
-    DLL last = (*head)->prev;
-    DLL old_head = *head;
+    DLL* last = (*head)->prev;
+    DLL* old_head = *head;
     *head = new_head;
     new_head->next = old_head;
     old_head->prev = new_head;
@@ -96,11 +100,11 @@ int main(void) {
 
   const int len = 2;
   const int data = 1;
-  DLL s = dll_circular_create(len, data);
+  DLL* s = dll_circular_create(len, data);
 
   dll_circular_prepend(&s, data);
 
-  DLL ptr = s;
+  DLL* ptr = s;
   int count = 0;
   do {
     if(data != ptr->data) {

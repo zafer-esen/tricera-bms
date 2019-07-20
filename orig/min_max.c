@@ -16,7 +16,7 @@ int main() {
     int min = INT_MAX, max = -INT_MAX;
  
     while (__VERIFIER_nondet_int()) {
-        Node *p = malloc(sizeof(*p));
+        Node *p = malloc(sizeof(Node));
         p->val = __VERIFIER_nondet_int();
         APPEND(l, p)
         

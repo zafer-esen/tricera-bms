@@ -9,16 +9,16 @@ extern int __VERIFIER_nondet_int();
 
 typedef struct node {
   struct node* next;
-} *SLL;
+} SLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-SLL sll_create(int len) {
-  SLL head = NULL;
+SLL* sll_create(int len) {
+  SLL* head = NULL;
   while(len > 0) {
-    SLL new_head = (SLL) malloc(sizeof(struct node));
+    SLL* new_head = (SLL*) malloc(sizeof(struct node));
     if(NULL == new_head) {
       myexit(1);
     }
@@ -29,7 +29,7 @@ SLL sll_create(int len) {
   return head;
 }
 
-int sll_length(SLL head) {
+int sll_length(SLL* head) {
   int len = 0;
   while(head) {
     len++;
@@ -38,9 +38,9 @@ int sll_length(SLL head) {
   return len;
 }
 
-void sll_destroy(SLL head) {
+void sll_destroy(SLL* head) {
   while(head) {
-    SLL temp = head->next;
+    SLL* temp = head->next;
     free(head);
     head = temp;
   }
@@ -52,7 +52,7 @@ int main() {
     len++;
   }
   // Violation: create sll with 1 node more than expected
-  SLL s = sll_create(len + 1);
+  SLL* s = sll_create(len + 1);
   if(len != sll_length(s)) {
     goto ERROR;
   }

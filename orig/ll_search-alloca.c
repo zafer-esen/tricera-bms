@@ -19,7 +19,8 @@ node_t* init_ll (int n)
   node_t* head = NULL;
   node_t* curr;
   
-  for (int i = 0; i < n; i++) {
+  int i;
+  for (i = 0; i < n; i++) {
     curr = malloc(sizeof(node_t));
     curr->val = i;
     curr->next = head;

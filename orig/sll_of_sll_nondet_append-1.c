@@ -11,16 +11,16 @@ extern int __VERIFIER_nondet_int();
 typedef struct node {
   struct node* next;
   struct node* inner;
-} *SLL;
+} SLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-SLL sll_create(int len) {
-  SLL head = NULL;
+SLL* sll_create(int len) {
+  SLL* head = NULL;
   while(len > 0) {
-    SLL new_head = (SLL) malloc(sizeof(struct node));
+    SLL* new_head = (SLL*) malloc(sizeof(struct node));
     if(NULL == new_head) {
       myexit(1);
     }
@@ -31,8 +31,8 @@ SLL sll_create(int len) {
   return head;
 }
 
-SLL node_create_with_sublist(int sublist_length) {
-  SLL new_node = (SLL) malloc(sizeof(struct node));
+SLL* node_create_with_sublist(int sublist_length) {
+  SLL* new_node = (SLL*) malloc(sizeof(struct node));
   if(NULL == new_node) {
     myexit(1);
   }
@@ -41,7 +41,7 @@ SLL node_create_with_sublist(int sublist_length) {
   return new_node;
 }
 
-int sll_length(SLL head) {
+int sll_length(SLL* head) {
   int len = 0;
   while(head) {
     len++;
@@ -50,10 +50,10 @@ int sll_length(SLL head) {
   return len;
 }
 
-void sll_append(SLL* head, int sublist_length) {
-  SLL new_last = node_create_with_sublist(sublist_length);
+void sll_append(SLL** head, int sublist_length) {
+  SLL* new_last = node_create_with_sublist(sublist_length);
   new_last->next = NULL;
-  SLL temp = *head;
+  SLL* temp = *head;
   if(NULL != temp) {
     while(temp->next) {
       temp = temp->next;
@@ -64,12 +64,12 @@ void sll_append(SLL* head, int sublist_length) {
   }
 }
 
-void sll_hierarchical_destroy(SLL head) {
+void sll_hierarchical_destroy(SLL* head) {
  while(head) {
-    SLL temp = head->next;
-    SLL sub_head = head->inner;
+    SLL* temp = head->next;
+    SLL* sub_head = head->inner;
     while(sub_head) {
-      SLL temp_2 = sub_head->next;
+      SLL* temp_2 = sub_head->next;
       free(sub_head);
       sub_head = temp_2;
     }
@@ -82,13 +82,13 @@ int main() {
   const int min = 3; /* min. sublist length */
   const int max = 5; /* max. sublist length */
   int i, j;
-  SLL head = NULL;
+  SLL* head = NULL;
   for(i = min; i <= max; i++) {
     for(j = 0; j < 10 && __VERIFIER_nondet_int(); j++) {
       sll_append(&head, i);
     }
   }
-  SLL ptr = head;
+  SLL* ptr = head;
   for(i = min; NULL != ptr; i++) {
     if(i > max) {
       goto ERROR;

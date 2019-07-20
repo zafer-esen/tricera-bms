@@ -17,7 +17,7 @@ typedef struct packet {
 typedef struct packet_list_node {
     struct packet packet;
     struct packet_list_node *next;
-} *Node;
+} Node;
 
 struct packet_queue {
     struct packet_list_node *front;
@@ -34,23 +34,25 @@ Packet receive() {
 
 void send(struct packet p) { (void)p; }
 
-void append_to_queue(Packet p, Node *q) {
-    Node node = malloc(sizeof(*node));
+void append_to_queue(Packet p, Node** q) {
+    Node* node = malloc(sizeof(Node));
     node->packet = p;
     node->next = *q;
     *q = node;
 }
 
-void process_prio_queue(Node q) {
-    for (Node node = q; node != NULL; node = node->next) {
+void process_prio_queue(Node* q) {
+  Node* node;
+    for (node = q; node != NULL; node = node->next) {
         if (!(node->packet.prio == HIGH || node->packet.size < 500))
             __VERIFIER_error();
         send(node->packet);
     }
 }
 
-void process_normal_queue(Node q) {
-    for (Node node = q; node != NULL; node = node->next) {
+void process_normal_queue(Node* q) {
+  Node* node;
+    for (node = q; node != NULL; node = node->next) {
         if (!(node->packet.prio == LOW && node->packet.size >= 500))
             __VERIFIER_error();
         send(node->packet);
@@ -58,8 +60,8 @@ void process_normal_queue(Node q) {
 }
 
 int main() {
-    Node prio_queue = NULL;
-    Node normal_queue = NULL;
+    Node* prio_queue = NULL;
+    Node* normal_queue = NULL;
 
     while (__VERIFIER_nondet_int()) {
         Packet new_packet = receive();

@@ -11,23 +11,23 @@ typedef struct node {
   int data;
   struct node* next;
   struct node* prev;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL dll_circular_create(int len, int data) {
-  DLL last = (DLL) malloc(sizeof(struct node));
+DLL* dll_circular_create(int len, int data) {
+  DLL* last = (DLL*) malloc(sizeof(struct node));
   if(NULL == last){
     myexit(1);
   }
   last->next = last;
   last->prev = last;
   last->data = data;
-  DLL head = last;
+  DLL* head = last;
   while(len > 1) {
-    DLL new_head = (DLL) malloc(sizeof(struct node));
+    DLL* new_head = (DLL*) malloc(sizeof(struct node));
     if(NULL == new_head) {
       myexit(1);
     }
@@ -45,10 +45,10 @@ DLL dll_circular_create(int len, int data) {
 int main() {
   const int len = 5;
   const int data_init = 1;
-  DLL head = dll_circular_create(len, data_init);
+  DLL* head = dll_circular_create(len, data_init);
   /* forward traversal */
   int data_new = 1;
-  DLL ptr = head;
+  DLL* ptr = head;
   do {
     if(data_init != ptr->data) {
       goto ERROR;
@@ -66,7 +66,7 @@ int main() {
     if(data_new != ptr->data) {
       goto ERROR;
     }
-    DLL temp = ptr->prev;
+    DLL* temp = ptr->prev;
     free(ptr);
     ptr = temp;
   } while(ptr != NULL);

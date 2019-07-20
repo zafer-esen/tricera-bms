@@ -25,7 +25,7 @@ typedef struct TTreeNode
 
 int main()
 {
-	TreeNode* tree = malloc(sizeof(*tree));
+	TreeNode* tree = malloc(sizeof(TreeNode));
 	TreeNode* tmp;
 	ListNode* tmpList;
 
@@ -60,12 +60,12 @@ int main()
 		TreeNode* newNode;
 		if ((NULL == tmp->left) && __VERIFIER_nondet_int())
 		{
-			newNode = malloc(sizeof(*newNode));
+			newNode = malloc(sizeof(TreeNode));
 			tmp->left = newNode;
 		}
 		else if ((NULL == tmp->right) && __VERIFIER_nondet_int())
 		{
-			newNode = malloc(sizeof(*newNode));
+			newNode = malloc(sizeof(TreeNode));
 			tmp->right = newNode;
 		}
 		else
@@ -75,7 +75,7 @@ int main()
 
 		newNode->left = NULL;
 		newNode->right = NULL;
-		newNode->list = malloc(sizeof(*newNode->list));
+		newNode->list = malloc(sizeof(ListNode));
 		newNode->list->next = newNode->list;
 
 		while (__VERIFIER_nondet_int())

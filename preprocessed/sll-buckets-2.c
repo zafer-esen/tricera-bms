@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 # 12 "<stdin>"
 extern int __VERIFIER_nondet_int(void);

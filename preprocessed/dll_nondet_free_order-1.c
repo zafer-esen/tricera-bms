@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 extern int __VERIFIER_nondet_int();
 
@@ -29,22 +33,22 @@ extern int __VERIFIER_nondet_int();
 typedef struct node {
   struct node* next;
   struct node* prev;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL dll_circular_create(int len) {
-  DLL last = malloc(sizeof(struct node));
+DLL* dll_circular_create(int len) {
+  DLL* last = malloc(sizeof(struct node));
   if(0 == last) {
     myexit(1);
   }
   last->next = last;
   last->prev = last;
-  DLL head = last;
+  DLL* head = last;
   while(len > 1) {
-    DLL new_head = malloc(sizeof(struct node));
+    DLL* new_head = malloc(sizeof(struct node));
     if(0 == new_head) {
       myexit(1);
     }
@@ -59,9 +63,9 @@ DLL dll_circular_create(int len) {
 }
 
 
-void _destroy_in_nondeterministic_order(DLL head) {
-  DLL pred = head->prev;
-  DLL succ = head->next;
+void _destroy_in_nondeterministic_order(DLL* head) {
+  DLL* pred = head->prev;
+  DLL* succ = head->next;
   if(__VERIFIER_nondet_int()) {
     __foo(head);
     if(__VERIFIER_nondet_int()) {
@@ -95,7 +99,7 @@ void _destroy_in_nondeterministic_order(DLL head) {
 int main() {
 
   const int len = 3;
-  DLL head = dll_circular_create(len);
+  DLL* head = dll_circular_create(len);
   _destroy_in_nondeterministic_order(head);
   head = 0;
   return 0;

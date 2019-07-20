@@ -21,7 +21,7 @@ struct list_head {
 #define list_entry(ptr, type, member) \
 	((type *)((char *)(ptr)-(unsigned long)(&((type *)0)->member)))
 
-static inline void __list_add(struct list_head *new,
+static void __list_add(struct list_head *new,
                               struct list_head *prev,
                               struct list_head *next)
 {
@@ -31,7 +31,7 @@ static inline void __list_add(struct list_head *new,
     prev->next = new;
 }
 
-static inline void list_add_tail(struct list_head *new, struct list_head *head)
+static void list_add_tail(struct list_head *new, struct list_head *head)
 {
     __list_add(new, head->prev, head);
 }

@@ -1,29 +1,9 @@
-# 1 "<stdin>"
-# 1 "<built-in>"
-# 1 "<command-line>"
-# 31 "<command-line>"
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 32 "<command-line>" 2
-# 1 "<stdin>"
-# 1 "./stdlib.h" 1
-
-
-
-
-
-
-
-void __foo(void *arg){
-
-
-}
-# 2 "<stdin>" 2
 extern int __VERIFIER_nondet_int();
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 
+#include <stdlib.h>
 
-
-
-
+#define MAX_PROC 1000
 
 struct process_node {
     int process_id;
@@ -41,12 +21,12 @@ void append_to_queue(struct process_node *n, struct process_node **q) {
 
 struct process_node *choose_next(struct process_node **q) {
     struct process_node *node = *q;
-    struct process_node *prev = 0;
-    struct process_node *result = 0;
-    while (node != 0) {
+    struct process_node *prev = NULL;
+    struct process_node *result = NULL;
+    while (node != NULL) {
         if (node->time_to_wait == 1) {
             result = node;
-            if (prev == 0)
+            if (prev == NULL)
                 *q = node->next;
             else
                 prev->next = node->next;
@@ -60,21 +40,22 @@ struct process_node *choose_next(struct process_node **q) {
 }
 
 void check_queue(struct process_node *q) {
-    for (struct process_node *n = q; n != 0; n = n->next)
+  struct process_node *n;
+    for (n = q; n != NULL; n = n->next)
         if (!(n->time_to_wait >= 1))
-            assert(0);
+            __VERIFIER_error();
 }
 
 
 int main() {
-    struct process_node *queue = 0;
+    struct process_node *queue = NULL;
     int next_time = 1;
 
     while (__VERIFIER_nondet_int()) {
-        if (next_time < 1000 && __VERIFIER_nondet_int()) {
+        if (next_time < MAX_PROC && __VERIFIER_nondet_int()) {
             int new_id = __VERIFIER_nondet_int();
-
-            struct process_node *new_process = malloc(sizeof(*new_process));
+            
+            struct process_node *new_process = malloc(sizeof(struct process_node));
             new_process->process_id = __VERIFIER_nondet_int();
             new_process->time_to_wait = next_time++;
             append_to_queue(new_process, &queue);
@@ -85,5 +66,5 @@ int main() {
         }
 
         check_queue(queue);
-    }
+    } 
 }

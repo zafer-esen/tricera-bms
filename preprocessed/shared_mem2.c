@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 extern int __VERIFIER_nondet_int();
 
@@ -34,10 +38,10 @@ struct list_node {
 };
 
 int main() {
-    struct mem *m = malloc(sizeof(*m));
+    struct mem *m = malloc(sizeof(struct mem));
     m->val = 0;
 
-    struct list_node *head = malloc(sizeof(*head));
+    struct list_node *head = malloc(sizeof(struct list_node));
     head->x = 1;
     head->mem = m;
     head->next = head;
@@ -47,7 +51,7 @@ int main() {
     while (__VERIFIER_nondet_int()) {
         int x = __VERIFIER_nondet_int();
         if (x > 0 && x < 10) {
-            struct list_node *n = malloc(sizeof(*n));
+            struct list_node *n = malloc(sizeof(struct list_node));
             n->x = x;
             n->mem = m;
             n->next = head;

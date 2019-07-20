@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 # 10 "<stdin>"
 extern int __VERIFIER_nondet_int();
@@ -35,7 +39,8 @@ node_t* init_nondet_ll (int n)
   curr->val = 0;
   head = curr;
 
-  for (int i = 1; i < n; i++) {
+  int i;
+  for (i = 1; i < n; i++) {
     node_t* next_node = malloc(sizeof(node_t));
     next_node->val = i;
     curr->next = next_node;

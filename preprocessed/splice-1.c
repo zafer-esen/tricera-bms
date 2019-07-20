@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 
 
@@ -29,20 +33,20 @@ void myexit(int s) {
 typedef struct node {
   int h;
   struct node *n;
-} *List;
+} List;
 
 int main() {
   int flag = 1;
 
 
-  List a = malloc(sizeof(struct node));
+  List* a = malloc(sizeof(struct node));
   if (a == 0) myexit(1);
-  List t;
-  List l1;
-  List l2;
-  List b;
-  List u;
-  List p = a;
+  List* t;
+  List* l1;
+  List* l2;
+  List* b;
+  List* u;
+  List* p = a;
   while (__VERIFIER_nondet_int()) {
     if (flag) {
       p->h = 1;

@@ -21,7 +21,7 @@ void push()
 
     switch (pc1++) {
         case 1:
-            x1 = malloc(sizeof(*x1));
+            x1 = malloc(sizeof(struct cell));
             x1->data = 0;
             x1->next = NULL;
             return;

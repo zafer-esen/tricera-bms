@@ -14,16 +14,16 @@ typedef struct node {
   int data_1;
   struct node* prev;
   int data_2;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL dll_create(int len) {
-  DLL head = NULL;
+DLL* dll_create(int len) {
+  DLL* head = NULL;
   while(len > 0) {
-    DLL new_head = (DLL) malloc(sizeof(struct node));
+    DLL* new_head = (DLL*) malloc(sizeof(struct node));
     if(NULL == new_head) {
       myexit(1);
     }
@@ -44,7 +44,7 @@ DLL dll_create(int len) {
 
 int main() {
   const int len = 5;
-  DLL head = dll_create(len);
+  DLL* head = dll_create(len);
   /* forward traversal */
   while(head->next) {
     if(0 != head->data_0 || 0 != head->data_1 || 0 != head->data_2) {
@@ -54,7 +54,7 @@ int main() {
   }
   // backward traversal
   while(head) {
-    DLL temp = head->prev;
+    DLL* temp = head->prev;
     if(0 != head->data_0 || 0 != head->data_1 || 0 != head->data_2) {
       goto ERROR;
     }

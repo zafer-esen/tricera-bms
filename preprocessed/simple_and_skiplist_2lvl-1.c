@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 
 
@@ -40,7 +44,7 @@ struct sl_item* alloc_or_die(void)
 
 struct sl* create_sl_with_head_and_tail(void)
 {
- struct sl *sl = malloc(sizeof(*sl));
+ struct sl *sl = malloc(sizeof(struct sl));
 
  sl->head = malloc(sizeof(struct sl_item));
  sl->tail = malloc(sizeof(struct sl_item));
@@ -100,14 +104,14 @@ void myexit(int s) {
 typedef struct node {
   int h;
   struct node *n;
-} *List;
+} List;
 
 int main() {
 
-  List a = malloc(sizeof(struct node));
+  List* a = malloc(sizeof(struct node));
   if (a == 0) myexit(1);
-  List t;
-  List p = a;
+  List* t;
+  List* p = a;
   a->h = 2;
   while (__VERIFIER_nondet_int()) {
     p->h = 1;

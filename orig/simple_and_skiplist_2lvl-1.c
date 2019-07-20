@@ -35,7 +35,7 @@ struct sl_item* alloc_or_die(void)
 
 struct sl* create_sl_with_head_and_tail(void)
 {
-	struct sl *sl = malloc(sizeof(*sl));
+	struct sl *sl = malloc(sizeof(struct sl));
 
 	sl->head = malloc(sizeof(struct sl_item));
 	sl->tail = malloc(sizeof(struct sl_item));
@@ -95,18 +95,18 @@ void myexit(int s) {
 typedef struct node {
   int h;
   struct node *n;
-} *List;
+} List;
 
 int main() {
   /* Build a list of the form 1->...->1->0 */
-  List a = (List) malloc(sizeof(struct node));
+  List* a = (List*) malloc(sizeof(struct node));
   if (a == 0) myexit(1);
-  List t;
-  List p = a;
+  List* t;
+  List* p = a;
   a->h = 2;
   while (__VERIFIER_nondet_int()) {
     p->h = 1;
-    t = (List) malloc(sizeof(struct node));
+    t = (List*) malloc(sizeof(struct node));
     if (t == 0) myexit(1);
     p->n = t;
     p = p->n;

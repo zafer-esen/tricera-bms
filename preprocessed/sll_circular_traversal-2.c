@@ -17,27 +17,31 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 # 11 "<stdin>"
 typedef struct node {
   struct node* next;
   int data;
-} *SLL;
+} SLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-SLL sll_circular_create(int len, int data) {
-  SLL const last = malloc(sizeof(struct node));
+SLL* sll_circular_create(int len, int data) {
+  SLL* const last = malloc(sizeof(struct node));
   if(0 == last){
     myexit(1);
   }
   last->next = last;
   last->data = data;
-  SLL head = last;
+  SLL* head = last;
   while(len > 1) {
-    SLL new_head = malloc(sizeof(struct node));
+    SLL* new_head = malloc(sizeof(struct node));
     if(0 == new_head){
       myexit(1);
     }
@@ -53,10 +57,10 @@ SLL sll_circular_create(int len, int data) {
 int main() {
   const int len = 5;
   const int data_init = 1;
-  SLL const head = sll_circular_create(len, data_init);
+  SLL* const head = sll_circular_create(len, data_init);
 
   int data_new = 1;
-  SLL ptr = head;
+  SLL* ptr = head;
   do {
     if(data_init != ptr->data) {
       goto ERROR;
@@ -71,7 +75,7 @@ int main() {
     if(data_new != ptr->data) {
       goto ERROR;
     }
-    SLL temp = ptr->next;
+    SLL* temp = ptr->next;
     __foo(ptr);
     ptr = temp;
     data_new++;

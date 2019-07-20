@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 extern int __VERIFIER_nondet_int(void);
 # 15 "<stdin>"
@@ -34,7 +38,7 @@ typedef struct TTreeNode
 
 int main()
 {
- TreeNode* tree = malloc(sizeof(*tree));
+ TreeNode* tree = malloc(sizeof(TreeNode));
  TreeNode* tmp;
  ListNode* tmpList;
 
@@ -69,12 +73,12 @@ int main()
   TreeNode* newNode;
   if ((0 == tmp->left) && __VERIFIER_nondet_int())
   {
-   newNode = malloc(sizeof(*newNode));
+   newNode = malloc(sizeof(TreeNode));
    tmp->left = newNode;
   }
   else if ((0 == tmp->right) && __VERIFIER_nondet_int())
   {
-   newNode = malloc(sizeof(*newNode));
+   newNode = malloc(sizeof(TreeNode));
    tmp->right = newNode;
   }
   else
@@ -84,7 +88,7 @@ int main()
 
   newNode->left = 0;
   newNode->right = 0;
-  newNode->list = malloc(sizeof(*newNode->list));
+  newNode->list = malloc(sizeof(ListNode));
   newNode->list->next = newNode->list;
 
   while (__VERIFIER_nondet_int())

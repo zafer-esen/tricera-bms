@@ -8,14 +8,14 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 typedef struct node {
   struct node *next;
   int data;
-} *SLL;
+} SLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-SLL node_create(int data) {
-  SLL temp = (SLL) malloc(sizeof(struct node));
+SLL* node_create(int data) {
+  SLL* temp = (SLL*) malloc(sizeof(struct node));
   if(NULL == temp) {
     myexit(1);
   }
@@ -24,11 +24,11 @@ SLL node_create(int data) {
   return temp;
 }
 
-SLL sll_circular_create(int len, int data) {
-  SLL head = node_create(data);
-  SLL last = head;
+SLL* sll_circular_create(int len, int data) {
+  SLL* head = node_create(data);
+  SLL* last = head;
   while(len > 1) {
-    SLL new_head = node_create(data);
+    SLL* new_head = node_create(data);
     new_head->next = head;
     head = new_head;
     len--;
@@ -37,11 +37,11 @@ SLL sll_circular_create(int len, int data) {
   return head;
 }
 
-void sll_circular_destroy(SLL head) {
+void sll_circular_destroy(SLL* head) {
   if(NULL != head) {
-    SLL p = head->next;
+    SLL* p = head->next;
     while(p != head) {
-      SLL q = p->next;
+      SLL* q = p->next;
       free(p);
       p = q;
     }
@@ -49,10 +49,10 @@ void sll_circular_destroy(SLL head) {
   }
 }
 
-void sll_circular_insert(SLL* head, int data, int index) {
-  SLL new_node = node_create(data);
-  SLL snd_to_last = NULL;
-  SLL last = *head;
+void sll_circular_insert(SLL** head, int data, int index) {
+  SLL* new_node = node_create(data);
+  SLL* snd_to_last = NULL;
+  SLL* last = *head;
   while(index > 0) {
     snd_to_last = last;
     last = last->next;
@@ -76,13 +76,13 @@ int main(void) {
 
   const int len = 2;
   const int data = 1;
-  SLL s = sll_circular_create(len, data);
+  SLL* s = sll_circular_create(len, data);
 
   const int uneq = 5;
   const int mid_index = len / 2;
   sll_circular_insert(&s, uneq, mid_index);
 
-  SLL ptr = s;
+  SLL* ptr = s;
   int count = 0;
   do {
     if(data != ptr->data) {

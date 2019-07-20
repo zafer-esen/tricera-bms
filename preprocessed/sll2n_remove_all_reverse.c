@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 
 
@@ -28,14 +32,14 @@ void __foo(void *arg){
 typedef struct node {
   int data;
   struct node* next;
-} *SLL;
+} SLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-SLL node_create(int data) {
-  SLL temp = malloc(sizeof(struct node));
+SLL* node_create(int data) {
+  SLL* temp = malloc(sizeof(struct node));
   if(0 == temp) {
     myexit(1);
   }
@@ -44,23 +48,23 @@ SLL node_create(int data) {
   return temp;
 }
 
-SLL sll_create(int len, int data) {
-  SLL head = 0;
+SLL* sll_create(int len, int data) {
+  SLL* head = 0;
   for(; len > 0; len--) {
-    SLL new_head = node_create(data);
+    SLL* new_head = node_create(data);
     new_head->next = head;
     head = new_head;
   }
   return head;
 }
 
-void sll_remove_last(SLL* head) {
+void sll_remove_last(SLL** head) {
   if(0 == (*head)->next) {
     __foo(*head);
     *head = 0;
   } else {
-    SLL snd_to_last = 0;
-    SLL last = *head;
+    SLL* snd_to_last = 0;
+    SLL* last = *head;
     while(last->next) {
       snd_to_last = last;
       last = last->next;
@@ -73,7 +77,7 @@ void sll_remove_last(SLL* head) {
 int main() {
   const int len = 2;
   const int data = 1;
-  SLL s = sll_create(len, data);
+  SLL* s = sll_create(len, data);
   int i;
   for(i = len - 1; i >= 0; i--) {
     sll_remove_last(&s);

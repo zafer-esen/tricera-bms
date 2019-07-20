@@ -9,14 +9,14 @@ typedef struct node {
   int data;
   struct node* next;
   struct node* prev;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL node_create(int data) {
-  DLL temp = (DLL) malloc(sizeof(struct node));
+DLL* node_create(int data) {
+  DLL* temp = (DLL*) malloc(sizeof(struct node));
   if(NULL == temp) {
     myexit(1);
   }
@@ -26,10 +26,10 @@ DLL node_create(int data) {
   return temp;
 }
 
-DLL dll_create(int len, int data) {
-  DLL head = NULL;
+DLL* dll_create(int len, int data) {
+  DLL* head = NULL;
   while(len > 0) {
-    DLL new_head = (DLL) malloc(sizeof(struct node));
+    DLL* new_head = (DLL*) malloc(sizeof(struct node));
     if(NULL == new_head) {
       myexit(1);
     }
@@ -45,18 +45,18 @@ DLL dll_create(int len, int data) {
   return head;
 }
 
-void dll_destroy(DLL head) {
+void dll_destroy(DLL* head) {
   while(head) {
-    DLL temp = head->next;
+    DLL* temp = head->next;
     free(head);
     head = temp;
   }
 }
 
-void dll_insert(DLL* head, int data, int index) {
-  DLL new_node = node_create(data);
-  DLL snd_to_last = NULL;
-  DLL last = *head;
+void dll_insert(DLL** head, int data, int index) {
+  DLL* new_node = node_create(data);
+  DLL* snd_to_last = NULL;
+  DLL* last = *head;
   while(index > 0) {
     snd_to_last = last;
     last = last->next;
@@ -82,16 +82,16 @@ int main() {
 
   const int len = 2;
   const int data = 1;
-  DLL s = dll_create(len, data);
+  DLL* s = dll_create(len, data);
 
   const int uneq = 5;
   const int mid_index = len / 2;
   dll_insert(&s, uneq, mid_index);
 
-  DLL ptr = s;
+  DLL* ptr = s;
   int count = 0;
   while(ptr && count != mid_index) {
-    DLL temp = ptr->next;
+    DLL* temp = ptr->next;
     if(data != ptr->data) {
       goto ERROR;
     }
@@ -105,7 +105,7 @@ int main() {
   ptr = ptr->next;
   count++;
   while(ptr) {
-    DLL temp = ptr->next;
+    DLL* temp = ptr->next;
     if(data != ptr->data) {
       goto ERROR;
     }

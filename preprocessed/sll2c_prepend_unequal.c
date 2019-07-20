@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 
 
@@ -28,14 +32,14 @@ void __foo(void *arg){
 typedef struct node {
   struct node *next;
   int data;
-} *SLL;
+} SLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-SLL node_create(int data) {
-  SLL temp = malloc(sizeof(struct node));
+SLL* node_create(int data) {
+  SLL* temp = malloc(sizeof(struct node));
   if(0 == temp) {
     myexit(1);
   }
@@ -44,11 +48,11 @@ SLL node_create(int data) {
   return temp;
 }
 
-SLL sll_circular_create(int len, int data) {
-  SLL head = node_create(data);
-  SLL last = head;
+SLL* sll_circular_create(int len, int data) {
+  SLL* head = node_create(data);
+  SLL* last = head;
   while(len > 1) {
-    SLL new_head = node_create(data);
+    SLL* new_head = node_create(data);
     new_head->next = head;
     head = new_head;
     len--;
@@ -57,11 +61,11 @@ SLL sll_circular_create(int len, int data) {
   return head;
 }
 
-void sll_circular_destroy(SLL head) {
+void sll_circular_destroy(SLL* head) {
   if(0 != head) {
-    SLL p = head->next;
+    SLL* p = head->next;
     while(p != head) {
-      SLL q = p->next;
+      SLL* q = p->next;
       __foo(p);
       p = q;
     }
@@ -69,13 +73,13 @@ void sll_circular_destroy(SLL head) {
   }
 }
 
-void sll_circular_prepend(SLL* head, int data) {
-  SLL new_head = node_create(data);
+void sll_circular_prepend(SLL** head, int data) {
+  SLL* new_head = node_create(data);
   if(0 == *head) {
     *head = new_head;
     new_head->next = new_head;
   } else {
-    SLL last = *head;
+    SLL* last = *head;
     while(last->next != *head) {
       last = last->next;
     }
@@ -89,12 +93,12 @@ int main(void) {
 
   const int len = 2;
   const int data = 1;
-  SLL s = sll_circular_create(len, data);
+  SLL* s = sll_circular_create(len, data);
 
   const int uneq = 5;
   sll_circular_prepend(&s, uneq);
 
-  SLL ptr = s;
+  SLL* ptr = s;
   if(uneq != ptr->data) {
     goto ERROR;
   }

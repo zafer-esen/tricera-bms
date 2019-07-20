@@ -13,7 +13,7 @@ struct node {
 };
 
 void append_to_list(struct node **list, int val, int exp) {
-    struct node *node = malloc(sizeof(*node));
+    struct node *node = malloc(sizeof(struct node));
     node->next = *list;
     node->value = val;
     node->expected_list = exp;

@@ -9,14 +9,14 @@ typedef struct node {
   struct node *next;
   struct node *prev;
   int data;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL node_create(int data) {
-  DLL temp = (DLL) malloc(sizeof(struct node));
+DLL* node_create(int data) {
+  DLL* temp = (DLL*) malloc(sizeof(struct node));
   if(NULL == temp) {
     myexit(1);
   }
@@ -26,11 +26,11 @@ DLL node_create(int data) {
   return temp;
 }
 
-DLL dll_circular_create(int len, int data) {
-  DLL head = node_create(data);
-  DLL last = head;
+DLL* dll_circular_create(int len, int data) {
+  DLL* head = node_create(data);
+  DLL* last = head;
   while(len > 1) {
-    DLL new_head = node_create(data);
+    DLL* new_head = node_create(data);
     new_head->next = head;
     if(head) {
       head->prev = new_head;
@@ -43,11 +43,11 @@ DLL dll_circular_create(int len, int data) {
   return head;
 }
 
-void dll_circular_destroy(DLL head) {
+void dll_circular_destroy(DLL* head) {
   if(NULL != head) {
-    DLL p = head->next;
+    DLL* p = head->next;
     while(p != head) {
-      DLL q = p->next;
+      DLL* q = p->next;
       free(p);
       p = q;
     }
@@ -55,7 +55,7 @@ void dll_circular_destroy(DLL head) {
   }
 }
 
-int dll_circular_get_data_at(DLL head, int index) {
+int dll_circular_get_data_at(DLL* head, int index) {
   while(index > 0) {
     head = head->next;
     index--;
@@ -63,7 +63,7 @@ int dll_circular_get_data_at(DLL head, int index) {
   return head->data;
 }
 
-void dll_circular_update_at(DLL head, int data, int index) {
+void dll_circular_update_at(DLL* head, int data, int index) {
   while(index > 0) {
     head = head->next;
     index--;
@@ -74,7 +74,7 @@ void dll_circular_update_at(DLL head, int data, int index) {
 int main() {
   const int len = 2;
   const int data = 1;
-  DLL s = dll_circular_create(len, data);
+  DLL* s = dll_circular_create(len, data);
   int i = 0;
     for(i = 0; i < len; i++) {
     int new_data = i + len;

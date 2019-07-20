@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 extern int __VERIFIER_nondet_int();
 
@@ -85,7 +89,7 @@ int main() {
     int min = 0x7fffffff, max = -0x7fffffff;
 
     while (__VERIFIER_nondet_int()) {
-        Node *p = malloc(sizeof(*p));
+        Node *p = malloc(sizeof(Node));
         p->val = __VERIFIER_nondet_int();
         {p->next=l; l=p;}
 

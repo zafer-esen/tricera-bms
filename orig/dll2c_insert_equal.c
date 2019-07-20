@@ -9,14 +9,14 @@ typedef struct node {
   struct node *next;
   struct node *prev;
   int data;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL node_create(int data) {
-  DLL temp = (DLL) malloc(sizeof(struct node));
+DLL* node_create(int data) {
+  DLL* temp = (DLL*) malloc(sizeof(struct node));
   if(NULL == temp) {
     myexit(1);
   }
@@ -26,11 +26,11 @@ DLL node_create(int data) {
   return temp;
 }
 
-DLL dll_circular_create(int len, int data) {
-  DLL head = node_create(data);
-  DLL last = head;
+DLL* dll_circular_create(int len, int data) {
+  DLL* head = node_create(data);
+  DLL* last = head;
   while(len > 1) {
-    DLL new_head = node_create(data);
+    DLL* new_head = node_create(data);
     new_head->next = head;
     if(head) {
       head->prev = new_head;
@@ -43,11 +43,11 @@ DLL dll_circular_create(int len, int data) {
   return head;
 }
 
-void dll_circular_destroy(DLL head) {
+void dll_circular_destroy(DLL* head) {
   if(NULL != head) {
-    DLL p = head->next;
+    DLL* p = head->next;
     while(p != head) {
-      DLL q = p->next;
+      DLL* q = p->next;
       free(p);
       p = q;
     }
@@ -55,10 +55,10 @@ void dll_circular_destroy(DLL head) {
   }
 }
 
-void dll_circular_insert(DLL* head, int data, int index) {
-  DLL new_node = node_create(data);
-  DLL snd_to_last = NULL;
-  DLL last = *head;
+void dll_circular_insert(DLL** head, int data, int index) {
+  DLL* new_node = node_create(data);
+  DLL* snd_to_last = NULL;
+  DLL* last = *head;
   while(index > 0) {
     snd_to_last = last;
     last = last->next;
@@ -87,11 +87,11 @@ int main(void) {
 
   const int len = 2;
   const int data = 1;
-  DLL s = dll_circular_create(len, data);
+  DLL* s = dll_circular_create(len, data);
 
   dll_circular_insert(&s, data, len / 2);
 
-  DLL ptr = s;
+  DLL* ptr = s;
   int count = 0;
   do {
     if(data != ptr->data) {

@@ -2,6 +2,7 @@
 
 extern int __VERIFIER_nondet_int(void);
 
+/*@ contract @*/
 void rec(int *op, int i) {
 	if(i < 0) {
 		(*op)--;

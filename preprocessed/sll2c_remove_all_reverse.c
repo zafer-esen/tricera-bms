@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 
 
@@ -28,14 +32,14 @@ void __foo(void *arg){
 typedef struct node {
   struct node *next;
   int data;
-} *SLL;
+} SLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-SLL node_create(int data) {
-  SLL temp = malloc(sizeof(struct node));
+SLL* node_create(int data) {
+  SLL* temp = malloc(sizeof(struct node));
   if(0 == temp) {
     myexit(1);
   }
@@ -44,11 +48,11 @@ SLL node_create(int data) {
   return temp;
 }
 
-SLL sll_circular_create(int len, int data) {
-  SLL head = node_create(data);
-  SLL last = head;
+SLL* sll_circular_create(int len, int data) {
+  SLL* head = node_create(data);
+  SLL* last = head;
   while(len > 1) {
-    SLL new_head = node_create(data);
+    SLL* new_head = node_create(data);
     new_head->next = head;
     head = new_head;
     len--;
@@ -57,8 +61,8 @@ SLL sll_circular_create(int len, int data) {
   return head;
 }
 
-void sll_circular_remove_last(SLL* head) {
-  SLL last = *head;
+void sll_circular_remove_last(SLL** head) {
+  SLL* last = *head;
   while(last->next != *head) {
     last = last->next;
   }
@@ -66,7 +70,7 @@ void sll_circular_remove_last(SLL* head) {
     __foo(*head);
     *head = 0;
   } else {
-    SLL snd_to_last = *head;
+    SLL* snd_to_last = *head;
     while(snd_to_last->next != last) {
       snd_to_last = snd_to_last->next;
     }
@@ -78,7 +82,7 @@ void sll_circular_remove_last(SLL* head) {
 int main() {
   const int len = 2;
   const int data = 1;
-  SLL s = sll_circular_create(len, data);
+  SLL* s = sll_circular_create(len, data);
   int i;
   for(i = 0; i < len; i++) {
     sll_circular_remove_last(&s);

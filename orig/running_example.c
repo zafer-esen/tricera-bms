@@ -9,14 +9,14 @@ typedef struct node {
 } Node;
 
 int main() {
-    Node *p, *list = malloc(sizeof(*list));
+    Node *p, *list = malloc(sizeof(Node));
     Node *tail = list;
     list->next = NULL;
     list->val = 10;
     while (__VERIFIER_nondet_int()) {
         int x = __VERIFIER_nondet_int();
         if (x < 10 || x > 20) continue;
-        p = malloc(sizeof(*p));
+        p = malloc(sizeof(Node));
         tail->next = p;
         p->next = NULL;
         p->val = x;

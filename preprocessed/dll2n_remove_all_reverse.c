@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 
 
@@ -29,14 +33,14 @@ typedef struct node {
   int data;
   struct node* next;
   struct node* prev;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL node_create(int data) {
-  DLL temp = malloc(sizeof(struct node));
+DLL* node_create(int data) {
+  DLL* temp = malloc(sizeof(struct node));
   if(0 == temp) {
     myexit(1);
   }
@@ -46,10 +50,10 @@ DLL node_create(int data) {
   return temp;
 }
 
-DLL dll_create(int len, int data) {
-  DLL head = 0;
+DLL* dll_create(int len, int data) {
+  DLL* head = 0;
   while(len > 0) {
-    DLL new_head = malloc(sizeof(struct node));
+    DLL* new_head = malloc(sizeof(struct node));
     if(0 == new_head) {
       myexit(1);
     }
@@ -65,13 +69,13 @@ DLL dll_create(int len, int data) {
   return head;
 }
 
-void dll_remove_last(DLL* head) {
+void dll_remove_last(DLL** head) {
   if(0 == (*head)->next) {
     __foo(*head);
     *head = 0;
   } else {
-    DLL snd_to_last = 0;
-    DLL last = *head;
+    DLL* snd_to_last = 0;
+    DLL* last = *head;
     while(last->next) {
       snd_to_last = last;
       last = last->next;
@@ -84,7 +88,7 @@ void dll_remove_last(DLL* head) {
 int main() {
   const int len = 2;
   const int data = 1;
-  DLL s = dll_create(len, data);
+  DLL* s = dll_create(len, data);
   int i;
   for(i = len - 1; i >= 0; i--) {
     dll_remove_last(&s);

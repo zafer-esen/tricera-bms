@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 extern int __VERIFIER_nondet_int();
 
@@ -29,14 +33,14 @@ typedef struct node {
 } Node;
 
 int main() {
-    Node *p, *list = malloc(sizeof(*list));
+    Node *p, *list = malloc(sizeof(Node));
     Node *tail = list;
     list->next = 0;
     list->val = 10;
     while (__VERIFIER_nondet_int()) {
         int x = __VERIFIER_nondet_int();
         if (x < 10 || x > 20) continue;
-        p = malloc(sizeof(*p));
+        p = malloc(sizeof(Node));
         tail->next = p;
         p->next = 0;
         p->val = x;

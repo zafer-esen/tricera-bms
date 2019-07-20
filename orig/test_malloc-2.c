@@ -32,8 +32,8 @@ int main(void) {
 	int *p1=&a;
 	int *p2=&b;
 //#endif
-	if(p1!=0 && p2!=0) {
+//	if(p1!=0 && p2!=0) {
 		__VERIFIER_assert(p1!=p2);
-	}
+//	}
 	return 0;
 }

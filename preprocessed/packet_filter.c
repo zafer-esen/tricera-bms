@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 extern unsigned __VERIFIER_nondet_uint();
 extern int __VERIFIER_nondet_int();
@@ -37,7 +41,7 @@ typedef struct packet {
 typedef struct packet_list_node {
     struct packet packet;
     struct packet_list_node *next;
-} *Node;
+} Node;
 
 struct packet_queue {
     struct packet_list_node *front;
@@ -54,23 +58,25 @@ Packet receive() {
 
 void send(struct packet p) { (void)p; }
 
-void append_to_queue(Packet p, Node *q) {
-    Node node = malloc(sizeof(*node));
+void append_to_queue(Packet p, Node** q) {
+    Node* node = malloc(sizeof(Node));
     node->packet = p;
     node->next = *q;
     *q = node;
 }
 
-void process_prio_queue(Node q) {
-    for (Node node = q; node != 0; node = node->next) {
+void process_prio_queue(Node* q) {
+  Node* node;
+    for (node = q; node != 0; node = node->next) {
         if (!(node->packet.prio == 1 || node->packet.size < 500))
             assert(0);
         send(node->packet);
     }
 }
 
-void process_normal_queue(Node q) {
-    for (Node node = q; node != 0; node = node->next) {
+void process_normal_queue(Node* q) {
+  Node* node;
+    for (node = q; node != 0; node = node->next) {
         if (!(node->packet.prio == 0 && node->packet.size >= 500))
             assert(0);
         send(node->packet);
@@ -78,8 +84,8 @@ void process_normal_queue(Node q) {
 }
 
 int main() {
-    Node prio_queue = 0;
-    Node normal_queue = 0;
+    Node* prio_queue = 0;
+    Node* normal_queue = 0;
 
     while (__VERIFIER_nondet_int()) {
         Packet new_packet = receive();

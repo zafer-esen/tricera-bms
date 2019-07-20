@@ -17,6 +17,10 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 
 
@@ -41,7 +45,7 @@ void push()
 {
     switch (pc1++) {
         case 1:
-            x1 = malloc(sizeof(*x1));
+            x1 = malloc(sizeof(struct cell));
             x1->data = 0;
             x1->next = 0;
             return;

@@ -10,22 +10,22 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 typedef struct node {
   struct node* next;
   int data;
-} *SLL;
+} SLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-SLL sll_circular_create(int len, int data) {
-  SLL const last = (SLL) malloc(sizeof(struct node));
+SLL* sll_circular_create(int len, int data) {
+  SLL* const last = (SLL*) malloc(sizeof(struct node));
   if(NULL == last){
     myexit(1);
   }
   last->next = last;
   last->data = data;
-  SLL head = last;
+  SLL* head = last;
   while(len > 1) {
-    SLL new_head = (SLL) malloc(sizeof(struct node));
+    SLL* new_head = (SLL*) malloc(sizeof(struct node));
     if(NULL == new_head){
       myexit(1);
     }
@@ -41,10 +41,10 @@ SLL sll_circular_create(int len, int data) {
 int main() {
   const int len = 5;
   const int data_init = 1;
-  SLL const head = sll_circular_create(len, data_init);
+  SLL* const head = sll_circular_create(len, data_init);
   /* first traversal */
   int data_new = 1;
-  SLL ptr = head;
+  SLL* ptr = head;
   do {
     if(data_init != ptr->data) {
       goto ERROR;
@@ -59,7 +59,7 @@ int main() {
     if(data_new != ptr->data) {
       goto ERROR;
     }
-    SLL temp = ptr->next;
+    SLL* temp = ptr->next;
     free(ptr);
     ptr = temp;
     data_new++;

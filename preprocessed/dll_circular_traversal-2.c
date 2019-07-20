@@ -17,29 +17,33 @@ void __foo(void *arg){
 
 
 }
+
+void abort(void){
+  return 1;
+}
 # 2 "<stdin>" 2
 # 11 "<stdin>"
 typedef struct node {
   int data;
   struct node* next;
   struct node* prev;
-} *DLL;
+} DLL;
 
 void myexit(int s) {
  _EXIT: goto _EXIT;
 }
 
-DLL dll_circular_create(int len, int data) {
-  DLL last = malloc(sizeof(struct node));
+DLL* dll_circular_create(int len, int data) {
+  DLL* last = malloc(sizeof(struct node));
   if(0 == last){
     myexit(1);
   }
   last->next = last;
   last->prev = last;
   last->data = data;
-  DLL head = last;
+  DLL* head = last;
   while(len > 1) {
-    DLL new_head = malloc(sizeof(struct node));
+    DLL* new_head = malloc(sizeof(struct node));
     if(0 == new_head) {
       myexit(1);
     }
@@ -57,10 +61,10 @@ DLL dll_circular_create(int len, int data) {
 int main() {
   const int len = 5;
   const int data_init = 1;
-  DLL head = dll_circular_create(len, data_init);
+  DLL* head = dll_circular_create(len, data_init);
 
   int data_new = 1;
-  DLL ptr = head;
+  DLL* ptr = head;
   do {
     if(data_init != ptr->data) {
       goto ERROR;
@@ -78,7 +82,7 @@ int main() {
     if(data_new != ptr->data) {
       goto ERROR;
     }
-    DLL temp = ptr->prev;
+    DLL* temp = ptr->prev;
     __foo(ptr);
     ptr = temp;
   } while(ptr != 0);
