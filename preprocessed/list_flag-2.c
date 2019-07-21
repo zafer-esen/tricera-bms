@@ -37,7 +37,7 @@ typedef struct node {
 
 int main() {
   int flag = __VERIFIER_nondet_int();
-  List* p, a, t;
+  List *p, *a, *t;
 
 
 

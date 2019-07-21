@@ -37,12 +37,12 @@ typedef struct node {
 } List;
 
 int main() {
-  List* p, a, t;
+  List* p, *a, *t;
 
 
 
 
-  a = malloc(sizeof(struct node));
+  a = malloc(sizeof(List));
   if (a == 0) myexit(1);
   p = a;
 
@@ -58,7 +58,7 @@ int main() {
       p->h = 2;
     }
 
-    t = malloc(sizeof(struct node));
+    t = malloc(sizeof(List));
 
     if (t == 0) myexit(1);
 

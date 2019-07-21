@@ -21,12 +21,12 @@ typedef struct node {
 } List;
 
 int main() {  
-  List* p, a, t;
+  List* p, *a, *t;
 
   /* Build a list of the form 1->2->2->...->1->3
    * with 1,2 depending on some flag
    */
-  a = (List*) malloc(sizeof(struct node));
+  a = (List*) malloc(sizeof(List));
   if (a == 0) myexit(1);
   p = a;
   
@@ -42,7 +42,7 @@ int main() {
       p->h = 2;
     }
 
-    t = (List*) malloc(sizeof(struct node));
+    t = (List*) malloc(sizeof(List));
 
     if (t == 0) myexit(1);
 

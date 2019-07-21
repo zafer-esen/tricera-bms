@@ -21,7 +21,7 @@ typedef struct node {
 } List;
 
 int main() {
-  List* p, a, t;
+  List *p, *a, *t;
 
   /* Build a list of the form 1->2->2->...->1->3
    * with 1,2 depending on some flag

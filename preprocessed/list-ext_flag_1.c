@@ -37,7 +37,7 @@ typedef struct node {
 } List;
 
 int main() {
-  List* p, a, t;
+  List *p, *a, *t;
 
 
 

@@ -21,7 +21,7 @@ typedef struct node {
 
 int main() {
   int flag = __VERIFIER_nondet_int();
-  List* p, a, t;
+  List *p, *a, *t;
 
   /* Build a list of the form x->x->x->...->x->3
    * with x depending on some flag
