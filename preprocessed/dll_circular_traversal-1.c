@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -34,7 +28,7 @@ void myexit(int s) {
 }
 
 DLL* dll_circular_create(int len, int data) {
-  DLL* last = malloc(sizeof(struct node));
+  DLL* last = calloc(sizeof(struct node));
   if(0 == last){
     myexit(1);
   }
@@ -43,7 +37,7 @@ DLL* dll_circular_create(int len, int data) {
   last->data = data;
   DLL* head = last;
   while(len > 1) {
-    DLL* new_head = malloc(sizeof(struct node));
+    DLL* new_head = calloc(sizeof(struct node));
     if(0 == new_head) {
       myexit(1);
     }

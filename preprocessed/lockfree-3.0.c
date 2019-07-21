@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -45,7 +39,7 @@ void push()
 
     switch (pc1++) {
         case 1:
-            x1 = malloc(sizeof(struct cell));
+            x1 = calloc(sizeof(struct cell));
             x1->data = 0;
             x1->next = 0;
             return;

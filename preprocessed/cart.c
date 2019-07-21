@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -43,7 +37,7 @@ int main() {
         if (stock < 0)
             continue;
 
-        Node *p = malloc(sizeof(Node));
+        Node *p = calloc(sizeof(Node));
         p->stock = stock;
         p->order = 0;
         {p->next=l; l=p;}

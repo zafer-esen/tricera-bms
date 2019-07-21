@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -47,7 +41,7 @@ int main() {
 
     while (__VERIFIER_nondet_int()) {
 
-        struct T2* x = malloc(sizeof(struct T2));
+        struct T2* x = calloc(sizeof(struct T2));
         if (!x)
             abort();
 
@@ -60,7 +54,7 @@ int main() {
         struct T* y = 0;
 
         while (__VERIFIER_nondet_int()) {
-            y = malloc(sizeof(struct T));
+            y = calloc(sizeof(struct T));
             if (!y)
                 abort();
 

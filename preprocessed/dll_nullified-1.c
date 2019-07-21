@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -40,7 +34,7 @@ void myexit(int s) {
 DLL* dll_create(int len) {
   DLL* head = 0;
   while(len > 0) {
-    DLL* new_head = malloc(sizeof(struct node));
+    DLL* new_head = calloc(sizeof(struct node));
     if(0 == new_head) {
       myexit(1);
     }

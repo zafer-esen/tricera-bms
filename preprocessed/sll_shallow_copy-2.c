@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -38,7 +32,7 @@ void myexit(int s) {
 }
 
 struct node* alloc_node() {
-  struct node* temp = malloc(sizeof(struct node));
+  struct node* temp = calloc(sizeof(struct node));
   if(0 == temp) {
     myexit(1);
   }

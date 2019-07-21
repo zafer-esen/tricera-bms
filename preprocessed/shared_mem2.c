@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -38,10 +32,10 @@ struct list_node {
 };
 
 int main() {
-    struct mem *m = malloc(sizeof(struct mem));
+    struct mem *m = calloc(sizeof(struct mem));
     m->val = 0;
 
-    struct list_node *head = malloc(sizeof(struct list_node));
+    struct list_node *head = calloc(sizeof(struct list_node));
     head->x = 1;
     head->mem = m;
     head->next = head;
@@ -51,7 +45,7 @@ int main() {
     while (__VERIFIER_nondet_int()) {
         int x = __VERIFIER_nondet_int();
         if (x > 0 && x < 10) {
-            struct list_node *n = malloc(sizeof(struct list_node));
+            struct list_node *n = calloc(sizeof(struct list_node));
             n->x = x;
             n->mem = m;
             n->next = head;

@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -37,12 +31,12 @@ struct TSLL
 
 int main()
 {
- struct TSLL* null = malloc(sizeof(struct TSLL));
+ struct TSLL* null = calloc(sizeof(struct TSLL));
  null->next = 0;
  null->prev = 0;
  null->colour = BLACK;
 
- struct TSLL* list = malloc(sizeof(struct TSLL));
+ struct TSLL* list = calloc(sizeof(struct TSLL));
  list->next = null;
  list->prev = null;
  list->colour = BLACK;
@@ -53,7 +47,7 @@ int main()
  while (__VERIFIER_nondet_int())
  {
 
-  end->next = malloc(sizeof(struct TSLL));
+  end->next = calloc(sizeof(struct TSLL));
   end->next->prev = end;
   end = end->next;
   end->next = null;
@@ -65,7 +59,7 @@ int main()
   else
   {
    end->colour = RED;
-   end->next = malloc(sizeof(struct TSLL));
+   end->next = calloc(sizeof(struct TSLL));
    end->next->prev = end;
    end = end->next;
    end->next = null;

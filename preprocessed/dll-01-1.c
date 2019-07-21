@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -35,10 +29,10 @@ typedef struct TSLL
 int main()
 {
 
- SLL* list = malloc(sizeof(SLL));
+ SLL* list = calloc(sizeof(SLL));
  list->next = 0;
  list->prev = 0;
- __VERIFIER_assert(list != 0); if (__VERIFIER_nondet_int()) { list->inner = 0; } else { list->inner = malloc(sizeof(SLL)); list->inner->next = 0; list->inner->inner = 0; } __VERIFIER_assert(list->inner != 0 || list->inner == 0);;
+ __VERIFIER_assert(list != 0); if (__VERIFIER_nondet_int()) { list->inner = 0; } else { list->inner = calloc(sizeof(SLL)); list->inner->next = 0; list->inner->inner = 0; } __VERIFIER_assert(list->inner != 0 || list->inner == 0);;
 
  SLL* end = list;
 
@@ -46,12 +40,12 @@ int main()
  while (__VERIFIER_nondet_int())
  {
 
-  end->next = malloc(sizeof(SLL));
+  end->next = calloc(sizeof(SLL));
   end->next->prev = end;
   end = end->next;
   end->next = 0;
   __VERIFIER_assert(0 != end);
-  __VERIFIER_assert(end != 0); if (__VERIFIER_nondet_int()) { end->inner = 0; } else { end->inner = malloc(sizeof(SLL)); end->inner->next = 0; end->inner->inner = 0; } __VERIFIER_assert(end->inner != 0 || end->inner == 0);;
+  __VERIFIER_assert(end != 0); if (__VERIFIER_nondet_int()) { end->inner = 0; } else { end->inner = calloc(sizeof(SLL)); end->inner->next = 0; end->inner->inner = 0; } __VERIFIER_assert(end->inner != 0 || end->inner == 0);;
  }
 
  end = 0;

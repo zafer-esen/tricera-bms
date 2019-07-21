@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -43,16 +37,16 @@ typedef struct TBCK
 int main()
 {
 
- BCK* bucket = malloc(sizeof(BCK));
+ BCK* bucket = calloc(sizeof(BCK));
  bucket->data = 0;
  bucket->list = 0;
 
- bucket->next = malloc(sizeof(BCK));
+ bucket->next = calloc(sizeof(BCK));
  BCK* bcki = bucket->next;
  bcki->data = 1;
  bcki->list = 0;
 
- bcki->next = malloc(sizeof(BCK));
+ bcki->next = calloc(sizeof(BCK));
  bcki = bcki->next;
  bcki->data = 2;
  bcki->list = 0;
@@ -62,7 +56,7 @@ int main()
  struct TSLL* itr = 0;
  while (__VERIFIER_nondet_int())
  {
-  item = malloc(sizeof(SLL));
+  item = calloc(sizeof(SLL));
   item->next = 0;
   if (__VERIFIER_nondet_int())
    item->data = 0;

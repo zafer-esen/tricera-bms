@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -31,7 +25,7 @@ int main() {
   struct TreeNode* right;
  };
 
- struct TreeNode* root = malloc(sizeof(struct TreeNode)), *n;
+ struct TreeNode* root = calloc(sizeof(struct TreeNode)), *n;
  root->left = 0;
  root->right = 0;
 
@@ -44,12 +38,12 @@ int main() {
     n = n->right;
   }
   if (!n->left && __VERIFIER_nondet_int()) {
-   n->left = malloc(sizeof(struct TreeNode));
+   n->left = calloc(sizeof(struct TreeNode));
    n->left->left = 0;
    n->left->right = 0;
   }
   if (!n->right && __VERIFIER_nondet_int()) {
-   n->right = malloc(sizeof(struct TreeNode));
+   n->right = calloc(sizeof(struct TreeNode));
    n->right->left = 0;
    n->right->right = 0;
   }

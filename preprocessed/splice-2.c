@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -39,7 +33,7 @@ int main() {
   int flag = 1;
 
 
-  List* a = malloc(sizeof(struct node));
+  List* a = calloc(sizeof(struct node));
   if (a == 0) myexit(1);
   List* t;
   List* l1;
@@ -55,7 +49,7 @@ int main() {
       p->h = 2;
       flag = 1;
     }
-    t = malloc(sizeof(struct node));
+    t = calloc(sizeof(struct node));
     if (t == 0) myexit(1);
     p->n = t;
     p = p->n;

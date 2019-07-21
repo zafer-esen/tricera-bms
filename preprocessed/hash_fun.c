@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -37,7 +31,7 @@ struct node {
 int hash_fun() { return __VERIFIER_nondet_int(); }
 
 void append_to_list(struct node **list, int hash) {
-    struct node *node = malloc(sizeof(struct node));
+    struct node *node = calloc(sizeof(struct node));
     node->next = *list;
     node->hash = hash;
     *list = node;

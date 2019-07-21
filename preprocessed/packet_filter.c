@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -59,7 +53,7 @@ Packet receive() {
 void send(struct packet p) { (void)p; }
 
 void append_to_queue(Packet p, Node** q) {
-    Node* node = malloc(sizeof(Node));
+    Node* node = calloc(sizeof(Node));
     node->packet = p;
     node->next = *q;
     *q = node;

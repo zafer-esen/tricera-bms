@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -33,14 +27,14 @@ typedef struct node {
 } Node;
 
 int main() {
-    Node *p, *list = malloc(sizeof(Node));
+    Node *p, *list = calloc(sizeof(Node));
     Node *tail = list;
     list->next = 0;
     list->val = 10;
     while (__VERIFIER_nondet_int()) {
         int x = __VERIFIER_nondet_int();
         if (x < 10 || x > 20) continue;
-        p = malloc(sizeof(Node));
+        p = calloc(sizeof(Node));
         tail->next = p;
         p->next = 0;
         p->val = x;

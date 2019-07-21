@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -39,7 +33,7 @@ int main() {
   int flag = 1;
 
 
-  List* a = malloc(sizeof(List));
+  List* a = calloc(sizeof(List));
   if (a == 0) myexit(1);
   List* t = 0;
   List* p = a;
@@ -51,7 +45,7 @@ int main() {
       p->h = 1;
       flag = 1;
     }
-    t = malloc(sizeof(List));
+    t = calloc(sizeof(List));
     if (t == 0) myexit(1);
     p->n = t;
     p = p->n;

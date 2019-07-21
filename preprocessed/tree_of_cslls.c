@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -38,18 +32,18 @@ typedef struct TTreeNode
 
 int main()
 {
- TreeNode* tree = malloc(sizeof(TreeNode));
+ TreeNode* tree = calloc(sizeof(TreeNode));
  TreeNode* tmp;
  ListNode* tmpList;
 
  tree->left = 0;
  tree->right = 0;
- tree->list = malloc(sizeof(ListNode));
+ tree->list = calloc(sizeof(ListNode));
  tree->list->next = tree->list;
 
  while (__VERIFIER_nondet_int())
  {
-  tmpList = malloc(sizeof(ListNode));
+  tmpList = calloc(sizeof(ListNode));
   tmpList->next = tree->list->next;
   tree->list->next = tmpList;
  }
@@ -73,12 +67,12 @@ int main()
   TreeNode* newNode;
   if ((0 == tmp->left) && __VERIFIER_nondet_int())
   {
-   newNode = malloc(sizeof(TreeNode));
+   newNode = calloc(sizeof(TreeNode));
    tmp->left = newNode;
   }
   else if ((0 == tmp->right) && __VERIFIER_nondet_int())
   {
-   newNode = malloc(sizeof(TreeNode));
+   newNode = calloc(sizeof(TreeNode));
    tmp->right = newNode;
   }
   else
@@ -88,12 +82,12 @@ int main()
 
   newNode->left = 0;
   newNode->right = 0;
-  newNode->list = malloc(sizeof(ListNode));
+  newNode->list = calloc(sizeof(ListNode));
   newNode->list->next = newNode->list;
 
   while (__VERIFIER_nondet_int())
   {
-   tmpList = malloc(sizeof(ListNode));
+   tmpList = calloc(sizeof(ListNode));
    tmpList->next = tree->list->next;
    tree->list->next = tmpList;
   }

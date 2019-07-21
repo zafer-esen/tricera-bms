@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -47,7 +41,7 @@ mlist* search_list(mlist *l, int k){
 }
 
 int insert_list(mlist *l, int k){
-  l = malloc(sizeof(mlist));
+  l = calloc(sizeof(mlist));
   l->key = k;
   if (head==0) {
     l->next = 0;

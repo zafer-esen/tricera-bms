@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -36,13 +30,13 @@ typedef struct TSLL
 int main()
 {
 
- SLL* head = malloc(sizeof(SLL));
+ SLL* head = calloc(sizeof(SLL));
  head->next = 0;
  head->prev = 0;
- if (__VERIFIER_nondet_int()) { head->data = 2; head->opt = malloc(sizeof(SLL)); head->opt->next = 0; } else if (__VERIFIER_nondet_int()) { head->data = 1; head->opt = head; } else { head->data = 0; head->opt = head; }
+ if (__VERIFIER_nondet_int()) { head->data = 2; head->opt = calloc(sizeof(SLL)); head->opt->next = 0; } else if (__VERIFIER_nondet_int()) { head->data = 1; head->opt = head; } else { head->data = 0; head->opt = head; }
  SLL* x = head;
 
- while (__VERIFIER_nondet_int()) { x->next = malloc(sizeof(SLL)); x->next->prev = x; x = x->next; x->next = 0; if (__VERIFIER_nondet_int()) { x->data = 2; x->opt = malloc(sizeof(SLL)); x->opt->next = 0; } else if (__VERIFIER_nondet_int()) { x->data = 1; x->opt = x; } else { x->data = 0; x->opt = x; } }
+ while (__VERIFIER_nondet_int()) { x->next = calloc(sizeof(SLL)); x->next->prev = x; x = x->next; x->next = 0; if (__VERIFIER_nondet_int()) { x->data = 2; x->opt = calloc(sizeof(SLL)); x->opt->next = 0; } else if (__VERIFIER_nondet_int()) { x->data = 1; x->opt = x; } else { x->data = 0; x->opt = x; } }
 
 
  x = head;

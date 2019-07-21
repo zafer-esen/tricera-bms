@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -35,17 +29,17 @@ struct sl {
 
 struct sl_item* alloc_or_die(void)
 {
- struct sl_item *pi = malloc(sizeof(struct sl_item));
+ struct sl_item *pi = calloc(sizeof(struct sl_item));
 
  return pi;
 }
 
 struct sl* create_sl_with_head_and_tail(void)
 {
- struct sl *sl = malloc(sizeof(struct sl));
+ struct sl *sl = calloc(sizeof(struct sl));
 
- sl->head = malloc(sizeof(struct sl_item));
- sl->tail = malloc(sizeof(struct sl_item));
+ sl->head = calloc(sizeof(struct sl_item));
+ sl->tail = calloc(sizeof(struct sl_item));
 
  sl->head->n2 = sl->head->n1 = sl->tail;
  sl->tail->n2 = sl->tail->n1 = 0;
@@ -71,7 +65,7 @@ void sl_random_insert(struct sl *sl)
   a1 = a1->n1;
 
 
- new = malloc(sizeof(struct sl_item));
+ new = calloc(sizeof(struct sl_item));
 
  new->n1 = a1->n1;
  a1->n1 = new;

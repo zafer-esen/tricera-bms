@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -38,7 +32,7 @@ node_t* init_ll (int n)
 
   int i;
   for (i = 0; i < n; i++) {
-    curr = malloc(sizeof(node_t));
+    curr = calloc(sizeof(node_t));
     curr->val = i;
     curr->next = head;
     head = curr;

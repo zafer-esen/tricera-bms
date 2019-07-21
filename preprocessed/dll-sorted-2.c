@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -36,7 +30,7 @@ typedef struct TSLL
 int main()
 {
 
- SLL* head = malloc(sizeof(SLL));
+ SLL* head = calloc(sizeof(SLL));
  head->next = 0;
  head->prev = 0;
  head->data = 0;
@@ -48,7 +42,7 @@ int main()
  while (__VERIFIER_nondet_int() || !marked)
  {
 
-  x->next = malloc(sizeof(SLL));
+  x->next = calloc(sizeof(SLL));
   x->next->prev = x;
   x = x->next;
   x->next = 0;
@@ -80,7 +74,7 @@ int main()
   __VERIFIER_assert(x->data == 1);
  }
 
- SLL* tmp = malloc(sizeof(SLL));
+ SLL* tmp = calloc(sizeof(SLL));
  tmp->data = 1;
  tmp->next = 0;
  tmp->prev = x;

@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -37,7 +31,7 @@ void myexit(int s) {
 SLL* sll_create(int len) {
   SLL* head = 0;
   while(len > 0) {
-    SLL* new_head = malloc(sizeof(struct node));
+    SLL* new_head = calloc(sizeof(struct node));
     if(0 == new_head) {
       myexit(1);
     }
@@ -49,7 +43,7 @@ SLL* sll_create(int len) {
 }
 
 SLL* node_create_with_sublist(int sublist_length) {
-  SLL* new_node = malloc(sizeof(struct node));
+  SLL* new_node = calloc(sizeof(struct node));
   if(0 == new_node) {
     myexit(1);
   }

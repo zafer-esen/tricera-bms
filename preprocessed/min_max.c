@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -89,7 +83,7 @@ int main() {
     int min = 0x7fffffff, max = -0x7fffffff;
 
     while (__VERIFIER_nondet_int()) {
-        Node *p = malloc(sizeof(Node));
+        Node *p = calloc(sizeof(Node));
         p->val = __VERIFIER_nondet_int();
         {p->next=l; l=p;}
 

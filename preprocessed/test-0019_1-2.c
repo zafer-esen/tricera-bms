@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -33,8 +27,8 @@ typedef struct {
 
 static void alloc_data(TData *pdata)
 {
-    pdata->lo = malloc(sizeof(int));
-    pdata->hi = malloc(sizeof(int));
+    pdata->lo = calloc(sizeof(int));
+    pdata->hi = calloc(sizeof(int));
 
     *(pdata->lo) = 4;
     *(pdata->hi) = 8;

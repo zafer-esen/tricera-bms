@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -47,7 +41,7 @@ int main() {
         if (((ev1 == 0) && (ev2 == 2)) || ((ev1 == 1) && (ev2 == 3)) || ((ev1 == 0) && (ev2 == 3)))
             continue;
 
-        Node *p = malloc(sizeof(Node));
+        Node *p = calloc(sizeof(Node));
         p->event1 = ev1;
         p->event2 = ev2;
         {p->next=l; l=p;}

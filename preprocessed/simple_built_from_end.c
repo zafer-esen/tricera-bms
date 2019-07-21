@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -46,7 +40,7 @@ int main() {
   List* t;
   List* p = 0;
   while (__VERIFIER_nondet_int()) {
-    t = malloc(sizeof(struct node));
+    t = calloc(sizeof(struct node));
     if (t == 0) myexit(1);
     t->h = 1;
     t->n = p;

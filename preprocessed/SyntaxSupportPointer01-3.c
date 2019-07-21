@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -35,7 +29,7 @@ void __foo (void *__ptr);
 extern int __VERIFIER_nondet_int(void);
 
 int main() {
- int *p = malloc(sizeof(int));
+ int *p = calloc(sizeof(int));
  while (*p >= 0) {
   (*p)--;
  }

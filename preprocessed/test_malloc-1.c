@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -42,8 +36,8 @@ int CURRENTLY_UNSAFE;
 # 25 "<stdin>"
 int main(void) {
 
- int * p1 = malloc(sizeof(int));
- int * p2 = malloc(sizeof(int));
+ int * p1 = calloc(sizeof(int));
+ int * p2 = calloc(sizeof(int));
 
 
 

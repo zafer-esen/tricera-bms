@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -42,7 +36,7 @@ int main()
  Node* list = 0;
  Node* y = 0;
 
- y = malloc(sizeof(Node));
+ y = calloc(sizeof(Node));
  y->next = 0;
  y->prev = 0;
  y->pData = &y->data;
@@ -50,13 +44,13 @@ int main()
 
  while (__VERIFIER_nondet_int())
  {
-  y = malloc(sizeof(Node));
+  y = calloc(sizeof(Node));
   y->next = list;
   list->prev = y;
 
   if (__VERIFIER_nondet_int())
   {
-   y->pData = malloc(sizeof(Data));
+   y->pData = calloc(sizeof(Data));
   }
   else
   {

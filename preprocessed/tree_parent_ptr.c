@@ -6,13 +6,7 @@
 # 32 "<command-line>" 2
 # 1 "<stdin>"
 # 1 "./stdlib.h" 1
-
-
-
-
-
-
-
+# 10 "./stdlib.h"
 void __foo(void *arg){
 
 
@@ -37,7 +31,7 @@ int main() {
   struct TreeNode* node;
  };
 
- struct TreeNode* root = malloc(sizeof(struct TreeNode)), *n;
+ struct TreeNode* root = calloc(sizeof(struct TreeNode)), *n;
  root->left = 0;
  root->right = 0;
  root->parent = 0;
@@ -51,13 +45,13 @@ int main() {
     n = n->right;
   }
   if (!n->left && __VERIFIER_nondet_int()) {
-   n->left = malloc(sizeof(struct TreeNode));
+   n->left = calloc(sizeof(struct TreeNode));
    n->left->left = 0;
    n->left->right = 0;
    n->left->parent = n;
   }
   if (!n->right && __VERIFIER_nondet_int()) {
-   n->right = malloc(sizeof(struct TreeNode));
+   n->right = calloc(sizeof(struct TreeNode));
    n->right->left = 0;
    n->right->right = 0;
    n->right->parent = n;
@@ -66,7 +60,7 @@ int main() {
 
  n = 0;
 
- struct StackItem* s = malloc(sizeof(struct StackItem)), *st;
+ struct StackItem* s = calloc(sizeof(struct StackItem)), *st;
  s->next = 0;
  s->node = root;
 
@@ -76,13 +70,13 @@ int main() {
   n = st->node;
   __foo(st);
   if (n->left) {
-   st = malloc(sizeof(struct StackItem));
+   st = calloc(sizeof(struct StackItem));
    st->next = s;
    st->node = n->left;
    s = st;
   }
   if (n->right) {
-   st = malloc(sizeof(struct StackItem));
+   st = calloc(sizeof(struct StackItem));
    st->next = s;
    st->node = n->right;
    s = st;
