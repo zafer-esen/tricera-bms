@@ -3901,44 +3901,6 @@ error      : 1
 total      : 39
 ---------------------------
 
-dll_of_dll-1.c
-
-(error "Symbol dll_insert_master is not declared")
-Expected result: SAFE
-results do not match!
-PARSING ERROR OR BUG DETECTED
-
----------------------------
-matched    : 8
-  -safe    : 4
-  -unsafe  : 4
----------------------------
-imprecise  : 26
-unsound    : 4
-error      : 2
----------------------------
-total      : 40
----------------------------
-
-dll_of_dll-2.c
-
-(error "Symbol dll_insert_master is not declared")
-Expected result: UNSAFE
-results do not match!
-PARSING ERROR OR BUG DETECTED
-
----------------------------
-matched    : 8
-  -safe    : 4
-  -unsafe  : 4
----------------------------
-imprecise  : 26
-unsound    : 4
-error      : 3
----------------------------
-total      : 41
----------------------------
-
 dll-optional-1.c
 
 Warning: enabling heap model
@@ -3996,9 +3958,9 @@ matched    : 8
 ---------------------------
 imprecise  : 27
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 42
+total      : 40
 ---------------------------
 
 dll-optional-2.c
@@ -4058,9 +4020,9 @@ matched    : 9
 ---------------------------
 imprecise  : 27
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 43
+total      : 41
 ---------------------------
 
 dll-queue-1.c
@@ -4127,9 +4089,9 @@ matched    : 9
 ---------------------------
 imprecise  : 28
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 44
+total      : 42
 ---------------------------
 
 dll-queue-2.c
@@ -4196,9 +4158,9 @@ matched    : 10
 ---------------------------
 imprecise  : 28
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 45
+total      : 43
 ---------------------------
 
 dll-rb-cnstr_1-1.c
@@ -4250,9 +4212,9 @@ matched    : 10
 ---------------------------
 imprecise  : 29
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 46
+total      : 44
 ---------------------------
 
 dll-rb-cnstr_1-2.c
@@ -4309,9 +4271,9 @@ matched    : 11
 ---------------------------
 imprecise  : 29
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 47
+total      : 45
 ---------------------------
 
 dll-rb-sentinel-1.c
@@ -4383,9 +4345,9 @@ matched    : 12
 ---------------------------
 imprecise  : 29
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 48
+total      : 46
 ---------------------------
 
 dll-rb-sentinel-2.c
@@ -4457,9 +4419,9 @@ matched    : 12
 ---------------------------
 imprecise  : 30
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 49
+total      : 47
 ---------------------------
 
 dll-reverse.c
@@ -4521,9 +4483,9 @@ matched    : 12
 ---------------------------
 imprecise  : 31
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 50
+total      : 48
 ---------------------------
 
 dll-simple-white-blue-1.c
@@ -4591,9 +4553,9 @@ matched    : 13
 ---------------------------
 imprecise  : 31
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 51
+total      : 49
 ---------------------------
 
 dll-simple-white-blue-2.c
@@ -4661,9 +4623,9 @@ matched    : 13
 ---------------------------
 imprecise  : 32
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 52
+total      : 50
 ---------------------------
 
 dll-sorted-1.c
@@ -4751,9 +4713,9 @@ matched    : 14
 ---------------------------
 imprecise  : 32
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 53
+total      : 51
 ---------------------------
 
 dll-sorted-2.c
@@ -4841,9 +4803,9 @@ matched    : 14
 ---------------------------
 imprecise  : 33
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 54
+total      : 52
 ---------------------------
 
 dll-token-1.c
@@ -4904,9 +4866,9 @@ matched    : 14
 ---------------------------
 imprecise  : 34
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 55
+total      : 53
 ---------------------------
 
 dll-token-2.c
@@ -4967,9 +4929,9 @@ matched    : 15
 ---------------------------
 imprecise  : 34
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 56
+total      : 54
 ---------------------------
 
 hash_fun.c
@@ -5035,9 +4997,9 @@ matched    : 15
 ---------------------------
 imprecise  : 35
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 57
+total      : 55
 ---------------------------
 
 list-1.c
@@ -5084,9 +5046,9 @@ matched    : 15
 ---------------------------
 imprecise  : 36
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 58
+total      : 56
 ---------------------------
 
 list-2.c
@@ -5133,49 +5095,175 @@ matched    : 16
 ---------------------------
 imprecise  : 36
 unsound    : 4
-error      : 3
+error      : 1
 ---------------------------
-total      : 59
+total      : 57
 ---------------------------
 
 list_and_tree_cnstr-1.c
 
 Warning: enabling heap model
-(error "memory functions can currently only be called with argument: sizeof(type).")
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+UNSAFE
+
+-----------------------------
+Init:
+          main3(1)           
+-----------------------------
+              |              
+              |              
+              V              
+       main4(2, 1, 0)        
+-----------------------------
+              |              
+              |              
+              V              
+       main5(2, 1, 0)        
+-----------------------------
+              |              
+              |              
+              V              
+       main6(2, 1, 0)        
+-----------------------------
+              |              
+              |              
+              V              
+     main36(2, 1, 1, 0)      
+-----------------------------
+              |              
+              |              
+              V              
+     main42(2, 0, 1, 0)      
+-----------------------------
+              |              
+              |              
+              V              
+     main33(2, 0, 1, 0)      
+-----------------------------
+              |              
+              |              
+              V              
+ main59(3, 0, 1, 0, 2, 0, 2) 
+-----------------------------
+              |              
+              |              
+              V              
+ main86(3, 0, 1, 0, 2, 0, 2) 
+-----------------------------
+              |              
+              |              
+              V              
+ main87(3, 0, 1, 0, 2, 0, 2) 
+-----------------------------
+              |              
+              |              
+              V              
+ main92(3, 0, 1, 0, 2, 0, 2) 
+-----------------------------
+Final:
+ main92(3, 0, 1, 0, 2, 0, 2) 
+-----------------------------
 Expected result: UNSAFE
-results do not match!
-PARSING ERROR OR BUG DETECTED
+results match!
 
 ---------------------------
-matched    : 16
+matched    : 17
   -safe    : 4
-  -unsafe  : 12
+  -unsafe  : 13
 ---------------------------
 imprecise  : 36
 unsound    : 4
-error      : 4
+error      : 1
 ---------------------------
-total      : 60
+total      : 58
 ---------------------------
 
 list_and_tree_cnstr-2.c
 
 Warning: enabling heap model
-(error "memory functions can currently only be called with argument: sizeof(type).")
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+Warning: no definition of function "__VERIFIER_nondet_int" available
+UNSAFE
+
+-----------------------------
+Init:
+          main3(1)           
+-----------------------------
+              |              
+              |              
+              V              
+       main4(2, 1, 0)        
+-----------------------------
+              |              
+              |              
+              V              
+       main5(2, 1, 0)        
+-----------------------------
+              |              
+              |              
+              V              
+       main6(2, 1, 0)        
+-----------------------------
+              |              
+              |              
+              V              
+     main36(2, 1, 1, 0)      
+-----------------------------
+              |              
+              |              
+              V              
+     main42(2, 0, 1, 0)      
+-----------------------------
+              |              
+              |              
+              V              
+     main33(2, 0, 1, 0)      
+-----------------------------
+              |              
+              |              
+              V              
+ main59(3, 0, 1, 0, 2, 0, 2) 
+-----------------------------
+              |              
+              |              
+              V              
+ main86(3, 0, 1, 0, 2, 0, 2) 
+-----------------------------
+              |              
+              |              
+              V              
+ main87(3, 0, 1, 0, 2, 0, 2) 
+-----------------------------
+              |              
+              |              
+              V              
+ main92(3, 0, 1, 0, 2, 0, 2) 
+-----------------------------
+Final:
+ main92(3, 0, 1, 0, 2, 0, 2) 
+-----------------------------
 Expected result: UNSAFE
-results do not match!
-PARSING ERROR OR BUG DETECTED
+results match!
 
 ---------------------------
-matched    : 16
+matched    : 18
   -safe    : 4
-  -unsafe  : 12
+  -unsafe  : 14
 ---------------------------
 imprecise  : 36
 unsound    : 4
-error      : 5
+error      : 1
 ---------------------------
-total      : 61
+total      : 59
 ---------------------------
 
 list-ext_1.c
@@ -5221,15 +5309,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 16
+matched    : 18
   -safe    : 4
-  -unsafe  : 12
+  -unsafe  : 14
 ---------------------------
 imprecise  : 37
 unsound    : 4
-error      : 5
+error      : 1
 ---------------------------
-total      : 62
+total      : 60
 ---------------------------
 
 list-ext.c
@@ -5275,15 +5363,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 17
+matched    : 19
   -safe    : 4
-  -unsafe  : 13
+  -unsafe  : 15
 ---------------------------
 imprecise  : 37
 unsound    : 4
-error      : 5
+error      : 1
 ---------------------------
-total      : 63
+total      : 61
 ---------------------------
 
 list-ext_flag_1.c
@@ -5291,21 +5379,43 @@ list-ext_flag_1.c
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-(error "Trying to access field '->flag' of non pointer.")
+UNSAFE
+
+-----------------------
+Init:
+   main3(1, 0, 0, 0)   
+-----------------------
+           |           
+           |           
+           V           
+ main13(2, 1, 1, 0, 0) 
+-----------------------
+           |           
+           |           
+           V           
+ main36(2, 1, 1, 0, 0) 
+-----------------------
+           |           
+           |           
+           V           
+ main62(2, 1, 1, 0, 0) 
+-----------------------
+Final:
+ main62(2, 1, 1, 0, 0) 
+-----------------------
 Expected result: SAFE
 results do not match!
-PARSING ERROR OR BUG DETECTED
 
 ---------------------------
-matched    : 17
+matched    : 19
   -safe    : 4
-  -unsafe  : 13
+  -unsafe  : 15
 ---------------------------
-imprecise  : 37
+imprecise  : 38
 unsound    : 4
-error      : 6
+error      : 1
 ---------------------------
-total      : 64
+total      : 62
 ---------------------------
 
 list-ext_flag.c
@@ -5313,21 +5423,43 @@ list-ext_flag.c
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-(error "Trying to access field '->flag' of non pointer.")
+UNSAFE
+
+-----------------------
+Init:
+   main3(1, 0, 0, 0)   
+-----------------------
+           |           
+           |           
+           V           
+ main13(2, 1, 1, 0, 0) 
+-----------------------
+           |           
+           |           
+           V           
+ main34(2, 1, 1, 0, 0) 
+-----------------------
+           |           
+           |           
+           V           
+ main60(2, 1, 1, 0, 0) 
+-----------------------
+Final:
+ main60(2, 1, 1, 0, 0) 
+-----------------------
 Expected result: UNSAFE
-results do not match!
-PARSING ERROR OR BUG DETECTED
+results match!
 
 ---------------------------
-matched    : 17
+matched    : 20
   -safe    : 4
-  -unsafe  : 13
+  -unsafe  : 16
 ---------------------------
-imprecise  : 37
+imprecise  : 38
 unsound    : 4
-error      : 7
+error      : 1
 ---------------------------
-total      : 65
+total      : 63
 ---------------------------
 
 list_flag-1.c
@@ -5336,21 +5468,48 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-(error "Trying to access field '->h' of non pointer.")
+UNSAFE
+
+-----------------------
+Init:
+       main2(1)        
+-----------------------
+           |           
+           |           
+           V           
+ main5(1, 0, 0, 0, 0)  
+-----------------------
+           |           
+           |           
+           V           
+ main14(2, 0, 1, 1, 0) 
+-----------------------
+           |           
+           |           
+           V           
+ main34(2, 0, 1, 1, 0) 
+-----------------------
+           |           
+           |           
+           V           
+ main37(2, 0, 1, 1, 0) 
+-----------------------
+Final:
+ main37(2, 0, 1, 1, 0) 
+-----------------------
 Expected result: UNSAFE
-results do not match!
-PARSING ERROR OR BUG DETECTED
+results match!
 
 ---------------------------
-matched    : 17
+matched    : 21
   -safe    : 4
-  -unsafe  : 13
+  -unsafe  : 17
 ---------------------------
-imprecise  : 37
+imprecise  : 38
 unsound    : 4
-error      : 8
+error      : 1
 ---------------------------
-total      : 66
+total      : 64
 ---------------------------
 
 list_flag-2.c
@@ -5359,21 +5518,48 @@ Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: enabling heap model
 Warning: no definition of function "__VERIFIER_nondet_int" available
 Warning: no definition of function "__VERIFIER_nondet_int" available
-(error "Trying to access field '->h' of non pointer.")
+UNSAFE
+
+-----------------------
+Init:
+       main2(1)        
+-----------------------
+           |           
+           |           
+           V           
+ main5(1, 0, 0, 0, 0)  
+-----------------------
+           |           
+           |           
+           V           
+ main14(2, 0, 1, 1, 0) 
+-----------------------
+           |           
+           |           
+           V           
+ main34(2, 0, 1, 1, 0) 
+-----------------------
+           |           
+           |           
+           V           
+ main37(2, 0, 1, 1, 0) 
+-----------------------
+Final:
+ main37(2, 0, 1, 1, 0) 
+-----------------------
 Expected result: SAFE
 results do not match!
-PARSING ERROR OR BUG DETECTED
 
 ---------------------------
-matched    : 17
+matched    : 21
   -safe    : 4
-  -unsafe  : 13
+  -unsafe  : 17
 ---------------------------
-imprecise  : 37
+imprecise  : 39
 unsound    : 4
-error      : 9
+error      : 1
 ---------------------------
-total      : 67
+total      : 65
 ---------------------------
 
 list_search-1.c
@@ -5477,15 +5663,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 18
+matched    : 22
   -safe    : 4
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 37
+imprecise  : 39
 unsound    : 4
-error      : 9
+error      : 1
 ---------------------------
-total      : 68
+total      : 66
 ---------------------------
 
 list_search-2.c
@@ -5584,82 +5770,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 18
+matched    : 22
   -safe    : 4
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 38
+imprecise  : 40
 unsound    : 4
-error      : 9
+error      : 1
 ---------------------------
-total      : 69
----------------------------
-
-ll_append-alloca-1.c
-
-Warning: no definition of function "__VERIFIER_nondet_int" available
-Warning: enabling heap model
-Warning: no definition of function "__VERIFIER_nondet_int" available
-(error "out of memory")
-Expected result: SAFE
-results do not match!
-PARSING ERROR OR BUG DETECTED
-
----------------------------
-matched    : 18
-  -safe    : 4
-  -unsafe  : 14
----------------------------
-imprecise  : 38
-unsound    : 4
-error      : 10
----------------------------
-total      : 70
----------------------------
-
-ll_append-alloca-2.c
-
-Warning: no definition of function "__VERIFIER_nondet_int" available
-Warning: enabling heap model
-Warning: no definition of function "__VERIFIER_nondet_int" available
-(error "out of memory")
-Expected result: UNSAFE
-results do not match!
-PARSING ERROR OR BUG DETECTED
-
----------------------------
-matched    : 18
-  -safe    : 4
-  -unsafe  : 14
----------------------------
-imprecise  : 38
-unsound    : 4
-error      : 11
----------------------------
-total      : 71
----------------------------
-
-ll_append-alloca-WithAbsOfMinIntBug_false-no-overflow.c
-
-Warning: no definition of function "__VERIFIER_nondet_int" available
-Warning: enabling heap model
-Warning: no definition of function "__VERIFIER_nondet_int" available
-(error "out of memory")
-sed: can't read ../yml/ll_append-alloca-WithAbsOfMinIntBug_false-no-overflow.yml: No such file or directory
-Expected result: SAFE
-results do not match!
-PARSING ERROR OR BUG DETECTED
-
----------------------------
-matched    : 18
-  -safe    : 4
-  -unsafe  : 14
----------------------------
-imprecise  : 38
-unsound    : 4
-error      : 12
----------------------------
-total      : 72
+total      : 67
 ---------------------------
 
 ll_search-alloca.c
@@ -5673,15 +5792,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 19
+matched    : 23
   -safe    : 5
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 38
+imprecise  : 40
 unsound    : 4
-error      : 12
+error      : 1
 ---------------------------
-total      : 73
+total      : 68
 ---------------------------
 
 ll_search_not_found-alloca.c
@@ -5695,15 +5814,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 20
+matched    : 24
   -safe    : 6
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 38
+imprecise  : 40
 unsound    : 4
-error      : 12
+error      : 1
 ---------------------------
-total      : 74
+total      : 69
 ---------------------------
 
 ll_traverse-alloca.c
@@ -5716,15 +5835,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 21
+matched    : 25
   -safe    : 7
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 38
+imprecise  : 40
 unsound    : 4
-error      : 12
+error      : 1
 ---------------------------
-total      : 75
+total      : 70
 ---------------------------
 
 lockfree-3.0.c
@@ -5739,15 +5858,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 22
+matched    : 26
   -safe    : 8
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 38
+imprecise  : 40
 unsound    : 4
-error      : 12
+error      : 1
 ---------------------------
-total      : 76
+total      : 71
 ---------------------------
 
 lockfree-3.1.c
@@ -5763,15 +5882,15 @@ results do not match!
 UNSOUND RESULT DETECTED!
 
 ---------------------------
-matched    : 22
+matched    : 26
   -safe    : 8
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 38
+imprecise  : 40
 unsound    : 5
-error      : 12
+error      : 1
 ---------------------------
-total      : 77
+total      : 72
 ---------------------------
 
 lockfree-3.2.c
@@ -5787,15 +5906,15 @@ results do not match!
 UNSOUND RESULT DETECTED!
 
 ---------------------------
-matched    : 22
+matched    : 26
   -safe    : 8
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 38
+imprecise  : 40
 unsound    : 6
-error      : 12
+error      : 1
 ---------------------------
-total      : 78
+total      : 73
 ---------------------------
 
 lockfree-3.3.c
@@ -5811,15 +5930,15 @@ results do not match!
 UNSOUND RESULT DETECTED!
 
 ---------------------------
-matched    : 22
+matched    : 26
   -safe    : 8
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 38
+imprecise  : 40
 unsound    : 7
-error      : 12
+error      : 1
 ---------------------------
-total      : 79
+total      : 74
 ---------------------------
 
 min_max.c
@@ -5876,15 +5995,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 22
+matched    : 26
   -safe    : 8
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 39
+imprecise  : 41
 unsound    : 7
-error      : 12
+error      : 1
 ---------------------------
-total      : 80
+total      : 75
 ---------------------------
 
 nondet_ll_search-alloca-1.c
@@ -5900,15 +6019,15 @@ results do not match!
 UNSOUND RESULT DETECTED!
 
 ---------------------------
-matched    : 22
+matched    : 26
   -safe    : 8
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 39
+imprecise  : 41
 unsound    : 8
-error      : 12
+error      : 1
 ---------------------------
-total      : 81
+total      : 76
 ---------------------------
 
 nondet_ll_search-alloca-2.c
@@ -5923,15 +6042,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 23
+matched    : 27
   -safe    : 9
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 39
+imprecise  : 41
 unsound    : 8
-error      : 12
+error      : 1
 ---------------------------
-total      : 82
+total      : 77
 ---------------------------
 
 nondet_ll_traverse-alloca.c
@@ -5946,15 +6065,15 @@ results do not match!
 UNSOUND RESULT DETECTED!
 
 ---------------------------
-matched    : 23
+matched    : 27
   -safe    : 9
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 39
+imprecise  : 41
 unsound    : 9
-error      : 12
+error      : 1
 ---------------------------
-total      : 83
+total      : 78
 ---------------------------
 
 packet_filter.c
@@ -5974,15 +6093,15 @@ results do not match!
 PARSING ERROR OR BUG DETECTED
 
 ---------------------------
-matched    : 23
+matched    : 27
   -safe    : 9
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 39
+imprecise  : 41
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 84
+total      : 79
 ---------------------------
 
 quick_sort_split.c
@@ -5997,15 +6116,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 24
+matched    : 28
   -safe    : 10
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 39
+imprecise  : 41
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 85
+total      : 80
 ---------------------------
 
 running_example.c
@@ -6051,15 +6170,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 24
+matched    : 28
   -safe    : 10
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 40
+imprecise  : 42
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 86
+total      : 81
 ---------------------------
 
 shared_mem1.c
@@ -6120,15 +6239,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 24
+matched    : 28
   -safe    : 10
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 41
+imprecise  : 43
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 87
+total      : 82
 ---------------------------
 
 shared_mem2.c
@@ -6189,15 +6308,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 24
+matched    : 28
   -safe    : 10
-  -unsafe  : 14
+  -unsafe  : 18
 ---------------------------
-imprecise  : 42
+imprecise  : 44
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 88
+total      : 83
 ---------------------------
 
 simple-1.c
@@ -6232,15 +6351,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 25
+matched    : 29
   -safe    : 10
-  -unsafe  : 15
+  -unsafe  : 19
 ---------------------------
-imprecise  : 42
+imprecise  : 44
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 89
+total      : 84
 ---------------------------
 
 simple-2.c
@@ -6270,15 +6389,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 25
+matched    : 29
   -safe    : 10
-  -unsafe  : 15
+  -unsafe  : 19
 ---------------------------
-imprecise  : 43
+imprecise  : 45
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 90
+total      : 85
 ---------------------------
 
 simple_and_skiplist_2lvl-1.c
@@ -6317,15 +6436,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 26
+matched    : 30
   -safe    : 10
-  -unsafe  : 16
+  -unsafe  : 20
 ---------------------------
-imprecise  : 43
+imprecise  : 45
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 91
+total      : 86
 ---------------------------
 
 simple_and_skiplist_2lvl-2.c
@@ -6359,15 +6478,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 26
+matched    : 30
   -safe    : 10
-  -unsafe  : 16
+  -unsafe  : 20
 ---------------------------
-imprecise  : 44
+imprecise  : 46
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 92
+total      : 87
 ---------------------------
 
 simple_built_from_end.c
@@ -6423,15 +6542,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 26
+matched    : 30
   -safe    : 10
-  -unsafe  : 16
+  -unsafe  : 20
 ---------------------------
-imprecise  : 45
+imprecise  : 47
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 93
+total      : 88
 ---------------------------
 
 simple-ext_1.c
@@ -6486,15 +6605,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 26
+matched    : 30
   -safe    : 10
-  -unsafe  : 16
+  -unsafe  : 20
 ---------------------------
-imprecise  : 46
+imprecise  : 48
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 94
+total      : 89
 ---------------------------
 
 simple-ext.c
@@ -6549,15 +6668,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 26
+matched    : 30
   -safe    : 10
-  -unsafe  : 16
+  -unsafe  : 20
 ---------------------------
-imprecise  : 47
+imprecise  : 49
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 95
+total      : 90
 ---------------------------
 
 simple_search_value-1.c
@@ -6797,15 +6916,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 26
+matched    : 30
   -safe    : 10
-  -unsafe  : 16
+  -unsafe  : 20
 ---------------------------
-imprecise  : 48
+imprecise  : 50
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 96
+total      : 91
 ---------------------------
 
 simple_search_value-2.c
@@ -7045,15 +7164,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 27
+matched    : 31
   -safe    : 10
-  -unsafe  : 17
+  -unsafe  : 21
 ---------------------------
-imprecise  : 48
+imprecise  : 50
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 97
+total      : 92
 ---------------------------
 
 skiplist_2lvl.c
@@ -7068,15 +7187,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 28
+matched    : 32
   -safe    : 11
-  -unsafe  : 17
+  -unsafe  : 21
 ---------------------------
-imprecise  : 48
+imprecise  : 50
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 98
+total      : 93
 ---------------------------
 
 skiplist_3lvl.c
@@ -7093,15 +7212,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 29
+matched    : 33
   -safe    : 12
-  -unsafe  : 17
+  -unsafe  : 21
 ---------------------------
-imprecise  : 48
+imprecise  : 50
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 99
+total      : 94
 ---------------------------
 
 sll-01-1.c
@@ -7143,15 +7262,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 29
+matched    : 33
   -safe    : 12
-  -unsafe  : 17
+  -unsafe  : 21
 ---------------------------
-imprecise  : 49
+imprecise  : 51
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 100
+total      : 95
 ---------------------------
 
 sll-01-2.c
@@ -7193,15 +7312,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 49
+imprecise  : 51
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 101
+total      : 96
 ---------------------------
 
 sll2c_append_equal.c
@@ -7295,15 +7414,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 50
+imprecise  : 52
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 102
+total      : 97
 ---------------------------
 
 sll2c_append_unequal.c
@@ -7402,15 +7521,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 51
+imprecise  : 53
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 103
+total      : 98
 ---------------------------
 
 sll2c_insert_equal.c
@@ -7519,15 +7638,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 52
+imprecise  : 54
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 104
+total      : 99
 ---------------------------
 
 sll2c_insert_unequal.c
@@ -7631,15 +7750,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 53
+imprecise  : 55
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 105
+total      : 100
 ---------------------------
 
 sll2c_prepend_equal.c
@@ -7738,15 +7857,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 54
+imprecise  : 56
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 106
+total      : 101
 ---------------------------
 
 sll2c_prepend_unequal.c
@@ -7835,15 +7954,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 55
+imprecise  : 57
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 107
+total      : 102
 ---------------------------
 
 sll2c_remove_all.c
@@ -7932,15 +8051,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 56
+imprecise  : 58
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 108
+total      : 103
 ---------------------------
 
 sll2c_remove_all_reverse.c
@@ -8049,15 +8168,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 57
+imprecise  : 59
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 109
+total      : 104
 ---------------------------
 
 sll2c_update_all.c
@@ -8146,15 +8265,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 58
+imprecise  : 60
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 110
+total      : 105
 ---------------------------
 
 sll2c_update_all_reverse.c
@@ -8248,15 +8367,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 59
+imprecise  : 61
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 111
+total      : 106
 ---------------------------
 
 sll2n_append_equal.c
@@ -8350,15 +8469,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 60
+imprecise  : 62
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 112
+total      : 107
 ---------------------------
 
 sll2n_append_unequal.c
@@ -8447,15 +8566,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 61
+imprecise  : 63
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 113
+total      : 108
 ---------------------------
 
 sll2n_insert_equal.c
@@ -8564,15 +8683,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 62
+imprecise  : 64
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 114
+total      : 109
 ---------------------------
 
 sll2n_insert_unequal.c
@@ -8681,15 +8800,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 63
+imprecise  : 65
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 115
+total      : 110
 ---------------------------
 
 sll2n_prepend_equal.c
@@ -8783,15 +8902,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 64
+imprecise  : 66
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 116
+total      : 111
 ---------------------------
 
 sll2n_prepend_unequal.c
@@ -8875,15 +8994,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 65
+imprecise  : 67
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 117
+total      : 112
 ---------------------------
 
 sll2n_remove_all.c
@@ -8962,15 +9081,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 66
+imprecise  : 68
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 118
+total      : 113
 ---------------------------
 
 sll2n_remove_all_reverse.c
@@ -9079,15 +9198,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 67
+imprecise  : 69
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 119
+total      : 114
 ---------------------------
 
 sll2n_update_all.c
@@ -9176,15 +9295,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 68
+imprecise  : 70
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 120
+total      : 115
 ---------------------------
 
 sll2n_update_all_reverse.c
@@ -9278,15 +9397,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 69
+imprecise  : 71
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 121
+total      : 116
 ---------------------------
 
 sll-buckets-1.c
@@ -9363,15 +9482,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 30
+matched    : 34
   -safe    : 12
-  -unsafe  : 18
+  -unsafe  : 22
 ---------------------------
-imprecise  : 70
+imprecise  : 72
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 122
+total      : 117
 ---------------------------
 
 sll-buckets-2.c
@@ -9448,15 +9567,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 31
+matched    : 35
   -safe    : 12
-  -unsafe  : 19
+  -unsafe  : 23
 ---------------------------
-imprecise  : 70
+imprecise  : 72
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 123
+total      : 118
 ---------------------------
 
 sll-circular-1.c
@@ -9492,15 +9611,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 31
+matched    : 35
   -safe    : 12
-  -unsafe  : 19
+  -unsafe  : 23
 ---------------------------
-imprecise  : 71
+imprecise  : 73
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 124
+total      : 119
 ---------------------------
 
 sll-circular-2.c
@@ -9536,15 +9655,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 32
+matched    : 36
   -safe    : 12
-  -unsafe  : 20
+  -unsafe  : 24
 ---------------------------
-imprecise  : 71
+imprecise  : 73
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 125
+total      : 120
 ---------------------------
 
 sll_circular_traversal-1.c
@@ -9653,15 +9772,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 32
+matched    : 36
   -safe    : 12
-  -unsafe  : 20
+  -unsafe  : 24
 ---------------------------
-imprecise  : 72
+imprecise  : 74
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 126
+total      : 121
 ---------------------------
 
 sll_circular_traversal-2.c
@@ -9770,15 +9889,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 33
+matched    : 37
   -safe    : 12
-  -unsafe  : 21
+  -unsafe  : 25
 ---------------------------
-imprecise  : 72
+imprecise  : 74
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 127
+total      : 122
 ---------------------------
 
 sll_length_check-1.c
@@ -9844,15 +9963,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 34
+matched    : 38
   -safe    : 12
-  -unsafe  : 22
+  -unsafe  : 26
 ---------------------------
-imprecise  : 72
+imprecise  : 74
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 128
+total      : 123
 ---------------------------
 
 sll_length_check-2.c
@@ -9908,15 +10027,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 34
+matched    : 38
   -safe    : 12
-  -unsafe  : 22
+  -unsafe  : 26
 ---------------------------
-imprecise  : 73
+imprecise  : 75
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 129
+total      : 124
 ---------------------------
 
 sll_nondet_insert-1.c
@@ -9990,15 +10109,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 35
+matched    : 39
   -safe    : 12
-  -unsafe  : 23
+  -unsafe  : 27
 ---------------------------
-imprecise  : 73
+imprecise  : 75
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 130
+total      : 125
 ---------------------------
 
 sll_nondet_insert-2.c
@@ -10071,15 +10190,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 35
+matched    : 39
   -safe    : 12
-  -unsafe  : 23
+  -unsafe  : 27
 ---------------------------
-imprecise  : 74
+imprecise  : 76
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 131
+total      : 126
 ---------------------------
 
 sll_of_sll_nondet_append-1.c
@@ -10205,15 +10324,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 35
+matched    : 39
   -safe    : 12
-  -unsafe  : 23
+  -unsafe  : 27
 ---------------------------
-imprecise  : 75
+imprecise  : 77
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 132
+total      : 127
 ---------------------------
 
 sll_of_sll_nondet_append-2.c
@@ -10334,15 +10453,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 36
+matched    : 40
   -safe    : 12
-  -unsafe  : 24
+  -unsafe  : 28
 ---------------------------
-imprecise  : 75
+imprecise  : 77
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 133
+total      : 128
 ---------------------------
 
 sll-optional-1.c
@@ -10391,15 +10510,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 36
+matched    : 40
   -safe    : 12
-  -unsafe  : 24
+  -unsafe  : 28
 ---------------------------
-imprecise  : 76
+imprecise  : 78
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 134
+total      : 129
 ---------------------------
 
 sll-optional-2.c
@@ -10448,15 +10567,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 37
+matched    : 41
   -safe    : 12
-  -unsafe  : 25
+  -unsafe  : 29
 ---------------------------
-imprecise  : 76
+imprecise  : 78
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 135
+total      : 130
 ---------------------------
 
 sll-queue-1.c
@@ -10507,15 +10626,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 37
+matched    : 41
   -safe    : 12
-  -unsafe  : 25
+  -unsafe  : 29
 ---------------------------
-imprecise  : 77
+imprecise  : 79
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 136
+total      : 131
 ---------------------------
 
 sll-queue-2.c
@@ -10566,15 +10685,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 38
+matched    : 42
   -safe    : 12
-  -unsafe  : 26
+  -unsafe  : 30
 ---------------------------
-imprecise  : 77
+imprecise  : 79
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 137
+total      : 132
 ---------------------------
 
 sll-rb-cnstr_1-1.c
@@ -10620,15 +10739,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 38
+matched    : 42
   -safe    : 12
-  -unsafe  : 26
+  -unsafe  : 30
 ---------------------------
-imprecise  : 78
+imprecise  : 80
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 138
+total      : 133
 ---------------------------
 
 sll-rb-cnstr_1-2.c
@@ -10674,15 +10793,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 39
+matched    : 43
   -safe    : 12
-  -unsafe  : 27
+  -unsafe  : 31
 ---------------------------
-imprecise  : 78
+imprecise  : 80
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 139
+total      : 134
 ---------------------------
 
 sll-rb-sentinel-1.c
@@ -10743,15 +10862,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 39
+matched    : 43
   -safe    : 12
-  -unsafe  : 27
+  -unsafe  : 31
 ---------------------------
-imprecise  : 79
+imprecise  : 81
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 140
+total      : 135
 ---------------------------
 
 sll-rb-sentinel-2.c
@@ -10812,15 +10931,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 40
+matched    : 44
   -safe    : 12
-  -unsafe  : 28
+  -unsafe  : 32
 ---------------------------
-imprecise  : 79
+imprecise  : 81
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 141
+total      : 136
 ---------------------------
 
 sll-reverse_simple.c
@@ -10871,15 +10990,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 40
+matched    : 44
   -safe    : 12
-  -unsafe  : 28
+  -unsafe  : 32
 ---------------------------
-imprecise  : 80
+imprecise  : 82
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 142
+total      : 137
 ---------------------------
 
 sll_shallow_copy-1.c
@@ -10890,15 +11009,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 41
+matched    : 45
   -safe    : 13
-  -unsafe  : 28
+  -unsafe  : 32
 ---------------------------
-imprecise  : 80
+imprecise  : 82
 unsound    : 9
-error      : 13
+error      : 2
 ---------------------------
-total      : 143
+total      : 138
 ---------------------------
 
 sll_shallow_copy-2.c
@@ -10910,15 +11029,15 @@ results do not match!
 UNSOUND RESULT DETECTED!
 
 ---------------------------
-matched    : 41
+matched    : 45
   -safe    : 13
-  -unsafe  : 28
+  -unsafe  : 32
 ---------------------------
-imprecise  : 80
+imprecise  : 82
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 144
+total      : 139
 ---------------------------
 
 sll-simple-white-blue-1.c
@@ -10975,15 +11094,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 41
+matched    : 45
   -safe    : 13
-  -unsafe  : 28
+  -unsafe  : 32
 ---------------------------
-imprecise  : 81
+imprecise  : 83
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 145
+total      : 140
 ---------------------------
 
 sll-simple-white-blue-2.c
@@ -11040,15 +11159,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 42
+matched    : 46
   -safe    : 13
-  -unsafe  : 29
+  -unsafe  : 33
 ---------------------------
-imprecise  : 81
+imprecise  : 83
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 146
+total      : 141
 ---------------------------
 
 sll-sorted-1.c
@@ -11120,15 +11239,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 43
+matched    : 47
   -safe    : 13
-  -unsafe  : 30
+  -unsafe  : 34
 ---------------------------
-imprecise  : 81
+imprecise  : 83
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 147
+total      : 142
 ---------------------------
 
 sll-sorted-2.c
@@ -11190,15 +11309,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 43
+matched    : 47
   -safe    : 13
-  -unsafe  : 30
+  -unsafe  : 34
 ---------------------------
-imprecise  : 82
+imprecise  : 84
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 148
+total      : 143
 ---------------------------
 
 sll-token-1.c
@@ -11243,15 +11362,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 44
+matched    : 48
   -safe    : 13
-  -unsafe  : 31
+  -unsafe  : 35
 ---------------------------
-imprecise  : 82
+imprecise  : 84
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 149
+total      : 144
 ---------------------------
 
 sll-token-2.c
@@ -11296,15 +11415,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 44
+matched    : 48
   -safe    : 13
-  -unsafe  : 31
+  -unsafe  : 35
 ---------------------------
-imprecise  : 83
+imprecise  : 85
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 150
+total      : 145
 ---------------------------
 
 splice-1.c
@@ -11349,15 +11468,15 @@ Expected result: UNSAFE
 results match!
 
 ---------------------------
-matched    : 45
+matched    : 49
   -safe    : 13
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 83
+imprecise  : 85
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 151
+total      : 146
 ---------------------------
 
 splice-2.c
@@ -11402,15 +11521,15 @@ Expected result: SAFE
 results do not match!
 
 ---------------------------
-matched    : 45
+matched    : 49
   -safe    : 13
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 152
+total      : 147
 ---------------------------
 
 SyntaxSupportPointer01-1.c
@@ -11422,15 +11541,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 46
+matched    : 50
   -safe    : 14
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 153
+total      : 148
 ---------------------------
 
 SyntaxSupportPointer01-2.c
@@ -11442,15 +11561,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 47
+matched    : 51
   -safe    : 15
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 154
+total      : 149
 ---------------------------
 
 SyntaxSupportPointer01-3.c
@@ -11461,15 +11580,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 48
+matched    : 52
   -safe    : 16
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 155
+total      : 150
 ---------------------------
 
 test-0019_1-1.c
@@ -11480,15 +11599,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 49
+matched    : 53
   -safe    : 17
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 156
+total      : 151
 ---------------------------
 
 test-0019_1-2.c
@@ -11499,15 +11618,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 50
+matched    : 54
   -safe    : 18
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 10
-error      : 13
+error      : 2
 ---------------------------
-total      : 157
+total      : 152
 ---------------------------
 
 test-0504_1.c
@@ -11521,15 +11640,15 @@ results do not match!
 PARSING ERROR OR BUG DETECTED
 
 ---------------------------
-matched    : 50
+matched    : 54
   -safe    : 18
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 10
-error      : 14
+error      : 3
 ---------------------------
-total      : 158
+total      : 153
 ---------------------------
 
 test-0504.c
@@ -11543,15 +11662,15 @@ results do not match!
 PARSING ERROR OR BUG DETECTED
 
 ---------------------------
-matched    : 50
+matched    : 54
   -safe    : 18
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 10
-error      : 15
+error      : 4
 ---------------------------
-total      : 159
+total      : 154
 ---------------------------
 
 test_malloc-1.c
@@ -11562,15 +11681,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 51
+matched    : 55
   -safe    : 19
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 10
-error      : 15
+error      : 4
 ---------------------------
-total      : 160
+total      : 155
 ---------------------------
 
 test_malloc-2.c
@@ -11580,15 +11699,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 52
+matched    : 56
   -safe    : 20
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 10
-error      : 15
+error      : 4
 ---------------------------
-total      : 161
+total      : 156
 ---------------------------
 
 tree_cnstr.c
@@ -11604,15 +11723,15 @@ results do not match!
 UNSOUND RESULT DETECTED!
 
 ---------------------------
-matched    : 52
+matched    : 56
   -safe    : 20
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 11
-error      : 15
+error      : 4
 ---------------------------
-total      : 162
+total      : 157
 ---------------------------
 
 tree_of_cslls.c
@@ -11629,15 +11748,15 @@ Expected result: SAFE
 results match!
 
 ---------------------------
-matched    : 53
+matched    : 57
   -safe    : 21
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 11
-error      : 15
+error      : 4
 ---------------------------
-total      : 163
+total      : 158
 ---------------------------
 
 tree_parent_ptr.c
@@ -11653,15 +11772,15 @@ results do not match!
 UNSOUND RESULT DETECTED!
 
 ---------------------------
-matched    : 53
+matched    : 57
   -safe    : 21
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 12
-error      : 15
+error      : 4
 ---------------------------
-total      : 164
+total      : 159
 ---------------------------
 
 tree_stack.c
@@ -11677,15 +11796,15 @@ results do not match!
 UNSOUND RESULT DETECTED!
 
 ---------------------------
-matched    : 53
+matched    : 57
   -safe    : 21
-  -unsafe  : 32
+  -unsafe  : 36
 ---------------------------
-imprecise  : 84
+imprecise  : 86
 unsound    : 13
-error      : 15
+error      : 4
 ---------------------------
-total      : 165
+total      : 160
 ---------------------------
 
 Unsound results
@@ -11707,9 +11826,3 @@ tree_stack.c
 
 Errors
 ---------------------------
-dll_of_dll-2.c
-list_and_tree_cnstr-1.c
-list_and_tree_cnstr-2.c
-list-ext_flag.c
-list_flag-1.c
-ll_append-alloca-2.c
