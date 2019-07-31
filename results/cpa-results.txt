@@ -1,0 +1,4753 @@
+
+alternating_list-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 0
+  -safe    : 0
+  -unsafe  : 0
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 1
+---------------------------
+total      : 1
+---------------------------
+
+alternating_list-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 51, error label in line 55) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 1
+  -safe    : 0
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 1
+---------------------------
+total      : 2
+---------------------------
+
+calendar.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 2
+  -safe    : 1
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 1
+---------------------------
+total      : 3
+---------------------------
+
+cart.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 3
+  -safe    : 2
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 1
+---------------------------
+total      : 4
+---------------------------
+
+char_generic_nvram_nvram_llseek_nvram_unlocked_ioctl.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 3
+  -safe    : 2
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 2
+---------------------------
+total      : 5
+---------------------------
+
+char_generic_nvram_nvram_llseek_read_nvram.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 3
+  -safe    : 2
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 3
+---------------------------
+total      : 6
+---------------------------
+
+char_generic_nvram_nvram_llseek_write_nvram.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 3
+  -safe    : 2
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 4
+---------------------------
+total      : 7
+---------------------------
+
+char_generic_nvram_nvram_unlocked_ioctl_write_nvram.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 3
+  -safe    : 2
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 5
+---------------------------
+total      : 8
+---------------------------
+
+char_generic_nvram_read_nvram_nvram_unlocked_ioctl.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 3
+  -safe    : 2
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 6
+---------------------------
+total      : 9
+---------------------------
+
+char_generic_nvram_read_nvram_write_nvram.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+Expected result: FALSE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 3
+  -safe    : 2
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 7
+---------------------------
+total      : 10
+---------------------------
+
+cll_search-alloca-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 4
+  -safe    : 3
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 0
+unknown    : 7
+---------------------------
+total      : 11
+---------------------------
+
+cll_search-alloca-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 4
+  -safe    : 3
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 1
+unknown    : 7
+---------------------------
+total      : 12
+---------------------------
+
+cll_search-alloca-WithForgottenReturn_false-valid-deref.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+sed: can't read ../yml/cll_search-alloca-WithForgottenReturn_false-valid-deref.yml: No such file or directory
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 5
+  -safe    : 4
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 1
+unknown    : 7
+---------------------------
+total      : 13
+---------------------------
+
+cll_traverse-alloca.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 5
+  -safe    : 4
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 2
+unknown    : 7
+---------------------------
+total      : 14
+---------------------------
+
+dll-01-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 5
+  -safe    : 4
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 7
+---------------------------
+total      : 15
+---------------------------
+
+dll-01-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 7
+---------------------------
+total      : 16
+---------------------------
+
+dll2c_append_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 8
+---------------------------
+total      : 17
+---------------------------
+
+dll2c_append_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 9
+---------------------------
+total      : 18
+---------------------------
+
+dll2c_insert_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 10
+---------------------------
+total      : 19
+---------------------------
+
+dll2c_insert_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 11
+---------------------------
+total      : 20
+---------------------------
+
+dll2c_prepend_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 12
+---------------------------
+total      : 21
+---------------------------
+
+dll2c_prepend_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 13
+---------------------------
+total      : 22
+---------------------------
+
+dll2c_remove_all.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 14
+---------------------------
+total      : 23
+---------------------------
+
+dll2c_remove_all_reverse.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 15
+---------------------------
+total      : 24
+---------------------------
+
+dll2c_update_all.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 16
+---------------------------
+total      : 25
+---------------------------
+
+dll2c_update_all_reverse.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 17
+---------------------------
+total      : 26
+---------------------------
+
+dll2n_append_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 18
+---------------------------
+total      : 27
+---------------------------
+
+dll2n_append_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 19
+---------------------------
+total      : 28
+---------------------------
+
+dll2n_insert_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 20
+---------------------------
+total      : 29
+---------------------------
+
+dll2n_insert_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 21
+---------------------------
+total      : 30
+---------------------------
+
+dll2n_prepend_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 22
+---------------------------
+total      : 31
+---------------------------
+
+dll2n_prepend_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 23
+---------------------------
+total      : 32
+---------------------------
+
+dll2n_remove_all.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 24
+---------------------------
+total      : 33
+---------------------------
+
+dll2n_remove_all_reverse.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 25
+---------------------------
+total      : 34
+---------------------------
+
+dll2n_update_all.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 6
+  -safe    : 5
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 26
+---------------------------
+total      : 35
+---------------------------
+
+dll2n_update_all_reverse.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 7
+  -safe    : 6
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 3
+unknown    : 26
+---------------------------
+total      : 36
+---------------------------
+
+dll-circular-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 7
+  -safe    : 6
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 4
+unknown    : 26
+---------------------------
+total      : 37
+---------------------------
+
+dll-circular-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 8
+  -safe    : 7
+  -unsafe  : 1
+---------------------------
+imprecise  : 0
+unsound    : 4
+unknown    : 26
+---------------------------
+total      : 38
+---------------------------
+
+dll_circular_traversal-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 69, error label in line 55) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 9
+  -safe    : 7
+  -unsafe  : 2
+---------------------------
+imprecise  : 0
+unsound    : 4
+unknown    : 26
+---------------------------
+total      : 39
+---------------------------
+
+dll_circular_traversal-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 9
+  -safe    : 7
+  -unsafe  : 2
+---------------------------
+imprecise  : 0
+unsound    : 4
+unknown    : 27
+---------------------------
+total      : 40
+---------------------------
+
+dll_extends_pointer.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 10
+  -safe    : 8
+  -unsafe  : 2
+---------------------------
+imprecise  : 0
+unsound    : 4
+unknown    : 27
+---------------------------
+total      : 41
+---------------------------
+
+dll_nondet_free_order-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 11
+  -safe    : 9
+  -unsafe  : 2
+---------------------------
+imprecise  : 0
+unsound    : 4
+unknown    : 27
+---------------------------
+total      : 42
+---------------------------
+
+dll_nondet_free_order-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 11
+  -safe    : 9
+  -unsafe  : 2
+---------------------------
+imprecise  : 0
+unsound    : 5
+unknown    : 27
+---------------------------
+total      : 43
+---------------------------
+
+dll_nullified-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 51, error label in line 59) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 12
+  -safe    : 9
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 5
+unknown    : 27
+---------------------------
+total      : 44
+---------------------------
+
+dll_nullified-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 12
+  -safe    : 9
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 5
+unknown    : 28
+---------------------------
+total      : 45
+---------------------------
+
+dll-optional-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 13
+  -safe    : 10
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 5
+unknown    : 28
+---------------------------
+total      : 46
+---------------------------
+
+dll-optional-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 13
+  -safe    : 10
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 6
+unknown    : 28
+---------------------------
+total      : 47
+---------------------------
+
+dll-queue-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 14
+  -safe    : 11
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 6
+unknown    : 28
+---------------------------
+total      : 48
+---------------------------
+
+dll-queue-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 14
+  -safe    : 11
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 7
+unknown    : 28
+---------------------------
+total      : 49
+---------------------------
+
+dll-rb-cnstr_1-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 15
+  -safe    : 12
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 7
+unknown    : 28
+---------------------------
+total      : 50
+---------------------------
+
+dll-rb-cnstr_1-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 15
+  -safe    : 12
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 8
+unknown    : 28
+---------------------------
+total      : 51
+---------------------------
+
+dll-rb-sentinel-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 15
+  -safe    : 12
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 9
+unknown    : 28
+---------------------------
+total      : 52
+---------------------------
+
+dll-rb-sentinel-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 16
+  -safe    : 13
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 9
+unknown    : 28
+---------------------------
+total      : 53
+---------------------------
+
+dll-reverse.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 17
+  -safe    : 14
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 9
+unknown    : 28
+---------------------------
+total      : 54
+---------------------------
+
+dll-simple-white-blue-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 17
+  -safe    : 14
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 10
+unknown    : 28
+---------------------------
+total      : 55
+---------------------------
+
+dll-simple-white-blue-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 18
+  -safe    : 15
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 10
+unknown    : 28
+---------------------------
+total      : 56
+---------------------------
+
+dll-sorted-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 18
+  -safe    : 15
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 11
+unknown    : 28
+---------------------------
+total      : 57
+---------------------------
+
+dll-sorted-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 19
+  -safe    : 16
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 11
+unknown    : 28
+---------------------------
+total      : 58
+---------------------------
+
+dll-token-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 20
+  -safe    : 17
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 11
+unknown    : 28
+---------------------------
+total      : 59
+---------------------------
+
+dll-token-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 20
+  -safe    : 17
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 28
+---------------------------
+total      : 60
+---------------------------
+
+hash_fun.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 21
+  -safe    : 18
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 28
+---------------------------
+total      : 61
+---------------------------
+
+list-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 21
+  -safe    : 18
+  -unsafe  : 3
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 29
+---------------------------
+total      : 62
+---------------------------
+
+list-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 50) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 22
+  -safe    : 18
+  -unsafe  : 4
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 29
+---------------------------
+total      : 63
+---------------------------
+
+list_and_tree_cnstr-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 111) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 23
+  -safe    : 18
+  -unsafe  : 5
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 29
+---------------------------
+total      : 64
+---------------------------
+
+list_and_tree_cnstr-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 23
+  -safe    : 18
+  -unsafe  : 5
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 30
+---------------------------
+total      : 65
+---------------------------
+
+list-ext_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 23
+  -safe    : 18
+  -unsafe  : 5
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 31
+---------------------------
+total      : 66
+---------------------------
+
+list-ext.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 70) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 24
+  -safe    : 18
+  -unsafe  : 6
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 31
+---------------------------
+total      : 67
+---------------------------
+
+list-ext_flag_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 24
+  -safe    : 18
+  -unsafe  : 6
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 32
+---------------------------
+total      : 68
+---------------------------
+
+list-ext_flag.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 24
+  -safe    : 18
+  -unsafe  : 6
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 33
+---------------------------
+total      : 69
+---------------------------
+
+list_flag-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 56) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 25
+  -safe    : 18
+  -unsafe  : 7
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 33
+---------------------------
+total      : 70
+---------------------------
+
+list_flag-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 25
+  -safe    : 18
+  -unsafe  : 7
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 34
+---------------------------
+total      : 71
+---------------------------
+
+list_search-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 5) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 26
+  -safe    : 18
+  -unsafe  : 8
+---------------------------
+imprecise  : 0
+unsound    : 12
+unknown    : 34
+---------------------------
+total      : 72
+---------------------------
+
+list_search-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 5) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: TRUE
+results do not match!
+
+---------------------------
+matched    : 26
+  -safe    : 18
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 12
+unknown    : 34
+---------------------------
+total      : 73
+---------------------------
+
+list-set-impl.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/list-set-impl.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 26
+  -safe    : 18
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 12
+unknown    : 35
+---------------------------
+total      : 74
+---------------------------
+
+ll_search-alloca.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 27
+  -safe    : 19
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 12
+unknown    : 35
+---------------------------
+total      : 75
+---------------------------
+
+ll_search_not_found-alloca.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 28
+  -safe    : 20
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 12
+unknown    : 35
+---------------------------
+total      : 76
+---------------------------
+
+ll_traverse-alloca.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 29
+  -safe    : 21
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 12
+unknown    : 35
+---------------------------
+total      : 77
+---------------------------
+
+lockfree-3.0.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 12
+unknown    : 35
+---------------------------
+total      : 78
+---------------------------
+
+lockfree-3.1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 13
+unknown    : 35
+---------------------------
+total      : 79
+---------------------------
+
+lockfree-3.2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 14
+unknown    : 35
+---------------------------
+total      : 80
+---------------------------
+
+lockfree-3.3.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 35
+---------------------------
+total      : 81
+---------------------------
+
+memleaks_test10-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test10-1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 36
+---------------------------
+total      : 82
+---------------------------
+
+memleaks_test10-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test10-2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 37
+---------------------------
+total      : 83
+---------------------------
+
+memleaks_test11_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test11_1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 38
+---------------------------
+total      : 84
+---------------------------
+
+memleaks_test11_2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test11_2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 39
+---------------------------
+total      : 85
+---------------------------
+
+memleaks_test1-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test1-1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 40
+---------------------------
+total      : 86
+---------------------------
+
+memleaks_test11.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test11.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 41
+---------------------------
+total      : 87
+---------------------------
+
+memleaks_test1-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test1-2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 42
+---------------------------
+total      : 88
+---------------------------
+
+memleaks_test13_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test13_1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 43
+---------------------------
+total      : 89
+---------------------------
+
+memleaks_test13_2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test13_2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 44
+---------------------------
+total      : 90
+---------------------------
+
+memleaks_test1-3.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test1-3.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 45
+---------------------------
+total      : 91
+---------------------------
+
+memleaks_test13.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test13.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 46
+---------------------------
+total      : 92
+---------------------------
+
+memleaks_test14_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test14_1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 47
+---------------------------
+total      : 93
+---------------------------
+
+memleaks_test14_2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test14_2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 48
+---------------------------
+total      : 94
+---------------------------
+
+memleaks_test14_3.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test14_3.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 49
+---------------------------
+total      : 95
+---------------------------
+
+memleaks_test14.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test14.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 50
+---------------------------
+total      : 96
+---------------------------
+
+memleaks_test15-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test15-2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 51
+---------------------------
+total      : 97
+---------------------------
+
+memleaks_test16_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test16_1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 52
+---------------------------
+total      : 98
+---------------------------
+
+memleaks_test16_2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test16_2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 53
+---------------------------
+total      : 99
+---------------------------
+
+memleaks_test16.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test16.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 54
+---------------------------
+total      : 100
+---------------------------
+
+memleaks_test19-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test19-1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 55
+---------------------------
+total      : 101
+---------------------------
+
+memleaks_test19-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test19-2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 56
+---------------------------
+total      : 102
+---------------------------
+
+memleaks_test20-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test20-1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 57
+---------------------------
+total      : 103
+---------------------------
+
+memleaks_test20-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test20-2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 58
+---------------------------
+total      : 104
+---------------------------
+
+memleaks_test21-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test21-1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 59
+---------------------------
+total      : 105
+---------------------------
+
+memleaks_test21-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test21-2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 60
+---------------------------
+total      : 106
+---------------------------
+
+memleaks_test3-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test3-2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 61
+---------------------------
+total      : 107
+---------------------------
+
+memleaks_test4-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test4-1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 62
+---------------------------
+total      : 108
+---------------------------
+
+memleaks_test4-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test4-2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 63
+---------------------------
+total      : 109
+---------------------------
+
+memleaks_test5_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test5_1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 64
+---------------------------
+total      : 110
+---------------------------
+
+memleaks_test5_2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test5_2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 65
+---------------------------
+total      : 111
+---------------------------
+
+memleaks_test5.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test5.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 66
+---------------------------
+total      : 112
+---------------------------
+
+memleaks_test6_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test6_1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 67
+---------------------------
+total      : 113
+---------------------------
+
+memleaks_test6_2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test6_2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 68
+---------------------------
+total      : 114
+---------------------------
+
+memleaks_test6_3.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test6_3.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 69
+---------------------------
+total      : 115
+---------------------------
+
+memleaks_test6.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test6.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 70
+---------------------------
+total      : 116
+---------------------------
+
+memleaks_test7-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test7-1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 71
+---------------------------
+total      : 117
+---------------------------
+
+memleaks_test7-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test7-2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 72
+---------------------------
+total      : 118
+---------------------------
+
+memleaks_test8_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test8_1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 73
+---------------------------
+total      : 119
+---------------------------
+
+memleaks_test8_2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test8_2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 74
+---------------------------
+total      : 120
+---------------------------
+
+memleaks_test8.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test8.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 75
+---------------------------
+total      : 121
+---------------------------
+
+memleaks_test9_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test9_1.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 76
+---------------------------
+total      : 122
+---------------------------
+
+memleaks_test9_2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test9_2.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 77
+---------------------------
+total      : 123
+---------------------------
+
+memleaks_test9.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+More details about the verification run can be found in the directory "./output".
+sed: can't read ../yml/memleaks_test9.yml: No such file or directory
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 30
+  -safe    : 22
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 78
+---------------------------
+total      : 124
+---------------------------
+
+min_max.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 31
+  -safe    : 23
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 15
+unknown    : 78
+---------------------------
+total      : 125
+---------------------------
+
+nondet_ll_search-alloca-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 31
+  -safe    : 23
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 16
+unknown    : 78
+---------------------------
+total      : 126
+---------------------------
+
+nondet_ll_search-alloca-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 32
+  -safe    : 24
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 16
+unknown    : 78
+---------------------------
+total      : 127
+---------------------------
+
+nondet_ll_traverse-alloca.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 32
+  -safe    : 24
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 78
+---------------------------
+total      : 128
+---------------------------
+
+packet_filter.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 33
+  -safe    : 25
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 78
+---------------------------
+total      : 129
+---------------------------
+
+quick_sort_split.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 34
+  -safe    : 26
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 78
+---------------------------
+total      : 130
+---------------------------
+
+running_example.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 35
+  -safe    : 27
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 78
+---------------------------
+total      : 131
+---------------------------
+
+shared_mem1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 36
+  -safe    : 28
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 78
+---------------------------
+total      : 132
+---------------------------
+
+shared_mem2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 37
+  -safe    : 29
+  -unsafe  : 8
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 78
+---------------------------
+total      : 133
+---------------------------
+
+simple-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 39) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 38
+  -safe    : 29
+  -unsafe  : 9
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 78
+---------------------------
+total      : 134
+---------------------------
+
+simple-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 38
+  -safe    : 29
+  -unsafe  : 9
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 79
+---------------------------
+total      : 135
+---------------------------
+
+simple_and_skiplist_2lvl-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 119) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 39
+  -safe    : 29
+  -unsafe  : 10
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 79
+---------------------------
+total      : 136
+---------------------------
+
+simple_and_skiplist_2lvl-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 39
+  -safe    : 29
+  -unsafe  : 10
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 80
+---------------------------
+total      : 137
+---------------------------
+
+simple_built_from_end.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 39
+  -safe    : 29
+  -unsafe  : 10
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 81
+---------------------------
+total      : 138
+---------------------------
+
+simple-ext_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 39
+  -safe    : 29
+  -unsafe  : 10
+---------------------------
+imprecise  : 1
+unsound    : 17
+unknown    : 82
+---------------------------
+total      : 139
+---------------------------
+
+simple-ext.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 48) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: TRUE
+results do not match!
+
+---------------------------
+matched    : 39
+  -safe    : 29
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 17
+unknown    : 82
+---------------------------
+total      : 140
+---------------------------
+
+simple_search_value-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 39
+  -safe    : 29
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 17
+unknown    : 83
+---------------------------
+total      : 141
+---------------------------
+
+simple_search_value-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 39
+  -safe    : 29
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 17
+unknown    : 84
+---------------------------
+total      : 142
+---------------------------
+
+skiplist_2lvl.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 40
+  -safe    : 30
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 17
+unknown    : 84
+---------------------------
+total      : 143
+---------------------------
+
+skiplist_3lvl.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 41
+  -safe    : 31
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 17
+unknown    : 84
+---------------------------
+total      : 144
+---------------------------
+
+sll-01-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 17
+unknown    : 84
+---------------------------
+total      : 145
+---------------------------
+
+sll-01-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 84
+---------------------------
+total      : 146
+---------------------------
+
+sll2c_append_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 85
+---------------------------
+total      : 147
+---------------------------
+
+sll2c_append_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 86
+---------------------------
+total      : 148
+---------------------------
+
+sll2c_insert_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 87
+---------------------------
+total      : 149
+---------------------------
+
+sll2c_insert_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 88
+---------------------------
+total      : 150
+---------------------------
+
+sll2c_prepend_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 89
+---------------------------
+total      : 151
+---------------------------
+
+sll2c_prepend_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 90
+---------------------------
+total      : 152
+---------------------------
+
+sll2c_remove_all.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 91
+---------------------------
+total      : 153
+---------------------------
+
+sll2c_remove_all_reverse.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 92
+---------------------------
+total      : 154
+---------------------------
+
+sll2c_update_all.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 93
+---------------------------
+total      : 155
+---------------------------
+
+sll2c_update_all_reverse.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 94
+---------------------------
+total      : 156
+---------------------------
+
+sll2n_append_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 95
+---------------------------
+total      : 157
+---------------------------
+
+sll2n_append_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 96
+---------------------------
+total      : 158
+---------------------------
+
+sll2n_insert_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 97
+---------------------------
+total      : 159
+---------------------------
+
+sll2n_insert_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 98
+---------------------------
+total      : 160
+---------------------------
+
+sll2n_prepend_equal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 99
+---------------------------
+total      : 161
+---------------------------
+
+sll2n_prepend_unequal.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 100
+---------------------------
+total      : 162
+---------------------------
+
+sll2n_remove_all.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 101
+---------------------------
+total      : 163
+---------------------------
+
+sll2n_remove_all_reverse.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 102
+---------------------------
+total      : 164
+---------------------------
+
+sll2n_update_all.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 103
+---------------------------
+total      : 165
+---------------------------
+
+sll2n_update_all_reverse.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 42
+  -safe    : 32
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 104
+---------------------------
+total      : 166
+---------------------------
+
+sll-buckets-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 43
+  -safe    : 33
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 18
+unknown    : 104
+---------------------------
+total      : 167
+---------------------------
+
+sll-buckets-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 43
+  -safe    : 33
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 19
+unknown    : 104
+---------------------------
+total      : 168
+---------------------------
+
+sll-circular-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 44
+  -safe    : 34
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 19
+unknown    : 104
+---------------------------
+total      : 169
+---------------------------
+
+sll-circular-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 44
+  -safe    : 34
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 20
+unknown    : 104
+---------------------------
+total      : 170
+---------------------------
+
+sll_circular_traversal-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 44
+  -safe    : 34
+  -unsafe  : 10
+---------------------------
+imprecise  : 2
+unsound    : 20
+unknown    : 105
+---------------------------
+total      : 171
+---------------------------
+
+sll_circular_traversal-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 60, error label in line 50) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 45
+  -safe    : 34
+  -unsafe  : 11
+---------------------------
+imprecise  : 2
+unsound    : 20
+unknown    : 105
+---------------------------
+total      : 172
+---------------------------
+
+sll_length_check-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 57) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 46
+  -safe    : 34
+  -unsafe  : 12
+---------------------------
+imprecise  : 2
+unsound    : 20
+unknown    : 105
+---------------------------
+total      : 173
+---------------------------
+
+sll_length_check-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 46
+  -safe    : 34
+  -unsafe  : 12
+---------------------------
+imprecise  : 2
+unsound    : 20
+unknown    : 106
+---------------------------
+total      : 174
+---------------------------
+
+sll_nondet_insert-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 89) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 47
+  -safe    : 34
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 20
+unknown    : 106
+---------------------------
+total      : 175
+---------------------------
+
+sll_nondet_insert-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 47
+  -safe    : 34
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 20
+unknown    : 107
+---------------------------
+total      : 176
+---------------------------
+
+sll_of_sll_nondet_append-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 47
+  -safe    : 34
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 20
+unknown    : 108
+---------------------------
+total      : 177
+---------------------------
+
+sll_of_sll_nondet_append-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 47
+  -safe    : 34
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 20
+unknown    : 109
+---------------------------
+total      : 178
+---------------------------
+
+sll-optional-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 48
+  -safe    : 35
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 20
+unknown    : 109
+---------------------------
+total      : 179
+---------------------------
+
+sll-optional-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 48
+  -safe    : 35
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 21
+unknown    : 109
+---------------------------
+total      : 180
+---------------------------
+
+sll-queue-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 49
+  -safe    : 36
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 21
+unknown    : 109
+---------------------------
+total      : 181
+---------------------------
+
+sll-queue-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 49
+  -safe    : 36
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 22
+unknown    : 109
+---------------------------
+total      : 182
+---------------------------
+
+sll-rb-cnstr_1-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 50
+  -safe    : 37
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 22
+unknown    : 109
+---------------------------
+total      : 183
+---------------------------
+
+sll-rb-cnstr_1-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 50
+  -safe    : 37
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 23
+unknown    : 109
+---------------------------
+total      : 184
+---------------------------
+
+sll-rb-sentinel-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 51
+  -safe    : 38
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 23
+unknown    : 109
+---------------------------
+total      : 185
+---------------------------
+
+sll-rb-sentinel-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 51
+  -safe    : 38
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 24
+unknown    : 109
+---------------------------
+total      : 186
+---------------------------
+
+sll-reverse_simple.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 52
+  -safe    : 39
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 24
+unknown    : 109
+---------------------------
+total      : 187
+---------------------------
+
+sll_shallow_copy-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 53
+  -safe    : 40
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 24
+unknown    : 109
+---------------------------
+total      : 188
+---------------------------
+
+sll_shallow_copy-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 53
+  -safe    : 40
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 25
+unknown    : 109
+---------------------------
+total      : 189
+---------------------------
+
+sll-simple-white-blue-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 54
+  -safe    : 41
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 25
+unknown    : 109
+---------------------------
+total      : 190
+---------------------------
+
+sll-simple-white-blue-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 54
+  -safe    : 41
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 26
+unknown    : 109
+---------------------------
+total      : 191
+---------------------------
+
+sll-sorted-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 54
+  -safe    : 41
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 27
+unknown    : 109
+---------------------------
+total      : 192
+---------------------------
+
+sll-sorted-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 55
+  -safe    : 42
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 27
+unknown    : 109
+---------------------------
+total      : 193
+---------------------------
+
+sll-token-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 55
+  -safe    : 42
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 109
+---------------------------
+total      : 194
+---------------------------
+
+sll-token-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 56
+  -safe    : 43
+  -unsafe  : 13
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 109
+---------------------------
+total      : 195
+---------------------------
+
+splice-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation (error label in line 73) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.1.html".
+Expected result: FALSE
+results match!
+
+---------------------------
+matched    : 57
+  -safe    : 43
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 109
+---------------------------
+total      : 196
+---------------------------
+
+splice-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results do not match!
+UNKNOWN
+
+---------------------------
+matched    : 57
+  -safe    : 43
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 110
+---------------------------
+total      : 197
+---------------------------
+
+SyntaxSupportPointer01-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 58
+  -safe    : 44
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 110
+---------------------------
+total      : 198
+---------------------------
+
+SyntaxSupportPointer01-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 59
+  -safe    : 45
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 110
+---------------------------
+total      : 199
+---------------------------
+
+SyntaxSupportPointer01-3.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 60
+  -safe    : 46
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 110
+---------------------------
+total      : 200
+---------------------------
+
+test-0019_1-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 61
+  -safe    : 47
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 110
+---------------------------
+total      : 201
+---------------------------
+
+test-0019_1-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 62
+  -safe    : 48
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 110
+---------------------------
+total      : 202
+---------------------------
+
+test-0504_1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 63
+  -safe    : 49
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 110
+---------------------------
+total      : 203
+---------------------------
+
+test-0504.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 64
+  -safe    : 50
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 110
+---------------------------
+total      : 204
+---------------------------
+
+test_malloc-1.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 65
+  -safe    : 51
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 110
+---------------------------
+total      : 205
+---------------------------
+
+test_malloc-2.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 66
+  -safe    : 52
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 28
+unknown    : 110
+---------------------------
+total      : 206
+---------------------------
+
+tree_cnstr.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 66
+  -safe    : 52
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 29
+unknown    : 110
+---------------------------
+total      : 207
+---------------------------
+
+tree_of_cslls.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: TRUE
+results match!
+
+---------------------------
+matched    : 67
+  -safe    : 53
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 29
+unknown    : 110
+---------------------------
+total      : 208
+---------------------------
+
+tree_parent_ptr.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 67
+  -safe    : 53
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 30
+unknown    : 110
+---------------------------
+total      : 209
+---------------------------
+
+tree_stack.c
+
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+Expected result: FALSE
+results do not match!
+UNSOUND RESULT DETECTED!
+
+---------------------------
+matched    : 67
+  -safe    : 53
+  -unsafe  : 14
+---------------------------
+imprecise  : 2
+unsound    : 31
+unknown    : 110
+---------------------------
+total      : 210
+---------------------------
+
+Unsound results
+---------------------------
+cll_search-alloca-2.c
+cll_traverse-alloca.c
+dll-01-1.c
+dll-circular-1.c
+dll_nondet_free_order-2.c
+dll-optional-2.c
+dll-queue-2.c
+dll-rb-cnstr_1-2.c
+dll-rb-sentinel-1.c
+dll-simple-white-blue-1.c
+dll-sorted-1.c
+dll-token-2.c
+lockfree-3.1.c
+lockfree-3.2.c
+lockfree-3.3.c
+nondet_ll_search-alloca-1.c
+nondet_ll_traverse-alloca.c
+sll-01-2.c
+sll-buckets-2.c
+sll-circular-2.c
+sll-optional-2.c
+sll-queue-2.c
+sll-rb-cnstr_1-2.c
+sll-rb-sentinel-2.c
+sll_shallow_copy-2.c
+sll-simple-white-blue-2.c
+sll-sorted-1.c
+sll-token-1.c
+tree_cnstr.c
+tree_parent_ptr.c
+tree_stack.c
+---------------------------
+
+Errors
+---------------------------
+char_generic_nvram_read_nvram_write_nvram.c
+list_and_tree_cnstr-2.c
+list-ext_flag.c
+simple_search_value-2.c
+sll_of_sll_nondet_append-2.c
+
+real	37m22.045s
+user	76m8.257s
+sys	1m2.837s
